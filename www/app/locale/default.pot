@@ -1,0 +1,1356 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2011-02-13 15:55-0500\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: /controllers/articles_controller.php:13;35
+msgid "Invalid article"
+msgstr ""
+
+#: /controllers/articles_controller.php:23;40
+msgid "The article has been saved"
+msgstr ""
+
+#: /controllers/articles_controller.php:26;43
+msgid "The article could not be saved. Please, try again."
+msgstr ""
+
+#: /controllers/articles_controller.php:55
+msgid "Invalid id for article"
+msgstr ""
+
+#: /controllers/articles_controller.php:59
+msgid "Article deleted"
+msgstr ""
+
+#: /controllers/articles_controller.php:62
+msgid "Article was not deleted"
+msgstr ""
+
+#: /plugins/urg/controllers/groups_controller.php:13;37
+msgid "Invalid group"
+msgstr ""
+
+#: /plugins/urg/controllers/groups_controller.php:25;42
+msgid "The group has been saved"
+msgstr ""
+
+#: /plugins/urg/controllers/groups_controller.php:28;45
+msgid "The group could not be saved. Please, try again."
+msgstr ""
+
+#: /plugins/urg/controllers/groups_controller.php:57
+msgid "Invalid id for group"
+msgstr ""
+
+#: /plugins/urg/controllers/groups_controller.php:61
+msgid "Group deleted"
+msgstr ""
+
+#: /plugins/urg/controllers/groups_controller.php:64
+msgid "Group was not deleted"
+msgstr ""
+
+#: /plugins/urg/controllers/roles_controller.php:12;42
+msgid "Invalid role"
+msgstr ""
+
+#: /plugins/urg/controllers/roles_controller.php:24;58
+msgid "The role has been saved"
+msgstr ""
+
+#: /plugins/urg/controllers/roles_controller.php:27;62
+msgid "The role could not be saved. Please, try again."
+msgstr ""
+
+#: /plugins/urg/controllers/roles_controller.php:101
+msgid "Invalid id for role"
+msgstr ""
+
+#: /plugins/urg/controllers/roles_controller.php:112
+msgid "Role deleted"
+msgstr ""
+
+#: /plugins/urg/controllers/roles_controller.php:116
+msgid "Role was not deleted"
+msgstr ""
+
+#: /plugins/urg/controllers/secured_actions_controller.php:19;42
+msgid "Invalid secured action"
+msgstr ""
+
+#: /plugins/urg/controllers/secured_actions_controller.php:29;47
+msgid "The secured action has been saved"
+msgstr ""
+
+#: /plugins/urg/controllers/secured_actions_controller.php:33;51
+msgid "The secured action could not be saved. Please, try again."
+msgstr ""
+
+#: /plugins/urg/controllers/secured_actions_controller.php:63
+msgid "Invalid id for secured action"
+msgstr ""
+
+#: /plugins/urg/controllers/secured_actions_controller.php:67
+msgid "Secured action deleted"
+msgstr ""
+
+#: /plugins/urg/controllers/secured_actions_controller.php:70
+msgid "Secured action was not deleted"
+msgstr ""
+
+#: /plugins/urg/controllers/users_controller.php:15;66
+msgid "Invalid user"
+msgstr ""
+
+#: /plugins/urg/controllers/users_controller.php:25;71
+msgid "The user has been saved"
+msgstr ""
+
+#: /plugins/urg/controllers/users_controller.php:28;74
+msgid "The user could not be saved. Please, try again."
+msgstr ""
+
+#: /plugins/urg/controllers/users_controller.php:86
+msgid "Invalid id for user"
+msgstr ""
+
+#: /plugins/urg/controllers/users_controller.php:90
+msgid "User deleted"
+msgstr ""
+
+#: /plugins/urg/controllers/users_controller.php:93
+msgid "User was not deleted"
+msgstr ""
+
+#: /plugins/urg/controllers/users_controller.php:130
+msgid "The confirmation password does not match."
+msgstr ""
+
+#: /plugins/urg/views/groups/add.ctp:4
+msgid "Add Group"
+msgstr ""
+
+#: /plugins/urg/views/groups/add.ctp:6
+#: /plugins/urg/views/groups/edit.ctp:7
+#: /plugins/urg/views/groups/view.ctp:9;48
+msgid "Parent Group"
+msgstr ""
+
+#: /plugins/urg/views/groups/add.ctp:6
+#: /plugins/urg/views/groups/edit.ctp:7
+msgid "No Parent"
+msgstr ""
+
+#: /plugins/urg/views/groups/add.ctp:11
+#: /plugins/urg/views/groups/edit.ctp:12
+#: /plugins/urg/views/roles/add.ctp:17
+#: /plugins/urg/views/roles/edit.ctp:18
+#: /plugins/urg/views/secured_actions/add.ctp:11
+#: /plugins/urg/views/secured_actions/edit.ctp:12
+#: /plugins/urg/views/users/add.ctp:11
+#: /plugins/urg/views/users/edit.ctp:12
+#: /plugins/urg_meeting/views/meetings/add.ctp:12
+#: /plugins/urg_meeting/views/meetings/edit.ctp:13
+#: /plugins/urg_meeting/views/recurrences/add.ctp:9
+#: /plugins/urg_meeting/views/recurrences/edit.ctp:10
+#: /plugins/urg_post/views/attachment_metadata/add.ctp:11
+#: /plugins/urg_post/views/attachment_metadata/edit.ctp:12
+#: /plugins/urg_post/views/attachment_types/add.ctp:10
+#: /plugins/urg_post/views/attachment_types/edit.ctp:11
+#: /plugins/urg_post/views/attachments/add.ctp:12
+#: /plugins/urg_post/views/attachments/edit.ctp:13
+#: /plugins/urg_post/views/posts/add.ctp:11
+#: /plugins/urg_post/views/posts/edit.ctp:13
+#: /plugins/urg_sermon/views/sermons/add.ctp:154
+#: /plugins/urg_sermon/views/sermons/edit.ctp:13
+#: /views/articles/add.ctp:10
+#: /views/articles/edit.ctp:11
+msgid "Submit"
+msgstr ""
+
+#: /plugins/urg/views/groups/add.ctp:14
+#: /plugins/urg/views/groups/edit.ctp:15
+#: /plugins/urg/views/groups/index.ctp:9;49
+#: /plugins/urg/views/groups/view.ctp:37;58;96;139
+#: /plugins/urg/views/roles/add.ctp:20
+#: /plugins/urg/views/roles/edit.ctp:21
+#: /plugins/urg/views/roles/index.ctp:10;51
+#: /plugins/urg/views/roles/view.ctp:32;52
+#: /plugins/urg/views/secured_actions/add.ctp:14
+#: /plugins/urg/views/secured_actions/edit.ctp:15
+#: /plugins/urg/views/secured_actions/index.ctp:11;53
+#: /plugins/urg/views/secured_actions/view.ctp:37
+#: /plugins/urg/views/users/add.ctp:14
+#: /plugins/urg/views/users/edit.ctp:15
+#: /plugins/urg/views/users/index.ctp:9;47
+#: /plugins/urg/views/users/view.ctp:32;100
+#: /plugins/urg_meeting/views/meetings/add.ctp:15
+#: /plugins/urg_meeting/views/meetings/edit.ctp:16
+#: /plugins/urg_meeting/views/meetings/index.ctp:12;57
+#: /plugins/urg_meeting/views/meetings/view.ctp:42
+#: /plugins/urg_meeting/views/recurrences/add.ctp:12
+#: /plugins/urg_meeting/views/recurrences/edit.ctp:13
+#: /plugins/urg_meeting/views/recurrences/index.ctp:9;47
+#: /plugins/urg_meeting/views/recurrences/view.ctp:27
+#: /plugins/urg_post/views/attachment_metadata/add.ctp:14
+#: /plugins/urg_post/views/attachment_metadata/edit.ctp:15
+#: /plugins/urg_post/views/attachment_metadata/index.ctp:11;53
+#: /plugins/urg_post/views/attachment_metadata/view.ctp:37
+#: /plugins/urg_post/views/attachment_types/add.ctp:13
+#: /plugins/urg_post/views/attachment_types/edit.ctp:14
+#: /plugins/urg_post/views/attachment_types/index.ctp:10;49
+#: /plugins/urg_post/views/attachment_types/view.ctp:32;54
+#: /plugins/urg_post/views/attachments/add.ctp:15
+#: /plugins/urg_post/views/attachments/edit.ctp:16
+#: /plugins/urg_post/views/attachments/index.ctp:12;59
+#: /plugins/urg_post/views/attachments/view.ctp:42;69
+#: /plugins/urg_post/views/posts/add.ctp:14
+#: /plugins/urg_post/views/posts/edit.ctp:16
+#: /plugins/urg_post/views/posts/index.ctp:12;57
+#: /plugins/urg_post/views/posts/view.ctp:42
+#: /plugins/urg_sermon/views/sermons/add.ctp:161
+#: /plugins/urg_sermon/views/sermons/edit.ctp:16
+#: /plugins/urg_sermon/views/sermons/index.ctp:12;66
+#: /plugins/urg_sermon/views/sermons/view.ctp:36
+#: /views/articles/add.ctp:13
+#: /views/articles/edit.ctp:14
+#: /views/articles/index.ctp:10;51
+#: /views/articles/view.ctp:32
+msgid "Actions"
+msgstr ""
+
+#: /plugins/urg/views/groups/add.ctp:16
+#: /plugins/urg/views/groups/edit.ctp:19
+#: /plugins/urg/views/groups/view.ctp:42
+#: /plugins/urg/views/roles/add.ctp:24
+#: /plugins/urg/views/roles/edit.ctp:26
+#: /plugins/urg/views/roles/index.ctp:54
+#: /plugins/urg/views/roles/view.ctp:38
+#: /plugins/urg_meeting/views/meetings/add.ctp:19
+#: /plugins/urg_meeting/views/meetings/edit.ctp:21
+#: /plugins/urg_meeting/views/meetings/index.ctp:60
+#: /plugins/urg_meeting/views/meetings/view.ctp:48
+#: /plugins/urg_post/views/posts/add.ctp:18
+#: /plugins/urg_post/views/posts/edit.ctp:21
+#: /plugins/urg_post/views/posts/index.ctp:60
+#: /plugins/urg_post/views/posts/view.ctp:48
+msgid "List Groups"
+msgstr ""
+
+#: /plugins/urg/views/groups/add.ctp:17
+#: /plugins/urg/views/groups/edit.ctp:20
+#: /plugins/urg/views/groups/index.ctp:52
+#: /plugins/urg/views/groups/view.ctp:43
+#: /plugins/urg/views/roles/add.ctp:23
+#: /plugins/urg/views/roles/edit.ctp:25
+#: /plugins/urg/views/roles/view.ctp:36
+#: /plugins/urg/views/secured_actions/add.ctp:18
+#: /plugins/urg/views/secured_actions/edit.ctp:20
+#: /plugins/urg/views/secured_actions/index.ctp:56
+#: /plugins/urg/views/secured_actions/view.ctp:43
+#: /plugins/urg/views/users/add.ctp:18
+#: /plugins/urg/views/users/edit.ctp:22
+#: /plugins/urg/views/users/index.ctp:52
+#: /plugins/urg/views/users/view.ctp:40
+msgid "List Roles"
+msgstr ""
+
+#: /plugins/urg/views/groups/add.ctp:18
+#: /plugins/urg/views/groups/edit.ctp:21
+#: /plugins/urg/views/groups/index.ctp:53
+#: /plugins/urg/views/groups/view.ctp:44;124
+#: /plugins/urg/views/roles/index.ctp:53
+#: /plugins/urg/views/roles/view.ctp:37
+#: /plugins/urg/views/secured_actions/add.ctp:19
+#: /plugins/urg/views/secured_actions/edit.ctp:21
+#: /plugins/urg/views/secured_actions/index.ctp:57
+#: /plugins/urg/views/secured_actions/view.ctp:44
+#: /plugins/urg/views/users/add.ctp:19
+#: /plugins/urg/views/users/edit.ctp:23
+#: /plugins/urg/views/users/index.ctp:53
+#: /plugins/urg/views/users/view.ctp:41;130
+msgid "New Role"
+msgstr ""
+
+#: /plugins/urg/views/groups/edit.ctp:4
+#: /plugins/urg/views/groups/view.ctp:39
+msgid "Edit Group"
+msgstr ""
+
+#: /plugins/urg/views/groups/edit.ctp:18
+#: /plugins/urg/views/groups/index.ctp:29
+#: /plugins/urg/views/groups/view.ctp:74;115;159
+#: /plugins/urg/views/roles/edit.ctp:24
+#: /plugins/urg/views/roles/index.ctp:31
+#: /plugins/urg/views/roles/view.ctp:69
+#: /plugins/urg/views/secured_actions/edit.ctp:18
+#: /plugins/urg/views/secured_actions/index.ctp:33
+#: /plugins/urg/views/users/edit.ctp:18
+#: /plugins/urg/views/users/index.ctp:27
+#: /plugins/urg/views/users/view.ctp:121
+#: /plugins/urg_meeting/views/meetings/edit.ctp:19
+#: /plugins/urg_meeting/views/meetings/index.ctp:37
+#: /plugins/urg_meeting/views/recurrences/edit.ctp:16
+#: /plugins/urg_meeting/views/recurrences/index.ctp:27
+#: /plugins/urg_post/views/attachment_metadata/edit.ctp:18
+#: /plugins/urg_post/views/attachment_metadata/index.ctp:33
+#: /plugins/urg_post/views/attachment_types/edit.ctp:17
+#: /plugins/urg_post/views/attachment_types/index.ctp:29
+#: /plugins/urg_post/views/attachment_types/view.ctp:75
+#: /plugins/urg_post/views/attachments/edit.ctp:19
+#: /plugins/urg_post/views/attachments/index.ctp:39
+#: /plugins/urg_post/views/attachments/view.ctp:89
+#: /plugins/urg_post/views/posts/edit.ctp:19
+#: /plugins/urg_post/views/posts/index.ctp:37
+#: /plugins/urg_sermon/views/sermons/edit.ctp:19
+#: /plugins/urg_sermon/views/sermons/index.ctp:46
+#: /views/articles/edit.ctp:17
+#: /views/articles/index.ctp:31
+msgid "Delete"
+msgstr ""
+
+#: /plugins/urg/views/groups/edit.ctp:18
+#: /plugins/urg/views/groups/index.ctp:29
+#: /plugins/urg/views/groups/view.ctp:40;74;115;159
+#: /plugins/urg/views/roles/edit.ctp:24
+#: /plugins/urg/views/roles/index.ctp:31
+#: /plugins/urg/views/roles/view.ctp:35;69
+#: /plugins/urg/views/secured_actions/edit.ctp:18
+#: /plugins/urg/views/secured_actions/index.ctp:33
+#: /plugins/urg/views/secured_actions/view.ctp:40
+#: /plugins/urg/views/users/edit.ctp:18
+#: /plugins/urg/views/users/index.ctp:27
+#: /plugins/urg/views/users/view.ctp:35;121
+#: /plugins/urg_meeting/views/meetings/edit.ctp:19
+#: /plugins/urg_meeting/views/meetings/index.ctp:37
+#: /plugins/urg_meeting/views/meetings/view.ctp:45
+#: /plugins/urg_meeting/views/recurrences/edit.ctp:16
+#: /plugins/urg_meeting/views/recurrences/index.ctp:27
+#: /plugins/urg_meeting/views/recurrences/view.ctp:30
+#: /plugins/urg_post/views/attachment_metadata/edit.ctp:18
+#: /plugins/urg_post/views/attachment_metadata/index.ctp:33
+#: /plugins/urg_post/views/attachment_metadata/view.ctp:40
+#: /plugins/urg_post/views/attachment_types/edit.ctp:17
+#: /plugins/urg_post/views/attachment_types/index.ctp:29
+#: /plugins/urg_post/views/attachment_types/view.ctp:35;75
+#: /plugins/urg_post/views/attachments/edit.ctp:19
+#: /plugins/urg_post/views/attachments/index.ctp:39
+#: /plugins/urg_post/views/attachments/view.ctp:45;89
+#: /plugins/urg_post/views/posts/edit.ctp:19
+#: /plugins/urg_post/views/posts/index.ctp:37
+#: /plugins/urg_post/views/posts/view.ctp:45
+#: /plugins/urg_sermon/views/sermons/edit.ctp:19
+#: /plugins/urg_sermon/views/sermons/index.ctp:46
+#: /plugins/urg_sermon/views/sermons/view.ctp:39
+#: /views/articles/edit.ctp:17
+#: /views/articles/index.ctp:31
+#: /views/articles/view.ctp:35
+msgid "Are you sure you want to delete # %s?"
+msgstr ""
+
+#: /plugins/urg/views/groups/index.ctp:2
+msgid "Groups"
+msgstr ""
+
+#: /plugins/urg/views/groups/index.ctp:27
+#: /plugins/urg/views/groups/view.ctp:72;113;157
+#: /plugins/urg/views/roles/index.ctp:29
+#: /plugins/urg/views/roles/view.ctp:67
+#: /plugins/urg/views/secured_actions/index.ctp:31
+#: /plugins/urg/views/users/index.ctp:25
+#: /plugins/urg/views/users/view.ctp:119
+#: /plugins/urg_meeting/views/meetings/index.ctp:35
+#: /plugins/urg_meeting/views/recurrences/index.ctp:25
+#: /plugins/urg_post/views/attachment_metadata/index.ctp:31
+#: /plugins/urg_post/views/attachment_types/index.ctp:27
+#: /plugins/urg_post/views/attachment_types/view.ctp:73
+#: /plugins/urg_post/views/attachments/index.ctp:37
+#: /plugins/urg_post/views/attachments/view.ctp:87
+#: /plugins/urg_post/views/posts/index.ctp:35
+#: /plugins/urg_sermon/views/sermons/index.ctp:44
+#: /views/articles/index.ctp:29
+msgid "View"
+msgstr ""
+
+#: /plugins/urg/views/groups/index.ctp:28
+#: /plugins/urg/views/groups/view.ctp:73;114;158
+#: /plugins/urg/views/roles/index.ctp:30
+#: /plugins/urg/views/roles/view.ctp:68
+#: /plugins/urg/views/secured_actions/index.ctp:32
+#: /plugins/urg/views/users/index.ctp:26
+#: /plugins/urg/views/users/view.ctp:120
+#: /plugins/urg_meeting/views/meetings/index.ctp:36
+#: /plugins/urg_meeting/views/recurrences/index.ctp:26
+#: /plugins/urg_post/views/attachment_metadata/index.ctp:32
+#: /plugins/urg_post/views/attachment_types/index.ctp:28
+#: /plugins/urg_post/views/attachment_types/view.ctp:74
+#: /plugins/urg_post/views/attachments/index.ctp:38
+#: /plugins/urg_post/views/attachments/view.ctp:88
+#: /plugins/urg_post/views/posts/index.ctp:36
+#: /plugins/urg_sermon/views/sermons/index.ctp:45
+#: /views/articles/index.ctp:30
+msgid "Edit"
+msgstr ""
+
+#: /plugins/urg/views/groups/index.ctp:37
+#: /plugins/urg/views/roles/index.ctp:39
+#: /plugins/urg/views/secured_actions/index.ctp:41
+#: /plugins/urg/views/users/index.ctp:35
+#: /plugins/urg_meeting/views/meetings/index.ctp:45
+#: /plugins/urg_meeting/views/recurrences/index.ctp:35
+#: /plugins/urg_post/views/attachment_metadata/index.ctp:41
+#: /plugins/urg_post/views/attachment_types/index.ctp:37
+#: /plugins/urg_post/views/attachments/index.ctp:47
+#: /plugins/urg_post/views/posts/index.ctp:45
+#: /plugins/urg_sermon/views/sermons/index.ctp:54
+#: /views/articles/index.ctp:39
+msgid "Page %page% of %pages%, showing %current% records out of %count% total, starting on record %start%, ending on %end%"
+msgstr ""
+
+#: /plugins/urg/views/groups/index.ctp:42
+#: /plugins/urg/views/roles/index.ctp:44
+#: /plugins/urg/views/secured_actions/index.ctp:46
+#: /plugins/urg/views/users/index.ctp:40
+#: /plugins/urg_meeting/views/meetings/index.ctp:50
+#: /plugins/urg_meeting/views/recurrences/index.ctp:40
+#: /plugins/urg_post/views/attachment_metadata/index.ctp:46
+#: /plugins/urg_post/views/attachment_types/index.ctp:42
+#: /plugins/urg_post/views/attachments/index.ctp:52
+#: /plugins/urg_post/views/posts/index.ctp:50
+#: /plugins/urg_sermon/views/sermons/index.ctp:59
+#: /views/articles/index.ctp:44
+msgid "previous"
+msgstr ""
+
+#: /plugins/urg/views/groups/index.ctp:45
+#: /plugins/urg/views/roles/index.ctp:47
+#: /plugins/urg/views/secured_actions/index.ctp:49
+#: /plugins/urg/views/users/index.ctp:43
+#: /plugins/urg_meeting/views/meetings/index.ctp:53
+#: /plugins/urg_meeting/views/recurrences/index.ctp:43
+#: /plugins/urg_post/views/attachment_metadata/index.ctp:49
+#: /plugins/urg_post/views/attachment_types/index.ctp:45
+#: /plugins/urg_post/views/attachments/index.ctp:55
+#: /plugins/urg_post/views/posts/index.ctp:53
+#: /plugins/urg_sermon/views/sermons/index.ctp:62
+#: /views/articles/index.ctp:47
+msgid "next"
+msgstr ""
+
+#: /plugins/urg/views/groups/index.ctp:51
+#: /plugins/urg/views/groups/view.ctp:41
+#: /plugins/urg/views/roles/add.ctp:25
+#: /plugins/urg/views/roles/edit.ctp:27
+#: /plugins/urg/views/roles/index.ctp:55
+#: /plugins/urg/views/roles/view.ctp:39
+#: /plugins/urg_meeting/views/meetings/add.ctp:20
+#: /plugins/urg_meeting/views/meetings/edit.ctp:22
+#: /plugins/urg_meeting/views/meetings/index.ctp:61
+#: /plugins/urg_meeting/views/meetings/view.ctp:49
+#: /plugins/urg_post/views/posts/add.ctp:19
+#: /plugins/urg_post/views/posts/edit.ctp:22
+#: /plugins/urg_post/views/posts/index.ctp:61
+#: /plugins/urg_post/views/posts/view.ctp:49
+msgid "New Group"
+msgstr ""
+
+#: /plugins/urg/views/groups/view.ctp:2
+#: /plugins/urg/views/roles/add.ctp:6
+#: /plugins/urg/views/roles/view.ctp:9
+#: /plugins/urg_meeting/views/meetings/view.ctp:9
+#: /plugins/urg_post/views/posts/view.ctp:9
+msgid "Group"
+msgstr ""
+
+#: /plugins/urg/views/groups/view.ctp:4;52;91;133
+#: /plugins/urg/views/roles/view.ctp:4;49
+#: /plugins/urg/views/secured_actions/view.ctp:4
+#: /plugins/urg/views/users/view.ctp:4;48;93
+#: /plugins/urg_meeting/views/meetings/view.ctp:4
+#: /plugins/urg_meeting/views/recurrences/view.ctp:4
+#: /plugins/urg_post/views/attachment_metadata/view.ctp:4
+#: /plugins/urg_post/views/attachment_types/view.ctp:4;47
+#: /plugins/urg_post/views/attachments/view.ctp:4;63
+#: /plugins/urg_post/views/posts/view.ctp:4
+#: /views/articles/view.ctp:4
+msgid "Id"
+msgstr ""
+
+#: /plugins/urg/views/groups/view.ctp:14;54;92;135
+#: /plugins/urg/views/roles/view.ctp:14
+#: /plugins/urg/views/users/view.ctp:56;95
+#: /plugins/urg_meeting/views/recurrences/view.ctp:9
+#: /plugins/urg_post/views/attachment_types/view.ctp:9
+#: /views/plugins/urg/users/register.ctp:9
+msgid "Name"
+msgstr ""
+
+#: /plugins/urg/views/groups/view.ctp:19;55;93;136
+#: /plugins/urg/views/roles/view.ctp:19
+#: /plugins/urg/views/users/view.ctp:97
+#: /plugins/urg_post/views/attachment_types/view.ctp:14
+#: /plugins/urg_sermon/views/sermons/add.ctp:130
+msgid "Description"
+msgstr ""
+
+#: /plugins/urg/views/groups/view.ctp:24;56;94;137
+#: /plugins/urg/views/secured_actions/view.ctp:24
+#: /plugins/urg/views/users/view.ctp:19;72;98
+#: /plugins/urg_meeting/views/meetings/view.ctp:29
+#: /plugins/urg_meeting/views/recurrences/view.ctp:14
+#: /plugins/urg_post/views/attachment_metadata/view.ctp:24
+#: /plugins/urg_post/views/attachment_types/view.ctp:19;52
+#: /plugins/urg_post/views/attachments/view.ctp:29;67
+#: /plugins/urg_post/views/posts/view.ctp:29
+#: /views/articles/view.ctp:19
+msgid "Created"
+msgstr ""
+
+#: /plugins/urg/views/groups/view.ctp:29;57;95;138
+#: /plugins/urg/views/roles/view.ctp:24;51
+#: /plugins/urg/views/secured_actions/view.ctp:29
+#: /plugins/urg/views/users/view.ctp:24;76;99
+#: /plugins/urg_meeting/views/meetings/view.ctp:34
+#: /plugins/urg_meeting/views/recurrences/view.ctp:19
+#: /plugins/urg_post/views/attachment_metadata/view.ctp:29
+#: /plugins/urg_post/views/attachment_types/view.ctp:24;53
+#: /plugins/urg_post/views/attachments/view.ctp:34;68
+#: /plugins/urg_post/views/posts/view.ctp:34
+#: /views/articles/view.ctp:24
+msgid "Modified"
+msgstr ""
+
+#: /plugins/urg/views/groups/view.ctp:40
+msgid "Delete Group"
+msgstr ""
+
+#: /plugins/urg/views/groups/view.ctp:53;134
+#: /plugins/urg/views/users/view.ctp:94
+msgid "Group Id"
+msgstr ""
+
+#: /plugins/urg/views/groups/view.ctp:82
+msgid "New Parent Group"
+msgstr ""
+
+#: /plugins/urg/views/groups/view.ctp:87
+#: /plugins/urg/views/users/view.ctp:89
+msgid "Related Roles"
+msgstr ""
+
+#: /plugins/urg/views/groups/view.ctp:129
+msgid "Related Groups"
+msgstr ""
+
+#: /plugins/urg/views/groups/view.ctp:168
+msgid "New Related Group"
+msgstr ""
+
+#: /plugins/urg/views/roles/add.ctp:4
+msgid "Add Role"
+msgstr ""
+
+#: /plugins/urg/views/roles/add.ctp:6
+msgid "Select a group"
+msgstr ""
+
+#: /plugins/urg/views/roles/add.ctp:12
+#: /plugins/urg/views/roles/edit.ctp:13
+msgid "Manage Secured Actions"
+msgstr ""
+
+#: /plugins/urg/views/roles/edit.ctp:4
+#: /plugins/urg/views/roles/view.ctp:34
+msgid "Edit Role"
+msgstr ""
+
+#: /plugins/urg/views/roles/index.ctp:2
+msgid "Roles"
+msgstr ""
+
+#: /plugins/urg/views/roles/index.ctp:56
+#: /plugins/urg/views/roles/view.ctp:40
+#: /plugins/urg/views/users/add.ctp:17
+#: /plugins/urg/views/users/edit.ctp:19
+#: /plugins/urg/views/users/view.ctp:36
+#: /plugins/urg_post/views/attachments/add.ctp:23
+#: /plugins/urg_post/views/attachments/edit.ctp:25
+#: /plugins/urg_post/views/attachments/index.ctp:66
+#: /plugins/urg_post/views/attachments/view.ctp:52
+#: /plugins/urg_post/views/posts/add.ctp:20
+#: /plugins/urg_post/views/posts/edit.ctp:23
+#: /plugins/urg_post/views/posts/index.ctp:62
+#: /plugins/urg_post/views/posts/view.ctp:50
+msgid "List Users"
+msgstr ""
+
+#: /plugins/urg/views/roles/index.ctp:57
+#: /plugins/urg/views/roles/view.ctp:41;78
+#: /plugins/urg/views/users/index.ctp:49
+#: /plugins/urg/views/users/view.ctp:37
+#: /plugins/urg_post/views/attachments/add.ctp:24
+#: /plugins/urg_post/views/attachments/edit.ctp:26
+#: /plugins/urg_post/views/attachments/index.ctp:67
+#: /plugins/urg_post/views/attachments/view.ctp:53
+#: /plugins/urg_post/views/posts/add.ctp:21
+#: /plugins/urg_post/views/posts/edit.ctp:24
+#: /plugins/urg_post/views/posts/index.ctp:63
+#: /plugins/urg_post/views/posts/view.ctp:51
+msgid "New User"
+msgstr ""
+
+#: /plugins/urg/views/roles/view.ctp:2
+#: /plugins/urg/views/secured_actions/view.ctp:9
+msgid "Role"
+msgstr ""
+
+#: /plugins/urg/views/roles/view.ctp:35
+msgid "Delete Role"
+msgstr ""
+
+#: /plugins/urg/views/roles/view.ctp:45
+msgid "Related Users"
+msgstr ""
+
+#: /plugins/urg/views/roles/view.ctp:50
+#: /plugins/urg/views/users/view.ctp:9
+#: /views/plugins/urg/users/login.ctp:6
+#: /views/plugins/urg/users/register.ctp:5
+msgid "Username"
+msgstr ""
+
+#: /plugins/urg/views/secured_actions/add.ctp:4
+msgid "Add Secured Action"
+msgstr ""
+
+#: /plugins/urg/views/secured_actions/add.ctp:6
+msgid "Public"
+msgstr ""
+
+#: /plugins/urg/views/secured_actions/add.ctp:17
+#: /plugins/urg/views/secured_actions/edit.ctp:19
+#: /plugins/urg/views/secured_actions/view.ctp:41
+msgid "List Secured Actions"
+msgstr ""
+
+#: /plugins/urg/views/secured_actions/edit.ctp:4
+#: /plugins/urg/views/secured_actions/view.ctp:39
+msgid "Edit Secured Action"
+msgstr ""
+
+#: /plugins/urg/views/secured_actions/index.ctp:2
+msgid "Secured Actions"
+msgstr ""
+
+#: /plugins/urg/views/secured_actions/index.ctp:55
+#: /plugins/urg/views/secured_actions/view.ctp:42
+msgid "New Secured Action"
+msgstr ""
+
+#: /plugins/urg/views/secured_actions/view.ctp:2
+msgid "Secured Action"
+msgstr ""
+
+#: /plugins/urg/views/secured_actions/view.ctp:14
+msgid "Controller"
+msgstr ""
+
+#: /plugins/urg/views/secured_actions/view.ctp:19
+msgid "Action"
+msgstr ""
+
+#: /plugins/urg/views/secured_actions/view.ctp:40
+msgid "Delete Secured Action"
+msgstr ""
+
+#: /plugins/urg/views/users/add.ctp:4
+msgid "Add User"
+msgstr ""
+
+#: /plugins/urg/views/users/edit.ctp:4
+#: /plugins/urg/views/users/view.ctp:34
+msgid "Edit User"
+msgstr ""
+
+#: /plugins/urg/views/users/edit.ctp:20
+#: /plugins/urg/views/users/index.ctp:50
+#: /plugins/urg/views/users/view.ctp:38
+msgid "List Profiles"
+msgstr ""
+
+#: /plugins/urg/views/users/edit.ctp:21
+#: /plugins/urg/views/users/index.ctp:51
+#: /plugins/urg/views/users/view.ctp:39
+msgid "New Profile"
+msgstr ""
+
+#: /plugins/urg/views/users/index.ctp:2
+msgid "Users"
+msgstr ""
+
+#: /plugins/urg/views/users/view.ctp:2
+#: /plugins/urg_post/views/attachments/view.ctp:19
+#: /plugins/urg_post/views/posts/view.ctp:14
+msgid "User"
+msgstr ""
+
+#: /plugins/urg/views/users/view.ctp:14
+#: /views/plugins/urg/users/login.ctp:9
+#: /views/plugins/urg/users/register.ctp:6
+msgid "Password"
+msgstr ""
+
+#: /plugins/urg/views/users/view.ctp:35
+msgid "Delete User"
+msgstr ""
+
+#: /plugins/urg/views/users/view.ctp:45
+msgid "Related Profiles"
+msgstr ""
+
+#: /plugins/urg/views/users/view.ctp:52
+#: /plugins/urg_post/views/attachment_types/view.ctp:50
+msgid "User Id"
+msgstr ""
+
+#: /plugins/urg/views/users/view.ctp:60
+msgid "Search Name"
+msgstr ""
+
+#: /plugins/urg/views/users/view.ctp:64
+msgid "Email"
+msgstr ""
+
+#: /plugins/urg/views/users/view.ctp:68
+msgid "Dob"
+msgstr ""
+
+#: /plugins/urg/views/users/view.ctp:84
+msgid "Edit Profile"
+msgstr ""
+
+#: /plugins/urg/views/users/view.ctp:96
+msgid "Url"
+msgstr ""
+
+#: /plugins/urg_meeting/controllers/meetings_controller.php:13;36
+msgid "Invalid meeting"
+msgstr ""
+
+#: /plugins/urg_meeting/controllers/meetings_controller.php:23;41
+msgid "The meeting has been saved"
+msgstr ""
+
+#: /plugins/urg_meeting/controllers/meetings_controller.php:26;44
+msgid "The meeting could not be saved. Please, try again."
+msgstr ""
+
+#: /plugins/urg_meeting/controllers/meetings_controller.php:57
+msgid "Invalid id for meeting"
+msgstr ""
+
+#: /plugins/urg_meeting/controllers/meetings_controller.php:61
+msgid "Meeting deleted"
+msgstr ""
+
+#: /plugins/urg_meeting/controllers/meetings_controller.php:64
+msgid "Meeting was not deleted"
+msgstr ""
+
+#: /plugins/urg_meeting/controllers/recurrences_controller.php:14;34
+msgid "Invalid recurrence"
+msgstr ""
+
+#: /plugins/urg_meeting/controllers/recurrences_controller.php:24;39
+msgid "The recurrence has been saved"
+msgstr ""
+
+#: /plugins/urg_meeting/controllers/recurrences_controller.php:27;42
+msgid "The recurrence could not be saved. Please, try again."
+msgstr ""
+
+#: /plugins/urg_meeting/controllers/recurrences_controller.php:52
+msgid "Invalid id for recurrence"
+msgstr ""
+
+#: /plugins/urg_meeting/controllers/recurrences_controller.php:56
+msgid "Recurrence deleted"
+msgstr ""
+
+#: /plugins/urg_meeting/controllers/recurrences_controller.php:59
+msgid "Recurrence was not deleted"
+msgstr ""
+
+#: /plugins/urg_meeting/views/meetings/add.ctp:4
+msgid "Add Meeting"
+msgstr ""
+
+#: /plugins/urg_meeting/views/meetings/add.ctp:18
+#: /plugins/urg_meeting/views/meetings/edit.ctp:20
+#: /plugins/urg_meeting/views/meetings/view.ctp:46
+msgid "List Meetings"
+msgstr ""
+
+#: /plugins/urg_meeting/views/meetings/add.ctp:21
+#: /plugins/urg_meeting/views/meetings/edit.ctp:23
+#: /plugins/urg_meeting/views/meetings/index.ctp:62
+#: /plugins/urg_meeting/views/meetings/view.ctp:50
+#: /plugins/urg_meeting/views/recurrences/add.ctp:15
+#: /plugins/urg_meeting/views/recurrences/edit.ctp:17
+#: /plugins/urg_meeting/views/recurrences/view.ctp:31
+msgid "List Recurrences"
+msgstr ""
+
+#: /plugins/urg_meeting/views/meetings/add.ctp:22
+#: /plugins/urg_meeting/views/meetings/edit.ctp:24
+#: /plugins/urg_meeting/views/meetings/index.ctp:63
+#: /plugins/urg_meeting/views/meetings/view.ctp:51
+#: /plugins/urg_meeting/views/recurrences/index.ctp:49
+#: /plugins/urg_meeting/views/recurrences/view.ctp:32
+msgid "New Recurrence"
+msgstr ""
+
+#: /plugins/urg_meeting/views/meetings/edit.ctp:4
+#: /plugins/urg_meeting/views/meetings/view.ctp:44
+msgid "Edit Meeting"
+msgstr ""
+
+#: /plugins/urg_meeting/views/meetings/index.ctp:2
+msgid "Meetings"
+msgstr ""
+
+#: /plugins/urg_meeting/views/meetings/index.ctp:59
+#: /plugins/urg_meeting/views/meetings/view.ctp:47
+msgid "New Meeting"
+msgstr ""
+
+#: /plugins/urg_meeting/views/meetings/view.ctp:2
+msgid "Meeting"
+msgstr ""
+
+#: /plugins/urg_meeting/views/meetings/view.ctp:14
+#: /plugins/urg_meeting/views/recurrences/view.ctp:2
+msgid "Recurrence"
+msgstr ""
+
+#: /plugins/urg_meeting/views/meetings/view.ctp:19
+#: /plugins/urg_post/views/posts/view.ctp:19
+msgid "Title"
+msgstr ""
+
+#: /plugins/urg_meeting/views/meetings/view.ctp:24
+msgid "Meeting Time"
+msgstr ""
+
+#: /plugins/urg_meeting/views/meetings/view.ctp:45
+msgid "Delete Meeting"
+msgstr ""
+
+#: /plugins/urg_meeting/views/recurrences/add.ctp:4
+msgid "Add Recurrence"
+msgstr ""
+
+#: /plugins/urg_meeting/views/recurrences/edit.ctp:4
+#: /plugins/urg_meeting/views/recurrences/view.ctp:29
+msgid "Edit Recurrence"
+msgstr ""
+
+#: /plugins/urg_meeting/views/recurrences/index.ctp:2
+msgid "Recurrences"
+msgstr ""
+
+#: /plugins/urg_meeting/views/recurrences/view.ctp:30
+msgid "Delete Recurrence"
+msgstr ""
+
+#: /plugins/urg_post/controllers/attachment_metadata_controller.php:13;35
+msgid "Invalid attachment metadatum"
+msgstr ""
+
+#: /plugins/urg_post/controllers/attachment_metadata_controller.php:23;40
+msgid "The attachment metadatum has been saved"
+msgstr ""
+
+#: /plugins/urg_post/controllers/attachment_metadata_controller.php:26;43
+msgid "The attachment metadatum could not be saved. Please, try again."
+msgstr ""
+
+#: /plugins/urg_post/controllers/attachment_metadata_controller.php:55
+msgid "Invalid id for attachment metadatum"
+msgstr ""
+
+#: /plugins/urg_post/controllers/attachment_metadata_controller.php:59
+msgid "Attachment metadatum deleted"
+msgstr ""
+
+#: /plugins/urg_post/controllers/attachment_metadata_controller.php:62
+msgid "Attachment metadatum was not deleted"
+msgstr ""
+
+#: /plugins/urg_post/controllers/attachment_types_controller.php:13;33
+msgid "Invalid attachment type"
+msgstr ""
+
+#: /plugins/urg_post/controllers/attachment_types_controller.php:23;38
+msgid "The attachment type has been saved"
+msgstr ""
+
+#: /plugins/urg_post/controllers/attachment_types_controller.php:26;41
+msgid "The attachment type could not be saved. Please, try again."
+msgstr ""
+
+#: /plugins/urg_post/controllers/attachment_types_controller.php:51
+msgid "Invalid id for attachment type"
+msgstr ""
+
+#: /plugins/urg_post/controllers/attachment_types_controller.php:55
+msgid "Attachment type deleted"
+msgstr ""
+
+#: /plugins/urg_post/controllers/attachment_types_controller.php:58
+msgid "Attachment type was not deleted"
+msgstr ""
+
+#: /plugins/urg_post/controllers/attachments_controller.php:13;37
+msgid "Invalid attachment"
+msgstr ""
+
+#: /plugins/urg_post/controllers/attachments_controller.php:23;42
+msgid "The attachment has been saved"
+msgstr ""
+
+#: /plugins/urg_post/controllers/attachments_controller.php:26;45
+msgid "The attachment could not be saved. Please, try again."
+msgstr ""
+
+#: /plugins/urg_post/controllers/attachments_controller.php:59
+msgid "Invalid id for attachment"
+msgstr ""
+
+#: /plugins/urg_post/controllers/attachments_controller.php:63
+msgid "Attachment deleted"
+msgstr ""
+
+#: /plugins/urg_post/controllers/attachments_controller.php:66
+msgid "Attachment was not deleted"
+msgstr ""
+
+#: /plugins/urg_post/controllers/posts_controller.php:13;38
+msgid "Invalid post"
+msgstr ""
+
+#: /plugins/urg_post/controllers/posts_controller.php:26;43
+msgid "The post has been saved"
+msgstr ""
+
+#: /plugins/urg_post/controllers/posts_controller.php:29;46
+msgid "The post could not be saved. Please, try again."
+msgstr ""
+
+#: /plugins/urg_post/controllers/posts_controller.php:59
+msgid "Invalid id for post"
+msgstr ""
+
+#: /plugins/urg_post/controllers/posts_controller.php:63
+msgid "Post deleted"
+msgstr ""
+
+#: /plugins/urg_post/controllers/posts_controller.php:66
+msgid "Post was not deleted"
+msgstr ""
+
+#: /plugins/urg_post/views/attachment_metadata/add.ctp:4
+msgid "Add Attachment Metadatum"
+msgstr ""
+
+#: /plugins/urg_post/views/attachment_metadata/add.ctp:17
+#: /plugins/urg_post/views/attachment_metadata/edit.ctp:19
+#: /plugins/urg_post/views/attachment_metadata/view.ctp:41
+#: /plugins/urg_post/views/attachments/add.ctp:25
+#: /plugins/urg_post/views/attachments/edit.ctp:27
+#: /plugins/urg_post/views/attachments/index.ctp:68
+#: /plugins/urg_post/views/attachments/view.ctp:54
+msgid "List Attachment Metadata"
+msgstr ""
+
+#: /plugins/urg_post/views/attachment_metadata/add.ctp:18
+#: /plugins/urg_post/views/attachment_metadata/edit.ctp:20
+#: /plugins/urg_post/views/attachment_metadata/index.ctp:56
+#: /plugins/urg_post/views/attachment_metadata/view.ctp:43
+#: /plugins/urg_post/views/attachment_types/add.ctp:17
+#: /plugins/urg_post/views/attachment_types/edit.ctp:19
+#: /plugins/urg_post/views/attachment_types/index.ctp:52
+#: /plugins/urg_post/views/attachment_types/view.ctp:38
+#: /plugins/urg_post/views/attachments/add.ctp:18
+#: /plugins/urg_post/views/attachments/edit.ctp:20
+#: /plugins/urg_post/views/attachments/view.ctp:46
+msgid "List Attachments"
+msgstr ""
+
+#: /plugins/urg_post/views/attachment_metadata/add.ctp:19
+#: /plugins/urg_post/views/attachment_metadata/edit.ctp:21
+#: /plugins/urg_post/views/attachment_metadata/index.ctp:57
+#: /plugins/urg_post/views/attachment_metadata/view.ctp:44
+#: /plugins/urg_post/views/attachment_types/add.ctp:18
+#: /plugins/urg_post/views/attachment_types/edit.ctp:20
+#: /plugins/urg_post/views/attachment_types/index.ctp:53
+#: /plugins/urg_post/views/attachment_types/view.ctp:39;84
+#: /plugins/urg_post/views/attachments/index.ctp:61
+#: /plugins/urg_post/views/attachments/view.ctp:47
+msgid "New Attachment"
+msgstr ""
+
+#: /plugins/urg_post/views/attachment_metadata/edit.ctp:4
+#: /plugins/urg_post/views/attachment_metadata/view.ctp:39
+msgid "Edit Attachment Metadatum"
+msgstr ""
+
+#: /plugins/urg_post/views/attachment_metadata/index.ctp:2
+msgid "Attachment Metadata"
+msgstr ""
+
+#: /plugins/urg_post/views/attachment_metadata/index.ctp:55
+#: /plugins/urg_post/views/attachment_metadata/view.ctp:42
+#: /plugins/urg_post/views/attachments/add.ctp:26
+#: /plugins/urg_post/views/attachments/edit.ctp:28
+#: /plugins/urg_post/views/attachments/index.ctp:69
+#: /plugins/urg_post/views/attachments/view.ctp:55;98
+msgid "New Attachment Metadatum"
+msgstr ""
+
+#: /plugins/urg_post/views/attachment_metadata/view.ctp:2
+msgid "Attachment Metadatum"
+msgstr ""
+
+#: /plugins/urg_post/views/attachment_metadata/view.ctp:9
+#: /plugins/urg_post/views/attachments/view.ctp:2
+msgid "Attachment"
+msgstr ""
+
+#: /plugins/urg_post/views/attachment_metadata/view.ctp:14
+#: /plugins/urg_post/views/attachments/view.ctp:65
+msgid "Key"
+msgstr ""
+
+#: /plugins/urg_post/views/attachment_metadata/view.ctp:19
+#: /plugins/urg_post/views/attachments/view.ctp:66
+msgid "Value"
+msgstr ""
+
+#: /plugins/urg_post/views/attachment_metadata/view.ctp:40
+msgid "Delete Attachment Metadatum"
+msgstr ""
+
+#: /plugins/urg_post/views/attachment_types/add.ctp:4
+msgid "Add Attachment Type"
+msgstr ""
+
+#: /plugins/urg_post/views/attachment_types/add.ctp:16
+#: /plugins/urg_post/views/attachment_types/edit.ctp:18
+#: /plugins/urg_post/views/attachment_types/view.ctp:36
+#: /plugins/urg_post/views/attachments/add.ctp:19
+#: /plugins/urg_post/views/attachments/edit.ctp:21
+#: /plugins/urg_post/views/attachments/index.ctp:62
+#: /plugins/urg_post/views/attachments/view.ctp:48
+msgid "List Attachment Types"
+msgstr ""
+
+#: /plugins/urg_post/views/attachment_types/edit.ctp:4
+#: /plugins/urg_post/views/attachment_types/view.ctp:34
+msgid "Edit Attachment Type"
+msgstr ""
+
+#: /plugins/urg_post/views/attachment_types/index.ctp:2
+msgid "Attachment Types"
+msgstr ""
+
+#: /plugins/urg_post/views/attachment_types/index.ctp:51
+#: /plugins/urg_post/views/attachment_types/view.ctp:37
+#: /plugins/urg_post/views/attachments/add.ctp:20
+#: /plugins/urg_post/views/attachments/edit.ctp:22
+#: /plugins/urg_post/views/attachments/index.ctp:63
+#: /plugins/urg_post/views/attachments/view.ctp:49
+msgid "New Attachment Type"
+msgstr ""
+
+#: /plugins/urg_post/views/attachment_types/view.ctp:2
+#: /plugins/urg_post/views/attachments/view.ctp:9
+msgid "Attachment Type"
+msgstr ""
+
+#: /plugins/urg_post/views/attachment_types/view.ctp:35
+msgid "Delete Attachment Type"
+msgstr ""
+
+#: /plugins/urg_post/views/attachment_types/view.ctp:43
+msgid "Related Attachments"
+msgstr ""
+
+#: /plugins/urg_post/views/attachment_types/view.ctp:48
+msgid "Attachment Type Id"
+msgstr ""
+
+#: /plugins/urg_post/views/attachment_types/view.ctp:49
+msgid "Post Id"
+msgstr ""
+
+#: /plugins/urg_post/views/attachment_types/view.ctp:51
+#: /plugins/urg_post/views/attachments/view.ctp:24
+msgid "Filename"
+msgstr ""
+
+#: /plugins/urg_post/views/attachments/add.ctp:4
+msgid "Add Attachment"
+msgstr ""
+
+#: /plugins/urg_post/views/attachments/add.ctp:21
+#: /plugins/urg_post/views/attachments/edit.ctp:23
+#: /plugins/urg_post/views/attachments/index.ctp:64
+#: /plugins/urg_post/views/attachments/view.ctp:50
+#: /plugins/urg_post/views/posts/add.ctp:17
+#: /plugins/urg_post/views/posts/edit.ctp:20
+#: /plugins/urg_post/views/posts/view.ctp:46
+#: /plugins/urg_sermon/views/sermons/edit.ctp:21
+#: /plugins/urg_sermon/views/sermons/view.ctp:42
+#: /views/articles/add.ctp:17
+#: /views/articles/edit.ctp:19
+#: /views/articles/index.ctp:54
+#: /views/articles/view.ctp:38
+msgid "List Posts"
+msgstr ""
+
+#: /plugins/urg_post/views/attachments/add.ctp:22
+#: /plugins/urg_post/views/attachments/edit.ctp:24
+#: /plugins/urg_post/views/attachments/index.ctp:65
+#: /plugins/urg_post/views/attachments/view.ctp:51
+#: /plugins/urg_post/views/posts/index.ctp:59
+#: /plugins/urg_post/views/posts/view.ctp:47
+#: /plugins/urg_sermon/views/sermons/edit.ctp:22
+#: /plugins/urg_sermon/views/sermons/view.ctp:43
+#: /views/articles/add.ctp:18
+#: /views/articles/edit.ctp:20
+#: /views/articles/index.ctp:55
+#: /views/articles/view.ctp:39
+msgid "New Post"
+msgstr ""
+
+#: /plugins/urg_post/views/attachments/edit.ctp:4
+#: /plugins/urg_post/views/attachments/view.ctp:44
+msgid "Edit Attachment"
+msgstr ""
+
+#: /plugins/urg_post/views/attachments/index.ctp:2
+msgid "Attachments"
+msgstr ""
+
+#: /plugins/urg_post/views/attachments/view.ctp:14
+#: /plugins/urg_post/views/posts/view.ctp:2
+#: /views/articles/view.ctp:14
+msgid "Post"
+msgstr ""
+
+#: /plugins/urg_post/views/attachments/view.ctp:45
+msgid "Delete Attachment"
+msgstr ""
+
+#: /plugins/urg_post/views/attachments/view.ctp:59
+msgid "Related Attachment Metadata"
+msgstr ""
+
+#: /plugins/urg_post/views/attachments/view.ctp:64
+msgid "Attachment Id"
+msgstr ""
+
+#: /plugins/urg_post/views/posts/add.ctp:4
+msgid "Add Post"
+msgstr ""
+
+#: /plugins/urg_post/views/posts/edit.ctp:4
+#: /plugins/urg_post/views/posts/view.ctp:44
+msgid "Edit Post"
+msgstr ""
+
+#: /plugins/urg_post/views/posts/index.ctp:2
+msgid "Posts"
+msgstr ""
+
+#: /plugins/urg_post/views/posts/view.ctp:24
+msgid "Content"
+msgstr ""
+
+#: /plugins/urg_post/views/posts/view.ctp:45
+msgid "Delete Post"
+msgstr ""
+
+#: /plugins/urg_sermon/controllers/sermons_controller.php:30;223
+msgid "Invalid sermon"
+msgstr ""
+
+#: /plugins/urg_sermon/controllers/sermons_controller.php:195;228
+msgid "The sermon has been saved"
+msgstr ""
+
+#: /plugins/urg_sermon/controllers/sermons_controller.php:202;207;231
+msgid "The sermon could not be saved. Please, try again."
+msgstr ""
+
+#: /plugins/urg_sermon/controllers/sermons_controller.php:243
+msgid "Invalid id for sermon"
+msgstr ""
+
+#: /plugins/urg_sermon/controllers/sermons_controller.php:247
+msgid "Sermon deleted"
+msgstr ""
+
+#: /plugins/urg_sermon/controllers/sermons_controller.php:250
+msgid "Sermon was not deleted"
+msgstr ""
+
+#: /plugins/urg_sermon/views/sermons/add.ctp:85
+msgid "Add Sermon"
+msgstr ""
+
+#: /plugins/urg_sermon/views/sermons/add.ctp:89
+msgid "INSERT SERMON BANNER"
+msgstr ""
+
+#: /plugins/urg_sermon/views/sermons/add.ctp:110
+msgid "Series"
+msgstr ""
+
+#: /plugins/urg_sermon/views/sermons/add.ctp:121
+msgid "Speaker"
+msgstr ""
+
+#: /plugins/urg_sermon/views/sermons/add.ctp:129
+msgid "Date"
+msgstr ""
+
+#: /plugins/urg_sermon/views/sermons/add.ctp:156
+msgid "Uploads pending..."
+msgstr ""
+
+#: /plugins/urg_sermon/views/sermons/add.ctp:157
+msgid "The sermon form will be submitted after all attachments have been uploaded."
+msgstr ""
+
+#: /plugins/urg_sermon/views/sermons/add.ctp:163
+#: /plugins/urg_sermon/views/sermons/edit.ctp:20
+#: /plugins/urg_sermon/views/sermons/view.ctp:40
+msgid "List Sermons"
+msgstr ""
+
+#: /plugins/urg_sermon/views/sermons/edit.ctp:4
+#: /plugins/urg_sermon/views/sermons/view.ctp:38
+msgid "Edit Sermon"
+msgstr ""
+
+#: /plugins/urg_sermon/views/sermons/edit.ctp:23
+msgid "List Passages"
+msgstr ""
+
+#: /plugins/urg_sermon/views/sermons/edit.ctp:24
+msgid "New Passage"
+msgstr ""
+
+#: /plugins/urg_sermon/views/sermons/index.ctp:2
+msgid "Sermons"
+msgstr ""
+
+#: /plugins/urg_sermon/views/sermons/index.ctp:28
+msgid "Draft"
+msgstr ""
+
+#: /plugins/urg_sermon/views/sermons/index.ctp:68
+#: /plugins/urg_sermon/views/sermons/view.ctp:41
+msgid "New Sermon"
+msgstr ""
+
+#: /plugins/urg_sermon/views/sermons/view.ctp:2
+msgid "Sermon"
+msgstr ""
+
+#: /plugins/urg_sermon/views/sermons/view.ctp:24
+msgid "Preached by %s on %s"
+msgstr ""
+
+#: /plugins/urg_sermon/views/sermons/view.ctp:39
+msgid "Delete Sermon"
+msgstr ""
+
+#: /views/articles/add.ctp:4
+msgid "Add Article"
+msgstr ""
+
+#: /views/articles/add.ctp:16
+#: /views/articles/edit.ctp:18
+#: /views/articles/view.ctp:36
+msgid "List Articles"
+msgstr ""
+
+#: /views/articles/edit.ctp:4
+#: /views/articles/view.ctp:34
+msgid "Edit Article"
+msgstr ""
+
+#: /views/articles/index.ctp:2
+msgid "Articles"
+msgstr ""
+
+#: /views/articles/index.ctp:53
+#: /views/articles/view.ctp:37
+msgid "New Article"
+msgstr ""
+
+#: /views/articles/view.ctp:2
+msgid "Article"
+msgstr ""
+
+#: /views/articles/view.ctp:9
+msgid "Pastor Id"
+msgstr ""
+
+#: /views/articles/view.ctp:35
+msgid "Delete Article"
+msgstr ""
+
+#: /views/layouts/default.ctp:25
+msgid "CakePHP: the rapid development php framework:"
+msgstr ""
+
+#: /views/layouts/default.ctp:43;54
+msgid "CakePHP: the rapid development php framework"
+msgstr ""
+
+#: /views/plugins/urg/users/login.ctp:11
+msgid "Login"
+msgstr ""
+
+#: /views/plugins/urg/users/register.ctp:10
+msgid "E-mail"
+msgstr ""
+
+#: /views/plugins/urg/users/register.ctp:11
+msgid "Date of Birth"
+msgstr ""
+
+#: /views/plugins/urg/users/register.ctp:12
+msgid "Register"
+msgstr ""
+
+#: /webroot/test.php:88
+msgid "Debug setting does not allow access to this url."
+msgstr ""
+

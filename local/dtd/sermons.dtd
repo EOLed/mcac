@@ -1,0 +1,18 @@
+<!ELEMENT sermons (sermon)*>
+<!ELEMENT sermon (series?, speaker, passages?, title, timestamp, notes?, description?, banners?, attachments?)>
+<!ELEMENT series (#PCDATA)>
+<!ELEMENT speaker (#PCDATA)>
+<!ELEMENT passages (#PCDATA)>
+<!ELEMENT timestamp (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT notes (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT banners (img)*>
+<!ELEMENT attachments (attachment)*>
+
+<!ELEMENT img (#PCDATA)>
+<!ATTLIST img src CDATA #REQUIRED>
+
+<!ELEMENT attachment (#PCDATA)>
+<!ATTLIST attachment src CDATA #REQUIRED>
+
