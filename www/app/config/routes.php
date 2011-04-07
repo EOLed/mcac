@@ -44,4 +44,4 @@
 
     Router::connect("/pastors/*", array("controller" => "pastors", "action" => "view", "plugin" => "urg_sermon"));
 
-    Router::connect("/groups/*", array("controller" => "groups", "action" => "view", "plugin" => "urg"));
+    Router::connect("/groups/*", array("controller" => "posts", "action" => "view_group", "plugin" => "urg_post"));
