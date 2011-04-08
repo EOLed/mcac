@@ -11,15 +11,30 @@ class FlyLoaderComponent extends Object {
         $this->controller =& $controller;
     }
                                 
-    function load($type, $name) {
-        App::import($type, $name);
+    function load($type, $abs_name) {
+        $settings = array();
+        if (is_array($abs_name)) {
+            $keys = array_keys($abs_name);
 
-        if ($type == $COMPONENT_TYPE) {
+            foreach ($keys as $key) {
+                $settings = $abs_name[$key];
+                $abs_name = $key;
+
+                break;
+            }
+        }
+
+        App::import($type, $abs_name);
+
+        $name = $this->get_name($abs_name);
+
+        if ($type == $this->COMPONENT_TYPE) {
+            CakeLog::write("debug", "loading component: $name");
             $component2 = $name.'Component';
             $component =& new $component2(null);
                     
             if (method_exists($component, 'initialize')) {
-                $component->initialize($this->controller);
+                $component->initialize($this->controller, $settings);
             }
                         
             if (method_exists($component, 'startup')) {
@@ -27,16 +42,25 @@ class FlyLoaderComponent extends Object {
             }
                     
             $this->controller->{$name} = &$component;
-        } else if ($type == $HELPER_TYPE) {
-            $this->helpers[] = $name;
-        } else if ($type == $BEHAVIOR_TYPE) {
-            $this->Behaviors->attach($name);
+        } else if ($type == $this->HELPER_TYPE) {
+            CakeLog::write("debug", "loading helper: $name");
+            $this->controller->helpers[] = $name;
+        } else if ($type == $this->BEHAVIOR_TYPE) {
+            CakeLog::write("debug", "loading behavior: $name");
+            $this->controller->Behaviors->attach($name);
         }
+
+        return $name;
+    }
+
+    function get_name($name) {
+        CakeLog::write("debug", "get name for $name");
+        return substr($name, strrpos($name, ".") + 1);
     }
 
     function unload($type, $name) {
-        if ($type == $BEHAVIOR_TYPE) {
-            $this->Behaviors->detach($name);
+        if ($type == $this->BEHAVIOR_TYPE) {
+            $this->controller->Behaviors->detach($name);
         }
     }
 }
