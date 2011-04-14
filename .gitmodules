@@ -16,6 +16,3 @@
 [submodule "www/app/plugins/urg_post"]
 	path = www/app/plugins/urg_post
 	url = git://github.com/achan/urg_post.git
-[submodule "www/app/plugins/urg_sermon"]
-	path = www/app/plugins/urg_sermon
-	url = git://github.com/achan/urg_sermon.git
