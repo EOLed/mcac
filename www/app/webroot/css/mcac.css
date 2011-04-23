@@ -4,6 +4,7 @@ body {
     font-family: 'Arimo', sans-serif;
     font-size: 11px;
     color: #222222;
+    line-height: 125%;
 }
 #header {
     height: 60px;

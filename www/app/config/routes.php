@@ -42,6 +42,6 @@
     Router::connect("/iho", array("controller" => "pastors", "action" => "view", "plugin" => "urg_sermon", "iho"));
     Router::connect("/mdavis", array("controller" => "pastors", "action" => "view", "plugin" => "urg_sermon", "mdavis"));
 
-    Router::connect("/pastors/*", array("controller" => "pastors", "action" => "view", "plugin" => "urg_sermon"));
+    Router::connect("/bethanies", array("controller" => "groups", "action" => "view", "plugin" => "urg", "30", "bethanies"));
 
     Router::connect("/groups/*", array("controller" => "groups", "action" => "view", "plugin" => "urg"));
