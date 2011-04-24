@@ -1,7 +1,7 @@
 body {
     background-image: url('/img/bg.png');
     background-repeat: repeat-x;
-    font-family: 'Arimo', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 11px;
     color: #222222;
     line-height: 125%;
@@ -21,7 +21,8 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: "Arvo", sans-serif;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
 }
 
 .shadow {
@@ -37,18 +38,19 @@ h1, h2, h3, h4, h5 {
 }
 
 #about-panel {
-    font-family: 'Droid Serif', serif;
-    font-size: 13px;
-    color: #666666;
+    font-family: Georgia, serif;
+    font-size: 14px;
+    font-style: italic;
+    color: #777777;
 }
 
 #about-panel h3 {
     font-weight: bold;
-    font-style: italic;
     font-size: 16px;
     padding-bottom: 5px;
     color: #222; 
     text-shadow: 0px 2px 3px #fff;
+    font-style: normal;
 }
 
 #banner-list {
@@ -150,8 +152,8 @@ h2, legend {
     font-size: 16px;
     text-transform: uppercase;
     color: #aa1111;
-    padding-bottom: 5px;
-    text-shadow: 0px 1px 2px #aaa;
+    padding-bottom: 15px;
+    /**text-shadow: 0px 1px 2px #aaa;*/
 }
 
 #nav li {

@@ -13,6 +13,7 @@
             if (Configure::read("General.cdn") === true) {
                 echo $this->Html->script("https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js");
                 echo $this->Html->script("https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.7/jquery-ui.min.js");
+                echo $this->Html->css("http://fonts.googleapis.com/css?family=Lato:100,100italic,light,lightitalic,regular,regularitalic,bold,bolditalic,900,900italic|Droid+Serif:regular,italic,bold,bolditalic|Arvo:regular,italic,bold,bolditalic");
             } else {
                 echo $this->Html->script('jquery/jquery');
                 echo $this->Html->script("jquery/jquery-ui.custom.min");
@@ -22,7 +23,6 @@
                 echo $this->Html->script("jquery/andy.jqdebugger.min");
             }
 
-            //echo $this->Html->css("http://fonts.googleapis.com/css?family=Arimo:regular,italic,bold,bolditalic|Droid+Serif:regular,italic,bold,bolditalic|Arvo:regular,italic,bold,bolditalic");
             echo $this->Html->css("reset");
             echo $this->Html->css("smoothness/jquery-ui-1.8.7.custom");
             echo $this->Html->css("960");
