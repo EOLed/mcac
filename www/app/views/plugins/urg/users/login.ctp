@@ -11,3 +11,7 @@
 	    <?php echo $form->submit(__("Login", true)) ?>
     <?php echo $form->end() ?>
 </div>
+
+<script type="text/javascript">
+    $($("#UserUsername").focus());
+</script>

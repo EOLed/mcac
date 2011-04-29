@@ -26,7 +26,7 @@
  * its action called 'display', and we pass a param to select the view file
  * to use (in this case, /app/views/pages/home.ctp)...
  */
-	Router::connect('/', array('controller' => 'pages', 'action' => 'display', 'home'));
+	Router::connect('/', array('plugin' => 'urg', 'controller' => 'groups', 'action' => 'view', 2, 'mcac'));
 	
     Router::connect('/logout', array('controller' => 'users', 'action' => 'logout', 'plugin' => 'urg', 'home'));
     
