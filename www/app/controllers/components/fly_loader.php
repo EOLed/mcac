@@ -29,7 +29,6 @@ class FlyLoaderComponent extends Object {
         $name = $this->get_name($abs_name);
 
         if ($type == $this->COMPONENT_TYPE) {
-            CakeLog::write("debug", "loading component: $name");
             $component2 = $name.'Component';
             $component =& new $component2(null);
                     
@@ -54,7 +53,6 @@ class FlyLoaderComponent extends Object {
     }
 
     function get_name($name) {
-        CakeLog::write("debug", "get name for $name");
         return substr($name, strrpos($name, ".") + 1);
     }
 
