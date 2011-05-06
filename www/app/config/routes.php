@@ -44,4 +44,5 @@
 
     Router::connect("/bethanies", array("controller" => "groups", "action" => "view", "plugin" => "urg", 8, "bethanies"));
 
-    Router::connect("/groups/*", array("controller" => "groups", "action" => "view", "plugin" => "urg"));
+    Router::connect("/groups/:action/*", array("controller" => "groups", "plugin" => "urg"));
+    Router::connect("/posts/:action/*", array("controller" => "posts", "plugin" => "urg_post"));
