@@ -19,3 +19,6 @@
 [submodule "www/app/plugins/urg_sermon"]
 	path = www/app/plugins/urg_sermon
 	url = git@github.com:achan/urg_sermon.git
+[submodule "www/app/plugins/urg_subscription"]
+	path = www/app/plugins/urg_subscription
+	url = git@github.com:achan/urg_subscription.git
