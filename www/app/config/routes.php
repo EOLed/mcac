@@ -46,3 +46,4 @@
 
     Router::connect("/groups/:action/*", array("controller" => "groups", "plugin" => "urg"));
     Router::connect("/posts/:action/*", array("controller" => "posts", "plugin" => "urg_post"));
+    Router::connect("/subscriptions/:action/*", array("controller" => "subscriptions", "plugin" => "urg_subscription"));
