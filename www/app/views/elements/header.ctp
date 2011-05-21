@@ -1,5 +1,5 @@
 <div id="logo" class="alpha grid_3">
-    <?php echo $this->Html->image("logo.png"); ?>
+    <?php echo $this->Html->link($this->Html->image("logo.png"), "/", array("alt"=>"Back to Home", "escape"=>false)); ?>
 </div>
 <div id="nav-pane" class="omega grid_6 suffix_3">
     <ul id="nav">

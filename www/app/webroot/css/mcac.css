@@ -1,6 +1,7 @@
 body {
-    background-image: url('/img/bg.png');
-    background-repeat: repeat-x;
+    background-image: url('/img/grey-rising-sun.gif');
+    background-repeat: no-repeat;
+    background-position: top center;
     font-family: 'Lato', sans-serif;
     font-size: 11px;
     color: #222222;
