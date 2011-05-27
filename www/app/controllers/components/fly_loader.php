@@ -24,29 +24,31 @@ class FlyLoaderComponent extends Object {
             }
         }
 
-        App::import($type, $abs_name);
+        if (App::import($type, $abs_name)) {
+            $name = $this->get_name($abs_name);
 
-        $name = $this->get_name($abs_name);
-
-        if ($type == $this->COMPONENT_TYPE) {
-            $component2 = $name.'Component';
-            $component =& new $component2(null);
-                    
-            if (method_exists($component, 'initialize')) {
-                $component->initialize($this->controller, $settings);
-            }
+            if ($type == $this->COMPONENT_TYPE) {
+                $component2 = $name.'Component';
+                $component =& new $component2(null);
                         
-            if (method_exists($component, 'startup')) {
-                $component->startup($this->controller);
+                if (method_exists($component, 'initialize')) {
+                    $component->initialize($this->controller, $settings);
+                }
+                            
+                if (method_exists($component, 'startup')) {
+                    $component->startup($this->controller);
+                }
+                        
+                $this->controller->{$name} = &$component;
+            } else if ($type == $this->HELPER_TYPE) {
+                CakeLog::write("debug", "loading helper: $name");
+                $this->controller->helpers[] = $name;
+            } else if ($type == $this->BEHAVIOR_TYPE) {
+                CakeLog::write("debug", "loading behavior: $name");
+                $this->controller->Behaviors->attach($name);
             }
-                    
-            $this->controller->{$name} = &$component;
-        } else if ($type == $this->HELPER_TYPE) {
-            CakeLog::write("debug", "loading helper: $name");
-            $this->controller->helpers[] = $name;
-        } else if ($type == $this->BEHAVIOR_TYPE) {
-            CakeLog::write("debug", "loading behavior: $name");
-            $this->controller->Behaviors->attach($name);
+        } else {
+            $name = false;
         }
 
         return $name;
