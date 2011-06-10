@@ -55,7 +55,12 @@ class FlyLoaderComponent extends Object {
     }
 
     function get_name($name) {
-        return substr($name, strrpos($name, ".") + 1);
+        $pos = strrpos($name, ".");
+
+        if ($pos !== false)
+            $name = substr($name, $pos + 1); 
+        
+        return $name;
     }
 
     function unload($type, $name) {
