@@ -37,7 +37,7 @@
 	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
 
     Router::connect("/jkaan", array("controller" => "pastors", "action" => "view", "plugin" => "urg_sermon", "jkaan"));
-    Router::connect("/tchan", array("controller" => "pastors", "action" => "view", "plugin" => "urg_sermon", "tchan"));
+    Router::connect("/tchan", array("controller" => "groups", "action" => "view", "plugin" => "urg", 56, "tchan"));
     Router::connect("/tyeung", array("controller" => "pastors", "action" => "view", "plugin" => "urg_sermon", "tyeung"));
     Router::connect("/iho", array("controller" => "pastors", "action" => "view", "plugin" => "urg_sermon", "iho"));
     Router::connect("/mdavis", array("controller" => "pastors", "action" => "view", "plugin" => "urg_sermon", "mdavis"));
