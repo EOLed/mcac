@@ -1,4 +1,5 @@
 <?php
+App::import('Lib', 'routes/GroupSlugRoute');
 /**
  * Routes configuration
  *
@@ -36,13 +37,11 @@
  */
 	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
 
-    Router::connect("/jkaan", array("controller" => "pastors", "action" => "view", "plugin" => "urg_sermon", "jkaan"));
-    Router::connect("/tchan", array("controller" => "groups", "action" => "view", "plugin" => "urg", 56, "tchan"));
-    Router::connect("/tyeung", array("controller" => "pastors", "action" => "view", "plugin" => "urg_sermon", "tyeung"));
-    Router::connect("/iho", array("controller" => "pastors", "action" => "view", "plugin" => "urg_sermon", "iho"));
-    Router::connect("/mdavis", array("controller" => "pastors", "action" => "view", "plugin" => "urg_sermon", "mdavis"));
-
-    Router::connect("/bethanies", array("controller" => "groups", "action" => "view", "plugin" => "urg", 8, "bethanies"));
+    Router::connect("/:group_slug", 
+                    array("plugin" => "urg", 
+                          "controller" => "groups", 
+                          "action" => "view"), 
+                    array("routeClass" => "GroupSlugRoute"));
 
     Router::connect("/groups/:action/*", array("controller" => "groups", "plugin" => "urg"));
     Router::connect("/posts/:action/*", array("controller" => "posts", "plugin" => "urg_post"));
