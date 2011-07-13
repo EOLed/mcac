@@ -9,6 +9,8 @@
         <?php echo $this->Form->input("Profile.name", array("label"=>__("Name", true))) ?>
         <?php echo $this->Form->input("Profile.email", array("label"=>__("E-mail", true))) ?>
         <?php echo $this->Form->input("Profile.dob", array("label"=>__("Date of Birth", true))) ?>
+        <?php echo $this->Form->input("Profile.locale", array("label"=>__("Language", true), 
+                                                              "options"=>$locales)) ?>
 	    <?php echo $this->Form->submit(__("Register", true)) ?>
     <?php echo $this->Form->end() ?>
 </div>

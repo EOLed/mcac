@@ -27,22 +27,41 @@ App::import('Lib', 'routes/GroupSlugRoute');
  * its action called 'display', and we pass a param to select the view file
  * to use (in this case, /app/views/pages/home.ctp)...
  */
-	Router::connect('/', array('plugin' => 'urg', 'controller' => 'groups', 'action' => 'view', 2, 'mcac'));
+	Router::connect('/', array('plugin' => 'urg', 
+                               'controller' => 'groups', 
+                               'action' => 'view', 
+                               'mcac'));
 	
-    Router::connect('/logout', array('controller' => 'users', 'action' => 'logout', 'plugin' => 'urg', 'home'));
+    Router::connect('/logout', array('controller' => 'users', 
+                                     'action' => 'logout', 
+                                     'plugin' => 'urg', 
+                                     'home'));
     
-    Router::connect('/login', array('controller' => 'users', 'action' => 'login', 'plugin' => 'urg', 'home'));
+    Router::connect('/login', array('controller' => 'users', 
+                                    'action' => 'login', 
+                                    'plugin' => 'urg', 
+                                    'home'));
 /**
  * ...and connect the rest of 'Pages' controller's urls.
  */
 	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
 
     Router::connect("/:group_slug", 
-                    array("plugin" => "urg", 
-                          "controller" => "groups", 
-                          "action" => "view"), 
+                    array("plugin" => "urg", "controller" => "groups", "action" => "view"), 
                     array("routeClass" => "GroupSlugRoute"));
 
-    Router::connect("/groups/:action/*", array("controller" => "groups", "plugin" => "urg"));
-    Router::connect("/posts/:action/*", array("controller" => "posts", "plugin" => "urg_post"));
-    Router::connect("/subscriptions/:action/*", array("controller" => "subscriptions", "plugin" => "urg_subscription"));
+    $langs = "en|ch";
+
+    Router::connect("/:lang/groups/:action/*", 
+                    array("controller" => "groups", "plugin" => "urg"), 
+                    array("lang" => $langs));
+
+    Router::connect("/:lang/posts/:action/*", 
+                    array("controller" => "posts", "plugin" => "urg_post"), 
+                    array("lang" => $langs));
+
+    Router::connect("/:lang/subscriptions/:action/*", 
+                    array("controller" => "subscriptions", "plugin" => "urg_subscription"), 
+                    array("lang" => $langs));
+
+    Router::connect("/:lang/*", array(), array("lang" => "LanguageRoute"));
