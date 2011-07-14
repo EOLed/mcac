@@ -52,6 +52,13 @@ App::import('Lib', 'routes/GroupSlugRoute');
 
     $langs = "en|ch";
 
+    Router::connect("/:lang/:group_slug", 
+                    array("plugin" => "urg", "controller" => "groups", "action" => "view"), 
+                    array("routeClass" => "GroupSlugRoute"));
+
+    Router::connect("/groups/:action/*",
+                    array("plugin" => "urg", "controller" => "groups", "action" =>"index"));
+
     Router::connect("/:lang/groups/:action/*", 
                     array("controller" => "groups", "plugin" => "urg"), 
                     array("lang" => $langs));
@@ -64,4 +71,3 @@ App::import('Lib', 'routes/GroupSlugRoute');
                     array("controller" => "subscriptions", "plugin" => "urg_subscription"), 
                     array("lang" => $langs));
 
-    Router::connect("/:lang/*", array(), array("lang" => "LanguageRoute"));

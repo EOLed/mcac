@@ -21,4 +21,18 @@ class GroupSlugRoute extends CakeRoute {
         }
         return false;
     }
+
+    function match($url) {
+        if (isset($url["plugin"]) && $url["plugin"] == "urg" && 
+                isset($url["controller"]) && $url["controller"] == "groups" &&
+                isset($url["action"]) && $url["action"] == "view" &&
+                isset($url[0])) {
+            $result = "/$url[0]";
+        } else {
+            $result = false;
+        }
+
+        CakeLog::write("debug", "result: " . Debugger::exportVar($result, 3));
+        return $result;
+    }
 }
