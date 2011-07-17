@@ -32,7 +32,6 @@ class GroupSlugRoute extends CakeRoute {
             $result = false;
         }
 
-        CakeLog::write("debug", "result: " . Debugger::exportVar($result, 3));
         return $result;
     }
 }
