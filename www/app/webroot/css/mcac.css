@@ -329,3 +329,34 @@ input.label {
 .error-message {
     background-color: #aa1111;
 }
+
+/** BASIC CSS */
+strong {
+    font-weight: bold;
+}
+
+p {
+    padding-bottom: 10px;
+}
+
+ul {
+    list-style-type: circle;
+    padding-left: 14px;
+}
+
+ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+blockquote {
+    padding-left: 20px;
+}
+
+em {
+    font-style: italic;
+}
+
+code {
+    font-family: monospace;
+}
