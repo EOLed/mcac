@@ -22,3 +22,6 @@
 [submodule "www/app/plugins/urg_subscription"]
 	path = www/app/plugins/urg_subscription
 	url = git@github.com:achan/urg_subscription.git
+[submodule "www/app/plugins/markdown"]
+	path = www/app/plugins/markdown
+	url = git://github.com/achan/markdown.git
