@@ -11,9 +11,14 @@ class SlugHelper extends AppHelper {
         $slug_field = $this->field();
         $slug_dom_id = $this->domId();
 
+        $slug_options = array("class"=>"label no-key-press", "tabindex"=>-1);
+        if (isset($options["slug_prefix"])) {
+            $slug_options["value"] = $options["slug_prefix"];
+        }
+
         $slug_input = $this->Html->tag("span", "<strong>" . __("Permalink: ", true) . "</strong> " . 
-                $options["slug_prefix"], array("id" => $slug_dom_id . "Label")) . 
-                $this->Form->text($slug_field, array("class"=>"label no-key-press", "tabindex"=>-1));
+                $options["base_url"], array("id" => $slug_dom_id . "Label")) . 
+                $this->Form->text($slug_field, $slug_options);
 
         $js = $this->Form->input($text_field, array("after" => $slug_input));
 
@@ -25,7 +30,11 @@ class SlugHelper extends AppHelper {
 
         // auto update by default
         if (!isset($options['auto_update']) || $options["auto_update"] === true) {
-            $slug_js = "$($('#$text_dom_id').slugIt({ output: '.no-key-press#$slug_dom_id' }));";
+            $prefix = "''";
+            if (isset($options["slug_prefix"])) {
+                $prefix = "'$options[slug_prefix]'";
+            }
+            $slug_js = "$($('#$text_dom_id').slugIt({ output: '.no-key-press#$slug_dom_id', prefix: $prefix }));";
             $keypress_js = "$($('.no-key-press#$slug_dom_id').keypress(function() { $(this).removeClass('no-key-press') }));";
 
             $script .= $slug_js.$keypress_js;

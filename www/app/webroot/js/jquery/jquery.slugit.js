@@ -13,7 +13,8 @@ jQuery.fn.slugIt = function(options) {
 	var defaults = {
  		events: 'keypress keyup',
 		output: '#slug', 
-        map:    false
+        map:    false,
+        prefix: ''
 	};
 	
 	var opts  = jQuery.extend(defaults, options);
@@ -49,8 +50,8 @@ jQuery.fn.slugIt = function(options) {
         slug = slug.replace(/-$/, '');         // remove trailing separator
 		slug = slug.toLowerCase();
 		
-		jQuery(opts.output).val(slug);         // input or textarea
-		jQuery(opts.output).html(slug);        // other dom elements
+		jQuery(opts.output).val(opts.prefix + slug);         // input or textarea
+		jQuery(opts.output).html(opts.prefix + slug);        // other dom elements
 		
 		return this;
 	});
