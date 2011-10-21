@@ -7,6 +7,10 @@ body {
     color: #222222;
     line-height: 125%;
 }
+#side-panel #post-content {
+    line-height: 1.28;
+    font-size: 11px;
+}
 #header {
     height: 60px;
 /*    -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.75);
@@ -24,6 +28,7 @@ body {
 h1, h2, h3, h4, h5 {
     font-family: "Lato", sans-serif;
     font-weight: 300;
+    text-transform: capitalize;
 }
 
 .shadow {
@@ -217,13 +222,13 @@ a:hover {
     color: #ff2200;
 }
 
-#debug {
-    position: absolute;
-    height: 500px;
-    width: 1200px;
+/*#debug {
+ //   position: absolute;
+ //   height: 500px;
+ //   width: 1200px;
     overflow: auto;
-    left: 1280px;
-}
+ //   left: 1280px;
+} */
 
 .flash {
     font-size: 10px;
