@@ -1,15 +1,17 @@
 body {
-    background-image: url('/img/grey-rising-sun.gif');
-    background-repeat: no-repeat;
-    background-position: top center;
-    font-family: 'Lato', sans-serif;
+    /*background-image: url('/img/grey-rising-sun.gif');*/
+    background-image: url('/img/fancy_deboss.png');
+    /*background-repeat: no-repeat;
+    background-position: top center;*/
+    /*font-family: 'Lato', sans-serif;*/
+    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
     font-size: 11px;
     color: #222222;
-    line-height: 125%;
+    line-height: 1.28;
 }
 #side-panel #post-content {
-    line-height: 1.28;
     font-size: 11px;
+    line-height: 1.28;
 }
 #header {
     height: 60px;
@@ -26,9 +28,13 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+h1, h2 {
     font-family: "Lato", sans-serif;
     font-weight: 300;
-    text-transform: capitalize;
 }
 
 .shadow {
