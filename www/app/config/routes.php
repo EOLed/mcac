@@ -50,24 +50,14 @@ App::import('Lib', 'routes/GroupSlugRoute');
                     array("plugin" => "urg", "controller" => "groups", "action" => "view"), 
                     array("routeClass" => "GroupSlugRoute"));
 
-    $langs = "en|ch";
-
-    Router::connect("/:lang/:group_slug", 
-                    array("plugin" => "urg", "controller" => "groups", "action" => "view"), 
-                    array("routeClass" => "GroupSlugRoute"));
-
     Router::connect("/groups/:action/*",
                     array("plugin" => "urg", "controller" => "groups", "action" =>"index"));
 
-    Router::connect("/:lang/groups/:action/*", 
-                    array("controller" => "groups", "plugin" => "urg"), 
-                    array("lang" => $langs));
+    Router::connect("/groups/:action/*", array("controller" => "groups", "plugin" => "urg"));
 
-    Router::connect("/:lang/posts/:action/*", 
-                    array("controller" => "posts", "plugin" => "urg_post"), 
-                    array("lang" => $langs));
+    Router::connect("/posts/:action/*", array("controller" => "posts", "plugin" => "urg_post"));
+    Router::connect("/sermons/:action/*", array("controller" => "sermons", "plugin" => "urg_sermon"));
 
-    Router::connect("/:lang/subscriptions/:action/*", 
-                    array("controller" => "subscriptions", "plugin" => "urg_subscription"), 
-                    array("lang" => $langs));
+    Router::connect("/subscriptions/:action/*", 
+                    array("controller" => "subscriptions", "plugin" => "urg_subscription"));
 
