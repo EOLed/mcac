@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2011-11-01 19:59-0400\n"
+"POT-Creation-Date: 2011-11-05 14:05-0400\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -116,7 +116,7 @@ msgstr ""
 msgid "User was not deleted"
 msgstr ""
 
-#: /plugins/urg/controllers/users_controller.php:131
+#: /plugins/urg/controllers/users_controller.php:133
 msgid "The confirmation password does not match."
 msgstr ""
 
@@ -1558,35 +1558,43 @@ msgstr ""
 msgid "Email: "
 msgstr ""
 
-#: /views/elements/header.ctp:7
-msgid "About Us"
+#: /views/elements/header.ctp:9
+msgid "Chinese"
 msgstr ""
 
 #: /views/elements/header.ctp:11
-msgid "Our Pastors"
-msgstr ""
-
-#: /views/elements/header.ctp:14
-msgid "Rev. Jonathan Kaan"
-msgstr ""
-
-#: /views/elements/header.ctp:15
-msgid "Rev. Thomas Chan"
+msgid "English"
 msgstr ""
 
 #: /views/elements/header.ctp:16
-msgid "Rev. Terry Yeung"
+msgid "About Us"
 msgstr ""
 
-#: /views/elements/header.ctp:17
-msgid "Rev. Ian Ho"
-msgstr ""
-
-#: /views/elements/header.ctp:18
-msgid "Pastor Davis Marshall"
+#: /views/elements/header.ctp:20
+msgid "Our Pastors"
 msgstr ""
 
 #: /views/elements/header.ctp:23
+msgid "Rev. Jonathan Kaan"
+msgstr ""
+
+#: /views/elements/header.ctp:24
+msgid "Rev. Thomas Chan"
+msgstr ""
+
+#: /views/elements/header.ctp:25
+msgid "Rev. Terry Yeung"
+msgstr ""
+
+#: /views/elements/header.ctp:26
+msgid "Rev. Ian Ho"
+msgstr ""
+
+#: /views/elements/header.ctp:27
+msgid "Pastor Davis Marshall"
+msgstr ""
+
+#: /views/elements/header.ctp:32
 msgid "Connect"
 msgstr ""
 

@@ -47,4 +47,19 @@ class AppController extends Controller {
     	$trace = debug_backtrace();
         parent::log("[" . $this->toString() . "::" . $trace[1]["function"] . "()] $msg", $type);
     }
+
+    function beforeFilter() {
+        if (isset($this->params["lang"])) {
+            $this->Session->write("Config.language", $this->params["lang"]);
+            Configure::write("Config.language", $this->params["language"]);
+            $this->log("setting language from param: " . $this->params["lang"]);
+        } else if (!$this->Session->check("Config.language") || $this->Session->read("Config.language") == "") {
+            Configure::load("config");
+            $default_lang = Configure::read("Language.default");
+            $this->Session->write("Config.language", $default_lang);
+            Configure::write("Config.language", $default_lang);
+        }
+
+        $this->log("THE LANGUAGE: " . $this->Session->read("Config.language"), LOG_DEBUG);
+    }
 }

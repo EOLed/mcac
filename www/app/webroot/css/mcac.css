@@ -86,6 +86,15 @@ h1, h2 {
     list-style: none;
 }
 
+#nav #locale a {
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#nav #locale span {
+}
+
 #nav li {
     float: right;
     margin-left: 10px;
@@ -100,6 +109,7 @@ h1, h2 {
 
 #nav li span {
     cursor: pointer;
+    text-transform: uppercase;
 }
 
 #nav-pastors ul li {
