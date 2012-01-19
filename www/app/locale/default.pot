@@ -1667,3 +1667,6 @@ msgstr ""
 
 msgid "mcac-styles"
 msgstr ""
+
+msgid "Pictures"
+msgstr ""

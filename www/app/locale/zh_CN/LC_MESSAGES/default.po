@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "POT-Creation-Date: 2011-11-05 14:05-0400\n"
-"PO-Revision-Date: 2012-01-18 20:27-0500\n"
+"PO-Revision-Date: 2012-01-18 21:10-0500\n"
 "Last-Translator: Amos Chan <amos.chan@chapps.org>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -1666,4 +1666,7 @@ msgstr "敬拜隊"
 
 msgid "mcac-styles"
 msgstr "mcac-ch"
+
+msgid "Pictures"
+msgstr "圖片"
 
