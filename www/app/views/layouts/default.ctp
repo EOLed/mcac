@@ -42,7 +42,7 @@
             <div id="footer" class="grid_12 top-border">
                 <?php echo $this->element("footer"); ?>
             </div>
-            <div id="debug" class="grid_12">
+            <div id="debug" class="grid_12" style="display: none">
                 <?php echo $this->element('sql_dump'); ?>
                 <?php echo $this->Js->writeBuffer(); ?>
             </div>

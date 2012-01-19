@@ -6,3 +6,6 @@ echo " | " . __("Email: ", true) . $this->Html->link("info@montreal-cac.org", "m
 </div>
 <div>&copy; Montreal Chinese Alliance Church | Designed by <a href="http://am05.com">AM05.com</a></div>
 <div>Part of the <a href="http://churchie.org">Churchie.org Network</a></div>
+<div class="grid_12">
+    <a href="#" onclick="$('#debug').toggle(); return false;">Show Debug Info</a>
+</div>
