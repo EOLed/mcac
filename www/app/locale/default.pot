@@ -1638,3 +1638,29 @@ msgstr ""
 msgid "Debug setting does not allow access to this url."
 msgstr ""
 
+msgid "Recent Activity"
+msgstr ""
+
+msgid "Around the Church"
+msgstr ""
+
+msgid "Upcoming Events"
+msgstr ""
+
+msgid "Related Articles"
+msgstr ""
+
+msgid "Rev. Marshall Davis"
+msgstr ""
+
+msgid "Montreal Chinese Alliance Church"
+msgstr ""
+
+msgid "Bethany Fellowship"
+msgstr ""
+
+msgid "Timothy Fellowship"
+msgstr ""
+
+msgid "Worship Team"
+msgstr ""

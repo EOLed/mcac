@@ -4,7 +4,7 @@ body {
     background-repeat: no-repeat;
     background-position: top center;*/
     /*font-family: 'Lato', sans-serif;*/
-    background-image: url('/img/bg.png'); 
+    background-image: url('/img/bg.jpg'); 
     background-repeat: repeat-x;
     background-position: top;
 
@@ -19,6 +19,7 @@ body {
 }
 #header {
     height: 60px;
+    padding: 15px 0;
 /*    -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.75);
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.75);
@@ -82,8 +83,23 @@ h1, h2 {
 #sermon-info h3 {
     color: #acacac;
 }
+/*
+#banner .banner img {
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+}
+*/
 
-#banner {
+#activity-feed .post {
+    border-width: 1px;
+    padding-top: 10px;
+    border-color: #EAEAEA;
+    padding-bottom: 10px;
+}
+
+.activity-feed-thumbnail {
+    padding-top: 11px;
 }
 
 #nav {
@@ -126,7 +142,7 @@ h1, h2 {
 .right-border {
     border-right-style: solid;
     border-right-width: 1px;
-    border-right-color: #cecece;
+    border-right-color: #eaeaea;
     padding-right: 9px;
     margin-right: 0px;
 }
@@ -134,14 +150,14 @@ h1, h2 {
 .bottom-border {
     border-bottom-style: solid;
     border-bottom-width: 1px;
-    border-bottom-color: #cecece;
+    border-bottom-color: #eaeaea;
     padding-bottom: 9px;
     margin-bottom: 0px;
 }
 .top-border {
     border-top-style: solid;
     border-top-width: 1px;
-    border-top-color: #cecece;
+    border-top-color: #eaeaea;
     padding-top: 9px;
     margin-top: 0px;
 }
@@ -149,7 +165,7 @@ h1, h2 {
 .left-border {
     border-left-style: solid;
     border-left-width: 1px;
-    border-left-color: #cecece;
+    border-left-color: #eaeaea;
     padding-left: 9px;
     margin-left: 0px;
 }
@@ -384,4 +400,28 @@ em {
 
 code {
     font-family: monospace;
+}
+
+#sermon-title, ul.playlist li a, .page-title { 
+    font-size: 30px;
+    letter-spacing: -0.05em;
+    line-height: 30px;
+    font-family: "Helvetica", "Arial", sans-serif;
+}
+
+.post-widget #post-content, #sermon-info {
+    font-family: "Georgia", serif;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 19px;
+    color: #444;
+}
+
+#sermon-info h3 {
+    font-family: "Helvetia", "Arial", sans-serif;
+    font-weight: normal;
+}
+
+.upcoming-details {
+    color: #ACACAC;
 }

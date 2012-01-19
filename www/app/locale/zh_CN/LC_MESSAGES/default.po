@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2011-11-01 19:59-0400\n"
-"PO-Revision-Date: 2011-11-01 21:20-0500\n"
+"POT-Creation-Date: 2011-11-05 14:05-0400\n"
+"PO-Revision-Date: 2012-01-18 20:15-0500\n"
 "Last-Translator: Amos Chan <amos.chan@chapps.org>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -115,7 +115,7 @@ msgstr ""
 msgid "User was not deleted"
 msgstr ""
 
-#: /plugins/urg/controllers/users_controller.php:131
+#: /plugins/urg/controllers/users_controller.php:133
 msgid "The confirmation password does not match."
 msgstr ""
 
@@ -582,7 +582,7 @@ msgstr ""
 #: /plugins/urg_sermon/views/sermons/edit.ctp:118
 #: /plugins/urg_sermon/views/sermons/view.ctp:105
 msgid "Description"
-msgstr ""
+msgstr "說明"
 
 #: /plugins/urg/views/roles/view.ctp:24;51
 #: /plugins/urg/views/secured_actions/view.ctp:29
@@ -1258,46 +1258,46 @@ msgstr ""
 #: /plugins/urg_sermon/views/helpers/pastor.php:22
 #: /plugins/urg_sermon/views/helpers/pastor_feed.php:38
 msgid "%s preached a sermon called %s."
-msgstr ""
+msgstr "%s鼓吹說教叫%s。"
 
 #: /plugins/urg_sermon/views/helpers/pastor.php:27
 #: /plugins/urg_sermon/views/helpers/pastor_feed.php:42
 msgid "%s wrote an article called %s."
-msgstr ""
+msgstr "%s寫了一篇名為%s。"
 
 #: /plugins/urg_sermon/views/helpers/sermon_meta.php:15
 #: /plugins/urg_sermon/views/sermons/view.ctp:43
 msgid "From the series"
-msgstr ""
+msgstr "從系列"
 
 #: /plugins/urg_sermon/views/helpers/sermon_meta.php:19
 #: /plugins/urg_sermon/views/sermons/view.ctp:49
 msgid "Taken place on"
-msgstr ""
+msgstr "被放在"
 
 #: /plugins/urg_sermon/views/helpers/sermon_meta.php:24
 #: /plugins/urg_sermon/views/sermons/view.ctp:55
 msgid "Spoken by"
-msgstr ""
+msgstr "所講的"
 
 #: /plugins/urg_sermon/views/helpers/sermon_meta.php:30
 #: /plugins/urg_sermon/views/sermons/view.ctp:61
 msgid "Resources"
-msgstr ""
+msgstr "資源"
 
 #: /plugins/urg_sermon/views/helpers/sermon_passages.php:29
 #: /plugins/urg_sermon/views/sermons/view.ctp:111
 msgid "Passage"
-msgstr ""
+msgstr "聖經通道"
 
 #: /plugins/urg_sermon/views/helpers/sermon_series.php:26
 #: /plugins/urg_sermon/views/sermons/view.ctp:135
 msgid "by %s on %s"
-msgstr ""
+msgstr "通過%s上%s"
 
 #: /plugins/urg_sermon/views/helpers/sermons.php:8
 msgid "Sermon Schedule"
-msgstr ""
+msgstr "講道附表"
 
 #: /plugins/urg_sermon/views/pastors/view.ctp:17
 msgid "Bio"
@@ -1365,7 +1365,7 @@ msgstr ""
 
 #: /plugins/urg_sermon/views/sermons/view.ctp:155
 msgid "Sermon notes"
-msgstr ""
+msgstr "講道筆記"
 
 #: /plugins/urg_subscription/controllers/subscriptions_controller.php:13;69
 msgid "Invalid subscription"
@@ -1557,35 +1557,43 @@ msgstr "電話號碼: 514.482.2703"
 msgid "Email: "
 msgstr "電子郵件: "
 
-#: /views/elements/header.ctp:7
-msgid "About Us"
-msgstr "關於我們"
-
-#: /views/elements/header.ctp:11
-msgid "Our Pastors"
-msgstr "牧師"
-
-#: /views/elements/header.ctp:14
-msgid "Rev. Jonathan Kaan"
+#: /views/elements/header.ctp:9
+msgid "Chinese"
 msgstr ""
 
-#: /views/elements/header.ctp:15
-msgid "Rev. Thomas Chan"
+#: /views/elements/header.ctp:11
+msgid "English"
 msgstr ""
 
 #: /views/elements/header.ctp:16
-msgid "Rev. Terry Yeung"
-msgstr ""
+msgid "About Us"
+msgstr "關於我們"
 
-#: /views/elements/header.ctp:17
-msgid "Rev. Ian Ho"
-msgstr ""
-
-#: /views/elements/header.ctp:18
-msgid "Pastor Davis Marshall"
-msgstr ""
+#: /views/elements/header.ctp:20
+msgid "Our Pastors"
+msgstr "牧師"
 
 #: /views/elements/header.ctp:23
+msgid "Rev. Jonathan Kaan"
+msgstr "簡國慶牧師"
+
+#: /views/elements/header.ctp:24
+msgid "Rev. Thomas Chan"
+msgstr "陳志誠牧師"
+
+#: /views/elements/header.ctp:25
+msgid "Rev. Terry Yeung"
+msgstr "楊文立牧師"
+
+#: /views/elements/header.ctp:26
+msgid "Rev. Ian Ho"
+msgstr "何鴻恩牧師"
+
+#: /views/elements/header.ctp:27
+msgid "Pastor Davis Marshall"
+msgstr "Marshall Davis 牧師"
+
+#: /views/elements/header.ctp:32
 msgid "Connect"
 msgstr "連接"
 
@@ -1628,4 +1636,31 @@ msgstr ""
 #: /webroot/test.php:88
 msgid "Debug setting does not allow access to this url."
 msgstr ""
+
+msgid "Recent Activity"
+msgstr "最近的活動"
+
+msgid "Around the Church"
+msgstr "在教堂周圍"
+
+msgid "Upcoming Events"
+msgstr "活動預告"
+
+msgid "Related Articles"
+msgstr "相關文章"
+
+msgid "Rev. Marshall Davis"
+msgstr "Marshall Davis 牧師"
+
+msgid "Montreal Chinese Alliance Church"
+msgstr "滿地可華人宣道會"
+
+msgid "Bethany Fellowship"
+msgstr "百大利團 (預科/大學)"
+
+msgid "Timothy Fellowship"
+msgstr "提摩太團 (高中)"
+
+msgid "Worship Team"
+msgstr "敬拜隊"
 
