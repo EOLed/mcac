@@ -1664,3 +1664,6 @@ msgstr ""
 
 msgid "Worship Team"
 msgstr ""
+
+msgid "mcac-styles"
+msgstr ""

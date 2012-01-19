@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MCAC\n"
 "POT-Creation-Date: 2011-11-05 14:05-0400\n"
-"PO-Revision-Date: 2011-11-05 14:13-0500\n"
+"PO-Revision-Date: 2012-01-18 20:29-0500\n"
 "Last-Translator: Amos Chan <amos.chan@chapps.org>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -1636,4 +1636,34 @@ msgstr ""
 #: /webroot/test.php:88
 msgid "Debug setting does not allow access to this url."
 msgstr ""
+
+msgid "Recent Activity"
+msgstr ""
+
+msgid "Around the Church"
+msgstr ""
+
+msgid "Upcoming Events"
+msgstr ""
+
+msgid "Related Articles"
+msgstr ""
+
+msgid "Rev. Marshall Davis"
+msgstr ""
+
+msgid "Montreal Chinese Alliance Church"
+msgstr ""
+
+msgid "Bethany Fellowship"
+msgstr ""
+
+msgid "Timothy Fellowship"
+msgstr ""
+
+msgid "Worship Team"
+msgstr ""
+
+msgid "mcac-styles"
+msgstr "mcac-en"
 

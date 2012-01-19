@@ -28,6 +28,7 @@
             echo $this->Html->css("960");
             echo $scripts_for_layout;
             echo $this->Html->css("mcac");
+            echo $this->Html->css(__("mcac-styles", true));
         ?>
     </head>
     <body>
