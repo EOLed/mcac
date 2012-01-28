@@ -14,23 +14,21 @@
         </li>
         <li>
             <span><?php echo __("About Us", true); ?></span>
-            <div id="nav-about">This is the about page</div>
+            <div id="nav-about" class="nav-content">
+                <?php echo $this->element("nav_about"); ?>
+            </div>
         </li>
         <li>
             <span><?php echo __("Our Pastors", true); ?></span>
-            <div id="nav-pastors">
-                <ul>
-                    <li><?php echo $this->Html->link(__("Rev. Jonathan Kaan", true), "/jkaan") ?></li>
-                    <li><?php echo $this->Html->link(__("Rev. Thomas Chan", true), "/tchan") ?></li>
-                    <li><?php echo $this->Html->link(__("Rev. Terry Yeung", true), "/tyeung") ?></li>
-                    <li><?php echo $this->Html->link(__("Rev. Ian Ho", true), "/iho") ?></li>
-                    <li><?php echo $this->Html->link(__("Pastor Davis Marshall", true), "/mdavis") ?></li>
-                </ul>
+            <div id="nav-pastors" class="nav-content">
+                <?php echo $this->element("nav_pastors"); ?>
             </div>
         </li>
         <li>
             <span><?php echo __("Connect", true); ?></span>
-            <div id="nav-connect">connect with us!</div>
+            <div id="nav-connect" class="nav-content">
+                <?php echo $this->element("nav_connect"); ?>
+            </div>
         </li>
     </ul>
 </div>

@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "POT-Creation-Date: 2011-11-05 14:05-0400\n"
-"PO-Revision-Date: 2012-01-18 21:10-0500\n"
+"PO-Revision-Date: 2012-01-27 15:53-0500\n"
 "Last-Translator: Amos Chan <amos.chan@chapps.org>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -1669,4 +1669,91 @@ msgstr "mcac-ch"
 
 msgid "Pictures"
 msgstr "圖片"
+
+msgid "nav.connect.title"
+msgstr "信仰宣言 (宣道會聯會)"
+
+msgid "nav.connect.description"
+msgstr "信仰宣言 (宣道會聯會)"
+
+msgid "nav.pastors.title"
+msgstr "信仰宣言 (宣道會聯會)"
+
+msgid "nav.pastors.description"
+msgstr "信仰宣言 (宣道會聯會)"
+
+msgid "nav.about.title"
+msgstr "信仰宣言 (宣道會聯會)"
+
+msgid "nav.about.description"
+msgstr "本堂開始時在市中心租用一當地路德會來聚會。一九七七年購得一車房，改建後成為禮拜堂。一九八三年購置然後搬入Marie-Anne街的教堂。一九九二年，本堂買入並搬入現在Queen Mary的堂址。同時把舊堂址轉手交給恩典堂使用。其他各分堂正在租用其他堂址。"
+
+msgid "nav.about.learnmore"
+msgstr "信仰宣言 (宣道會聯會)"
+
+msgid "Statement of Faith"
+msgstr "信仰宣言 (宣道會聯會)"
+
+msgid "nav.about.link.statementoffaith"
+msgstr "/posts/view/233/基督教信仰"
+
+msgid "MCAC's 40-year History"
+msgstr "滿宣四十年"
+
+msgid "nav.about.link.history"
+msgstr "/posts/view/235/滿地可華人宣道會三十年簡史"
+
+msgid "Our Departments"
+msgstr "滿宣的架構"
+
+msgid "nav.about.link.departments"
+msgstr ""
+
+msgid "Location & Time"
+msgstr "地點及時間"
+
+msgid "nav.about.link.locationandtime"
+msgstr "/posts/view/237/地點及時間"
+
+msgid "Chinese Communities"
+msgstr "華人社區"
+
+msgid "English Communities"
+msgstr "英語社區"
+
+msgid "Hang-Oi (Elderly)"
+msgstr "恆愛團 (長者)"
+
+msgid "Jien Jin (Elderly)"
+msgstr "常青團 (長者)"
+
+msgid "Canaan (Elderly)"
+msgstr "迦南團 (年長)"
+
+msgid "Zion (Adults)"
+msgstr "錫安團 (成人)"
+
+msgid "Mandarin (Adults)"
+msgstr "國語團 (成人)"
+
+msgid "Betha (Married)"
+msgstr "以利沙團（青年就業）"
+
+msgid "Elisha (Career)"
+msgstr "伯特利 (已婚)	"
+
+msgid "David (High School)"
+msgstr "大衛團 (青少年)"
+
+msgid "Jacob (Family)"
+msgstr "雅各（家庭）"
+
+msgid "AE (Career)"
+msgstr "AE (就業)"
+
+msgid "Bethany (College/University)"
+msgstr "百大利團 (預科/大學)"
+
+msgid "Timothy (High School/CEGEP1)"
+msgstr "提摩太團 (高中)"
 

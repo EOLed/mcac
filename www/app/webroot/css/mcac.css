@@ -104,6 +104,34 @@ h1, h2 {
 
 #nav {
     list-style: none;
+    font-size: 14px;
+}
+
+.nav-content h2 {
+    color: #988c49;
+    font-weight: bold;
+    font-family: "Futura-PT", sans-serif;
+}
+
+.nav-content a {
+    color: #d2bf53;
+}
+
+.nav-content a:hover, .nav-content a:visited {
+    color: #746b38;
+}
+
+.nav-content {
+    width: 960px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #d1ccc0;
+    -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.75);
+    overflow: auto; 
+    padding: 15px 15px 5px; 
+    background-image: url('../img/concrete_wall.png');
 }
 
 #nav #locale a {
@@ -132,11 +160,47 @@ h1, h2 {
     text-transform: uppercase;
 }
 
+.nav-content {
+    cursor: default;
+}
+
+.nav-content-section {
+    font-family: "Georgia", serif;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 19px;
+}
+
+#nav .nav-content ul {
+    padding: 0;
+    margin: 0;
+}
+
+#nav .nav-content ul li {
+    font-size: 14px;
+    font-style: italic;
+    list-style: none;
+}
+
 #nav-pastors ul li {
     float: none;
     margin: 0;
     border: 0;
-    width: 250px;
+    left: 0;
+}
+
+#nav li #nav-connect {
+    height: 300px;
+}
+
+#nav .nav-content ul li {
+    float: none;
+    margin: 0;
+    border: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    height: auto;
 }
 
 .right-border {
@@ -201,25 +265,44 @@ h2, legend {
 #nav li {
     position: relative;
     z-index: 50;
-    height: 30px;
+    height: 45px;
 }
 
 #nav li div {
     display: none;
     height: 100px;
     position: relative;
-    background-color: #000000;
-    margin-top: 12px;
+    margin-top: 5px;
+}
+
+#nav li:hover {
+    color: #d1ccc0;
+    background-image: url("../img/concrete_wall.png");
+    border-top-style: solid;
+}
+
+#nav li .nav-content li:hover {
+    background-color: transparent;
+    background-image: none;
+}
+
+#nav li#locale:hover {
+    color: #222222;
+    background-image: none;
+    background-color: transparent;
 }
 
 #nav li.hover div {
     z-index: 100;
     display: block;
     position: absolute;
-    background-color: #ffffff;
 }
 
 #nav li.hover div#nav-pastors {
+    height: 200px;
+}
+
+#nav li.hover div#nav-about {
     height: 200px;
 }
 
@@ -229,7 +312,6 @@ h2, legend {
 }
 
 #nav-about {
-    margin-left: -643px;
 }
 
 a {
@@ -424,4 +506,10 @@ code {
 
 .upcoming-details {
     color: #ACACAC;
+}
+
+
+.nav-pastor {
+    width: 192px;
+    float: left;
 }

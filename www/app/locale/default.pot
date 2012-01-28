@@ -1670,3 +1670,90 @@ msgstr ""
 
 msgid "Pictures"
 msgstr ""
+
+msgid "nav.connect.title"
+msgstr ""
+
+msgid "nav.connect.description"
+msgstr ""
+
+msgid "nav.pastors.title"
+msgstr ""
+
+msgid "nav.pastors.description"
+msgstr ""
+
+msgid "nav.about.title"
+msgstr ""
+
+msgid "nav.about.description"
+msgstr ""
+
+msgid "nav.about.learnmore"
+msgstr ""
+
+msgid "Statement of Faith"
+msgstr ""
+
+msgid "nav.about.link.statementoffaith"
+msgstr ""
+
+msgid "MCAC's 40-year History"
+msgstr ""
+
+msgid "nav.about.link.history"
+msgstr ""
+
+msgid "Our Departments"
+msgstr ""
+
+msgid "nav.about.link.departments"
+msgstr ""
+
+msgid "Location & Time"
+msgstr ""
+
+msgid "nav.about.link.locationandtime"
+msgstr ""
+
+msgid "Chinese Communities"
+msgstr ""
+
+msgid "English Communities"
+msgstr ""
+
+msgid "Hang-Oi (Elderly)"
+msgstr ""
+
+msgid "Jien Jin (Elderly)"
+msgstr ""
+
+msgid "Canaan (Elderly)"
+msgstr ""
+
+msgid "Zion (Adults)"
+msgstr ""
+
+msgid "Mandarin (Adults)"
+msgstr ""
+
+msgid "Betha (Married)"
+msgstr ""
+
+msgid "Elisha (Career)"
+msgstr ""
+
+msgid "David (High School)"
+msgstr ""
+
+msgid "Jacob (Family)"
+msgstr ""
+
+msgid "AE (Career)"
+msgstr ""
+
+msgid "Bethany (College/University)"
+msgstr ""
+
+msgid "Timothy (High School/CEGEP1)"
+msgstr ""

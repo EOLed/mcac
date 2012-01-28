@@ -1,0 +1,20 @@
+#nav-pastors {
+    margin-left: -564px;
+    padding: 10px 0;
+}
+
+#nav-connect {
+    margin-left: -524px;
+    padding: 10px 0;
+}
+
+#nav-about {
+    margin-left: -604px;
+    padding: 10px 0;
+}
+
+#nav .nav-content ul li {
+    font-size: 14px;
+    font-style: normal;
+    list-style: none;
+}

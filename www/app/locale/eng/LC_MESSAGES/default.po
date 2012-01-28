@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MCAC\n"
 "POT-Creation-Date: 2011-11-05 14:05-0400\n"
-"PO-Revision-Date: 2012-01-18 20:29-0500\n"
+"PO-Revision-Date: 2012-01-27 15:12-0500\n"
 "Last-Translator: Amos Chan <amos.chan@chapps.org>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -1666,4 +1666,94 @@ msgstr ""
 
 msgid "mcac-styles"
 msgstr "mcac-en"
+
+msgid "Pictures"
+msgstr ""
+
+msgid "nav.connect.title"
+msgstr "We Value Community"
+
+msgid "nav.connect.description"
+msgstr "Church is more than a service. It’s people living life together and helping one another throughout our cities to serve our cities. Each week, thousands of people at Mars Hill meet in hundreds of small communities to learn about God, pray, eat, laugh, and live. We call these Community Groups—and they’re the heart of our church."
+
+msgid "nav.pastors.title"
+msgstr "Our Pastors"
+
+msgid "nav.pastors.description"
+msgstr "a short description of our pastors"
+
+msgid "nav.about.title"
+msgstr "About MCAC"
+
+msgid "nav.about.description"
+msgstr "A short description of MCAC"
+
+msgid "nav.about.learnmore"
+msgstr "More About Us"
+
+msgid "Statement of Faith"
+msgstr ""
+
+msgid "nav.about.link.statementoffaith"
+msgstr "/posts/view/231/our-statement-of-faith"
+
+msgid "MCAC's 40-year History"
+msgstr ""
+
+msgid "nav.about.link.history"
+msgstr "/posts/view/234/a-brief-introduction-to-the-mcac"
+
+msgid "Our Departments"
+msgstr ""
+
+msgid "nav.about.link.departments"
+msgstr ""
+
+msgid "Location & Time"
+msgstr ""
+
+msgid "nav.about.link.locationandtime"
+msgstr "/posts/view/236/visiting-mcac"
+
+msgid "Chinese Communities"
+msgstr ""
+
+msgid "English Communities"
+msgstr ""
+
+msgid "Hang-Oi (Elderly)"
+msgstr ""
+
+msgid "Jien Jin (Elderly)"
+msgstr ""
+
+msgid "Canaan (Elderly)"
+msgstr ""
+
+msgid "Zion (Adults)"
+msgstr ""
+
+msgid "Mandarin (Adults)"
+msgstr ""
+
+msgid "Betha (Married)"
+msgstr ""
+
+msgid "Elisha (Career)"
+msgstr ""
+
+msgid "David (High School)"
+msgstr ""
+
+msgid "Jacob (Family)"
+msgstr ""
+
+msgid "AE (Career)"
+msgstr ""
+
+msgid "Bethany (College/University)"
+msgstr ""
+
+msgid "Timothy (High School/CEGEP1)"
+msgstr ""
 
