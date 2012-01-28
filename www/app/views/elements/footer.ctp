@@ -4,8 +4,11 @@ echo $this->Html->link(__("13 rue Finchley, Hampstead, QC H3X 2Z6", true), "http
 echo " | " . __("Phone: 514.482.2703", true);
 echo " | " . __("Email: ", true) . $this->Html->link("info@montreal-cac.org", "mailto:info@montreal-cac.org"); ?>
 </div>
-<div>&copy; Montreal Chinese Alliance Church | Designed by <a href="http://am05.com">AM05.com</a></div>
-<div>Part of the <a href="http://churchie.org">Churchie.org Network</a></div>
+<div>
+    &copy; Montreal Chinese Alliance Church |
+    Designed by <a href="http://am05.com">AM05.com</a> |
+    Part of the <a href="http://churchie.org">Churchie.org Network</a>
+</div>
 <div class="grid_12">
     <a href="#" onclick="$('#debug').toggle(); return false;">Show Debug Info</a>
 </div>

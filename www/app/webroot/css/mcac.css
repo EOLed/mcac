@@ -4,7 +4,7 @@ body {
     background-repeat: no-repeat;
     background-position: top center;*/
     /*font-family: 'Lato', sans-serif;*/
-    background-image: url('/img/bg.jpg'); 
+    background-image: url('/img/bg.gif'); 
     background-repeat: repeat-x;
     background-position: top;
 
@@ -148,7 +148,7 @@ h1, h2 {
     margin-left: 10px;
     border-top-style: solid;
     border-top-width: 3px;
-    border-top-color: #aa1111;
+    border-top-color: #776622;
     padding: 5px 5px 0 5px;
     font-size: 10px;
     margin-top: 30px;
@@ -257,7 +257,7 @@ div.sermon-details {
 h2, legend {
     font-size: 16px;
     text-transform: uppercase;
-    color: #aa1111;
+    color: #776622;
     padding-bottom: 15px;
     /**text-shadow: 0px 1px 2px #aaa;*/
 }
@@ -315,13 +315,13 @@ h2, legend {
 }
 
 a {
-    color: #FF2200;
+    color: #bbaa55;
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
-    color: #aa1111;
+    color: #776622;
 }
 
 #footer {
@@ -333,11 +333,11 @@ a:hover {
 }
 
 #footer a {
-    color: #ff6666;
+    color: #ddcc77;
 }
 
 #footer a:hover {
-    color: #ff2200;
+    color: #bbaa55;
 }
 
 /*#debug {
@@ -354,7 +354,7 @@ a:hover {
 }
 
 .flash_error {
-    background-color: #ff6666;
+    background-color: #ddcc77;
     color: #ffffff;
 }
 
@@ -450,7 +450,7 @@ input.label {
 }
 
 .error-message {
-    background-color: #aa1111;
+    background-color: #776622;
 }
 
 /** BASIC CSS */
@@ -512,4 +512,31 @@ code {
 .nav-pastor {
     width: 192px;
     float: left;
+}
+
+.activity-feed-post h3 {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+ul.playlist li.sm2_paused {
+    background-color: #bbaa55;
+}
+
+ul.playlist li.sm2_playing, ul.playlist li.sm2_playing:hover {
+    background-color: #776622;
+}
+
+ul.playlist li .controls .statusbar {
+    background-color: #bbaa55;
+}
+
+ul.playlist li .timing {
+    background-color: #bbaa55;
+    border-color: #ececec;
+}
+
+ul.playlist li .controls .statusbar .position {
+    background-color: #776622;
+    border-right-color: #776622;
 }
