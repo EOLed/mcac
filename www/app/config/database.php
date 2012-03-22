@@ -73,24 +73,26 @@
  */
 class DATABASE_CONFIG {
 
-	var $default = array(
-		'driver' => 'mysql',
+	public $default = array(
+		'datasource' => 'Database/Mysql',
+        'port' => '/Applications/MAMP/tmp/mysql/mysql.sock',
 		'persistent' => false,
 		'host' => 'localhost',
-        'port' => '/Applications/MAMP/tmp/mysql/mysql.sock',
 		'login' => 'churchap_mcac',
 		'password' => 'mcac',
 		'database' => 'churchap_mcac',
 		'prefix' => '',
+		//'encoding' => 'utf8',
 	);
 
-	var $test = array(
-		'driver' => 'mysql',
+	public $test = array(
+		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => 'localhost',
 		'login' => 'user',
 		'password' => 'password',
 		'database' => 'test_database_name',
 		'prefix' => '',
+		//'encoding' => 'utf8',
 	);
 }

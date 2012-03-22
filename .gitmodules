@@ -1,27 +1,27 @@
-[submodule "www/app/plugins/bible"]
-	path = www/app/plugins/bible
-	url = git://github.com/achan/bible.git
-[submodule "www/app/plugins/cuploadify"]
-	path = www/app/plugins/cuploadify
-	url = git://github.com/achan/cuploadify.git
-[submodule "www/app/plugins/img_lib"]
-	path = www/app/plugins/img_lib
-	url = git://github.com/achan/img_lib.git
-[submodule "www/app/plugins/sm2"]
-	path = www/app/plugins/sm2
-	url = git://github.com/achan/sm2.git
-[submodule "www/app/plugins/urg"]
-	path = www/app/plugins/urg
-	url = git://github.com/achan/urg.git
-[submodule "www/app/plugins/urg_post"]
-	path = www/app/plugins/urg_post
-	url = git://github.com/achan/urg_post.git
-[submodule "www/app/plugins/urg_sermon"]
-	path = www/app/plugins/urg_sermon
-	url = git@github.com:achan/urg_sermon.git
-[submodule "www/app/plugins/urg_subscription"]
-	path = www/app/plugins/urg_subscription
-	url = git@github.com:achan/urg_subscription.git
-[submodule "www/app/plugins/markdown"]
-	path = www/app/plugins/markdown
-	url = git://github.com/achan/markdown.git
+[submodule "www/app/Plugin/Urg"]
+	path = www/app/Plugin/Urg
+	url = git@github.com:achan/urg
+[submodule "www/app/Plugin/UrgPost"]
+	path = www/app/Plugin/UrgPost
+	url = git@github.com:achan/urg_post
+[submodule "www/app/Plugin/UrgSermon"]
+	path = www/app/Plugin/UrgSermon
+	url = git@github.com:achan/urg_sermon
+[submodule "www/app/Plugin/UrgSubscription"]
+	path = www/app/Plugin/UrgSubscription
+	url = git@github.com:achan/urg_subscription
+[submodule "www/app/Plugin/ImgLib"]
+	path = www/app/Plugin/ImgLib
+	url = git@github.com:achan/img_lib
+[submodule "www/app/Plugin/Sm2"]
+	path = www/app/Plugin/Sm2
+	url = git@github.com:achan/sm2
+[submodule "www/app/Plugin/Cuploadify"]
+	path = www/app/Plugin/Cuploadify
+	url = git@github.com:achan/cuploadify
+[submodule "www/app/Plugin/Bible"]
+	path = www/app/Plugin/Bible
+	url = git@github.com:achan/bible
+[submodule "www/app/Plugin/Markdown"]
+	path = www/app/Plugin/Markdown
+	url = git@github.com:achan/markdown

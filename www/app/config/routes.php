@@ -1,5 +1,4 @@
 <?php
-App::import('Lib', 'routes/GroupSlugRoute');
 /**
  * Routes configuration
  *
@@ -46,6 +45,7 @@ App::import('Lib', 'routes/GroupSlugRoute');
  */
 	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
 
+    App::uses('GroupSlugRoute', 'Routing/Route');
     Router::connect("/:group_slug", 
                     array("plugin" => "urg", "controller" => "groups", "action" => "view"), 
                     array("routeClass" => "GroupSlugRoute"));
@@ -61,3 +61,6 @@ App::import('Lib', 'routes/GroupSlugRoute');
     Router::connect("/subscriptions/:action/*", 
                     array("controller" => "subscriptions", "plugin" => "urg_subscription"));
 
+    CakePlugin::routes();
+
+    require CAKE . 'Config' . DS . 'routes.php';
