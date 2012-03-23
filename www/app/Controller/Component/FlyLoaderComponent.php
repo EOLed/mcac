@@ -18,17 +18,18 @@ class FlyLoaderComponent extends Component {
 
             foreach ($keys as $key) {
                 $settings = $abs_name[$key];
+                $settings["enabled"] = true;
                 $abs_name = $key;
 
                 break;
             }
         }
 
-        if (App::uses($type, $abs_name)) {
+        if (App::import($type, $abs_name)) {
             $name = $this->get_name($abs_name);
 
             if ($type == $this->COMPONENT_TYPE) {
-                $component2 = $name.'Component';
+                /*$component2 = $name.'Component';
                 $component =& new $component2(null);
                         
                 if (method_exists($component, 'initialize')) {
@@ -39,7 +40,9 @@ class FlyLoaderComponent extends Component {
                     $component->startup($this->controller);
                 }
                         
-                $this->controller->{$name} = &$component;
+                $this->controller->{$name} = &$component;*/
+                $this->controller->{$name} = $this->controller->Components->load($name, $settings);
+                $this->controller->{$name}->initialize($this->controller);
             } else if ($type == $this->HELPER_TYPE) {
                 CakeLog::write("debug", "loading helper: $name");
                 $this->controller->helpers[] = $name;

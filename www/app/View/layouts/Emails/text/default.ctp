@@ -1,9 +1,5 @@
 <?php
 /**
- * Application model for Cake.
- *
- * This file is application-wide model file. You can put all
- * application-wide model-related methods here.
  *
  * PHP 5
  *
@@ -15,20 +11,11 @@
  *
  * @copyright     Copyright 2005-2011, Cake Software Foundation, Inc. (http://cakefoundation.org)
  * @link          http://cakephp.org CakePHP(tm) Project
- * @package       app.Model
- * @since         CakePHP(tm) v 0.2.9
+ * @package       Cake.View.Layouts.Emails.text
+ * @since         CakePHP(tm) v 0.10.0.1076
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
+?>
+<?php echo $content_for_layout;?>
 
-App::uses('Model', 'Model');
-
-/**
- * Application model for Cake.
- *
- * Add your application-wide methods in the class below, your models
- * will inherit them.
- *
- * @package       app.Model
- */
-class AppModel extends Model {
-}
+This email was sent using the CakePHP Framework, http://cakephp.org.
