@@ -1,0 +1,542 @@
+body {
+    /*background-image: url('/img/grey-rising-sun.gif');*/
+    /*background-image: url('/img/fancy_deboss.png');
+    background-repeat: no-repeat;
+    background-position: top center;*/
+    /*font-family: 'Lato', sans-serif;*/
+    background-image: url('/img/bg.gif'); 
+    background-repeat: repeat-x;
+    background-position: top;
+
+    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+    font-size: 11px;
+    color: #222222;
+    line-height: 1.28;
+}
+#side-panel #post-content {
+    font-size: 11px;
+    line-height: 1.28;
+}
+#header {
+    height: 60px;
+    padding: 15px 0;
+/*    -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.75);
+    background: none repeat scroll 0 0 #ffffff;
+    border-color: -moz-use-text-color #333333 #333333;
+    border-right: 1px solid #333333;
+    border-style: none solid solid;
+    border-width: medium 1px 1px; 
+    overflow: auto; 
+    padding: 15px 15px 5px; */
+}
+
+h1, h2, h3, h4, h5 {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+h1, h2 {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+}
+
+.shadow {
+    -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.75);
+    /*background: none repeat scroll 0 0 #ffffff;
+    border-color: -moz-use-text-color #333333 #333333;
+    border-right: 1px solid #333333;
+    border-style: none solid solid;
+    border-width: medium 1px 1px; */
+    overflow: auto; 
+}
+
+#about-panel {
+    font-family: Georgia, serif;
+    font-size: 14px;
+    font-style: italic;
+    color: #777777;
+}
+
+#about-panel h3 {
+    font-weight: bold;
+    font-size: 16px;
+    padding-bottom: 5px;
+    color: #222; 
+    text-shadow: 0px 2px 3px #fff;
+    font-style: normal;
+}
+
+#banner-list {
+    list-style-type: none;
+}
+
+#sermon-info {
+    text-align: center;
+    padding-bottom: 20px;
+    color: #5c5c5c;
+}
+
+#sermon-info h3 {
+    color: #acacac;
+}
+/*
+#banner .banner img {
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+}
+*/
+
+#activity-feed .post {
+    border-width: 1px;
+    padding-top: 10px;
+    border-color: #EAEAEA;
+    padding-bottom: 10px;
+}
+
+.activity-feed-thumbnail {
+    padding-top: 11px;
+}
+
+#nav {
+    list-style: none;
+    font-size: 14px;
+}
+
+.nav-content h2 {
+    color: #988c49;
+    font-weight: bold;
+    font-family: "Futura-PT", sans-serif;
+}
+
+.nav-content a {
+    color: #d2bf53;
+}
+
+.nav-content a:hover, .nav-content a:visited {
+    color: #746b38;
+}
+
+.nav-content {
+    width: 960px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #d1ccc0;
+    -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.75);
+    overflow: auto; 
+    padding: 15px 15px 5px; 
+    background-image: url('../img/concrete_wall.png');
+}
+
+#nav #locale a {
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#nav #locale span {
+}
+
+#nav li {
+    float: right;
+    margin-left: 10px;
+    border-top-style: solid;
+    border-top-width: 3px;
+    border-top-color: #776622;
+    padding: 5px 5px 0 5px;
+    font-size: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+#nav li span {
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.nav-content {
+    cursor: default;
+}
+
+.nav-content-section {
+    font-family: "Georgia", serif;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 19px;
+}
+
+#nav .nav-content ul {
+    padding: 0;
+    margin: 0;
+}
+
+#nav .nav-content ul li {
+    font-size: 14px;
+    font-style: italic;
+    list-style: none;
+}
+
+#nav-pastors ul li {
+    float: none;
+    margin: 0;
+    border: 0;
+    left: 0;
+}
+
+#nav li #nav-connect {
+    height: 300px;
+}
+
+#nav .nav-content ul li {
+    float: none;
+    margin: 0;
+    border: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    height: auto;
+}
+
+.right-border {
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: #eaeaea;
+    padding-right: 9px;
+    margin-right: 0px;
+}
+
+.bottom-border {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #eaeaea;
+    padding-bottom: 9px;
+    margin-bottom: 0px;
+}
+.top-border {
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: #eaeaea;
+    padding-top: 9px;
+    margin-top: 0px;
+}
+
+.left-border {
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-left-color: #eaeaea;
+    padding-left: 9px;
+    margin-left: 0px;
+}
+
+h3.sermon-details {
+    font-size: 10px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+div.sermon-details {
+    /**height: 100px;*/
+    font-size: 14px;
+}
+
+
+#sermon-resource-list {
+    list-style: none;
+}
+
+#sermon-resource-list li {
+    float: left;
+}
+
+h2, legend {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #776622;
+    padding-bottom: 15px;
+    /**text-shadow: 0px 1px 2px #aaa;*/
+}
+
+#nav li {
+    position: relative;
+    z-index: 50;
+    height: 45px;
+}
+
+#nav li div {
+    display: none;
+    height: 100px;
+    position: relative;
+    margin-top: 5px;
+}
+
+#nav li:hover {
+    color: #d1ccc0;
+    background-image: url("../img/concrete_wall.png");
+    border-top-style: solid;
+}
+
+#nav li .nav-content li:hover {
+    background-color: transparent;
+    background-image: none;
+}
+
+#nav li#locale:hover {
+    color: #222222;
+    background-image: none;
+    background-color: transparent;
+}
+
+#nav li.hover div {
+    z-index: 100;
+    display: block;
+    position: absolute;
+}
+
+#nav li.hover div#nav-pastors {
+    height: 200px;
+}
+
+#nav li.hover div#nav-about {
+    height: 200px;
+}
+
+#banner {
+    position: relative;
+    z-index: 1;
+}
+
+#nav-about {
+}
+
+a {
+    color: #bbaa55;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #776622;
+}
+
+#footer {
+    font-size: 10px;
+    color: #999999;
+    text-align: center;
+    margin-top: 100px;
+    padding-bottom: 50px;
+}
+
+#footer a {
+    color: #ddcc77;
+}
+
+#footer a:hover {
+    color: #bbaa55;
+}
+
+/*#debug {
+ //   position: absolute;
+ //   height: 500px;
+ //   width: 1200px;
+    overflow: auto;
+ //   left: 1280px;
+} */
+
+.flash {
+    font-size: 10px;
+    padding: 5px;
+}
+
+.flash_error {
+    background-color: #ddcc77;
+    color: #ffffff;
+}
+
+/*
+.ui-tabs {
+    padding: 0px;
+    position: relative;
+    font-family: sans-serif;
+    background: none;
+    border: none;
+}
+
+.ui-tabs-nav {
+   -moz-border-radius: 0 0 0 0; 
+}
+
+.ui-tabs-panel {
+    background: none;
+    border: none;
+    background-color: transparent;
+}
+*/
+/*.ui-corner-all {
+   -moz-border-radius: 0 0 0 0; 
+}
+
+.ui-widget-content {
+    background: none;
+    border: none;
+    background-color: transparent;
+}
+
+.ui-widget {
+    font-family: sans-serif;
+}
+
+.ui-widget-header {
+    background: none;
+    border: none;
+
+}
+*/
+/*
+ul.playlist li {
+    background-color: transparent;
+}
+
+ul.playlist li:hover {
+    background-color: transparent;
+}
+*/
+
+#attachment-queue li {
+    background-color: #acacac;
+    color: #ffffff;
+    padding: 5px;
+    margin: 5px 0 5px 0;
+}
+
+#attachment-queue li a {
+    color: #ffffff;
+}
+
+/**
+ * Form styles
+ */
+div.input {
+    padding-bottom: 20px;
+}
+
+div.input input, div.input textarea {
+	clear: both;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 14px;
+    border-color: #cecece;
+    width: 449px;
+}
+
+div.input label {
+    display: block;
+}
+
+input.label {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.error-message, .validated {
+    color: #ffffff;
+    padding: 5px;
+}
+
+.error-message {
+    background-color: #776622;
+}
+
+/** BASIC CSS */
+strong {
+    font-weight: bold;
+}
+
+p {
+    padding-bottom: 10px;
+}
+
+ul {
+    list-style-type: circle;
+    padding-left: 14px;
+}
+
+ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+blockquote {
+    padding-left: 20px;
+}
+
+em {
+    font-style: italic;
+}
+
+code {
+    font-family: monospace;
+}
+
+#sermon-title, ul.playlist li a, .page-title { 
+    font-size: 30px;
+    letter-spacing: -0.05em;
+    line-height: 30px;
+    font-family: "Helvetica", "Arial", sans-serif;
+}
+
+.post-widget #post-content, #sermon-info {
+    font-family: "Georgia", serif;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 19px;
+    color: #444;
+}
+
+#sermon-info h3 {
+    font-family: "Helvetia", "Arial", sans-serif;
+    font-weight: normal;
+}
+
+.upcoming-details {
+    color: #ACACAC;
+}
+
+
+.nav-pastor {
+    width: 192px;
+    float: left;
+}
+
+.activity-feed-post h3 {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+ul.playlist li.sm2_paused {
+    background-color: #bbaa55;
+}
+
+ul.playlist li.sm2_playing, ul.playlist li.sm2_playing:hover {
+    background-color: #776622;
+}
+
+ul.playlist li .controls .statusbar {
+    background-color: #bbaa55;
+}
+
+ul.playlist li .timing {
+    background-color: #bbaa55;
+    border-color: #ececec;
+}
+
+ul.playlist li .controls .statusbar .position {
+    background-color: #776622;
+    border-right-color: #776622;
+}

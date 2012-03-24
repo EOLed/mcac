@@ -1,61 +1,52 @@
-<?php
-/**
- *
- * PHP 5
- *
- * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
- * Copyright 2005-2011, Cake Software Foundation, Inc. (http://cakefoundation.org)
- *
- * Licensed under The MIT License
- * Redistributions of files must retain the above copyright notice.
- *
- * @copyright     Copyright 2005-2011, Cake Software Foundation, Inc. (http://cakefoundation.org)
- * @link          http://cakephp.org CakePHP(tm) Project
- * @package       Cake.View.Layouts
- * @since         CakePHP(tm) v 0.10.0.1076
- * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
- */
-
-$cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework');
-?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-	<?php echo $this->Html->charset(); ?>
-	<title>
-		<?php echo $cakeDescription ?>:
-		<?php echo $title_for_layout; ?>
-	</title>
-	<?php
-		echo $this->Html->meta('icon');
+    <head>
+        <?php echo $this->Html->charset(); ?>
+        <title>
+            <?php __('Montreal Chinese Alliance Church &raquo;'); ?>
+            <?php echo $title_for_layout; ?>
+        </title>
+        <?php
+            echo $this->Html->meta('icon');
 
-		echo $this->Html->css('cake.generic');
+            if (Configure::read("General.cdn") === true) {
+                echo $this->Html->script("https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js");
+                echo $this->Html->script("https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.7/jquery-ui.min.js");
+                echo $this->Html->css("http://fonts.googleapis.com/css?family=Lato:100,100italic,light,lightitalic,regular,regularitalic,bold,bolditalic,900,900italic|Droid+Serif:regular,italic,bold,bolditalic|Arvo:regular,italic,bold,bolditalic");
+            } else {
+                echo $this->Html->script('jquery/jquery');
+                echo $this->Html->script("jquery/jquery-ui.custom.min");
+            }
 
-		echo $this->fetch('meta');
-		echo $this->fetch('css');
-		echo $this->fetch('script');
-	?>
-</head>
-<body>
-	<div id="container">
-		<div id="header">
-			<h1><?php echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>
-		</div>
-		<div id="content">
+            if (Configure::read("debug") > 0) {
+                echo $this->Html->script("jquery/andy.jqdebugger.min");
+            }
 
-			<?php echo $this->Session->flash(); ?>
-
-			<?php echo $this->fetch('content'); ?>
-		</div>
-		<div id="footer">
-			<?php echo $this->Html->link(
-					$this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),
-					'http://www.cakephp.org/',
-					array('target' => '_blank', 'escape' => false)
-				);
-			?>
-		</div>
-	</div>
-	<?php echo $this->element('sql_dump'); ?>
-</body>
+            echo $this->Html->css("reset");
+            echo $this->Html->css("smoothness/jquery-ui-1.8.7.custom");
+            echo $this->Html->css("960");
+            echo $scripts_for_layout;
+            echo $this->Html->css("mcac");
+            echo $this->Html->css(__("mcac-styles", true));
+        ?>
+    </head>
+    <body>
+        <div id="container" class="container_12">
+            <div id="header" class="grid_12">
+                <?php echo $this->element("header"); ?>
+            </div>
+            <div id="content">
+                <?php echo $this->Session->flash(); ?>
+                <?php echo $content_for_layout; ?>
+            </div>
+            <div id="footer" class="grid_12 top-border">
+                <?php echo $this->element("footer"); ?>
+            </div>
+            <div id="debug" class="grid_12" style="display: none">
+                <?php echo $this->element('sql_dump'); ?>
+                <?php echo $this->Js->writeBuffer(); ?>
+            </div>
+        </div>
+    </body>
 </html>
