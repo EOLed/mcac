@@ -1,3 +1,4 @@
+<!-- default.ctp -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -28,7 +29,6 @@
             echo $this->Html->css("960");
             echo $scripts_for_layout;
             echo $this->Html->css("mcac");
-            echo $this->Html->css(__("mcac-styles", true));
         ?>
     </head>
     <body>
@@ -50,3 +50,4 @@
         </div>
     </body>
 </html>
+<!-- end default.ctp -->
