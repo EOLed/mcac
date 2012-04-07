@@ -31,16 +31,7 @@
  * @subpackage    cake.app
  */
 class AppController extends Controller {
-    var $components = array(
-           "Auth" => array(
-                    "loginAction" => array(
-                            "plugin" => "urg",
-                            "controller" => "users",
-                            "action" => "login",
-                            "admin" => false
-                    )
-           ), "Session"
-    );
+    var $components = array("Session");
     var $helpers = array("Js" => array("Jquery"), "Session", "Html");
 	
     function log($msg, $type = LOG_ERROR) {
