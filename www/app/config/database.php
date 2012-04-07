@@ -87,11 +87,12 @@ class DATABASE_CONFIG {
 
 	public $test = array(
 		'datasource' => 'Database/Mysql',
+        'port' => '/Applications/MAMP/tmp/mysql/mysql.sock',
 		'persistent' => false,
 		'host' => 'localhost',
-		'login' => 'user',
-		'password' => 'password',
-		'database' => 'test_database_name',
+		'login' => 'test_mcac',
+		'password' => 'mcac',
+		'database' => 'test_mcac',
 		'prefix' => '',
 		//'encoding' => 'utf8',
 	);
