@@ -20,6 +20,7 @@ $config["PostContentImage"]["defaultHeight"] = 500;
 
 # delivery options as specified in http://book.cakephp.org/view/1284/Class-Attributes-and-Variables
 # debug, mail or smtp
+$config["Email"]["config"] = "gmail";
 $config["Email"]["delivery"] = "smtp";
 
 # if delivery = "smtp"
