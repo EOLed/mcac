@@ -24,4 +24,4 @@
 	url = git@github.com:achan/bible
 [submodule "www/app/Plugin/Markdown"]
 	path = www/app/Plugin/Markdown
-	url = git@github.com:achan/markdown
+	url = git@github.com:achan/markdown.git
