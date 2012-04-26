@@ -1,4 +1,4 @@
-<div class="grid_12 nav-content-section">
+<div class="span12 nav-content-section">
     <h2><?php echo __("Our Pastors", true) ?></h2>
     <ul>
     <?php 

@@ -10,6 +10,7 @@
         </title>
         <?php
             echo $this->Html->meta('icon');
+            echo $this->Html->meta(array("name"=>"viewport", "content"=>"width=device-width, initial-scale=1.0"));
 
             if (Configure::read("General.cdn") === true) {
                 echo $this->Html->script("https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js");
@@ -26,25 +27,26 @@
 
             echo $this->Html->css("reset");
             echo $this->Html->css("smoothness/jquery-ui-1.8.7.custom");
-            echo $this->Html->css("960");
+            echo $this->Html->css("bootstrap/bootstrap");
+            echo $this->Html->css("bootstrap/bootstrap-responsive");
             echo $scripts_for_layout;
             echo $this->Html->css("mcac");
             echo $this->Html->css(__("mcac-styles", true));
         ?>
     </head>
     <body>
-        <div id="container" class="container_12">
-            <div id="header" class="grid_12">
+        <div id="container" class="container">
+            <div id="header" class="row">
                 <?php echo $this->element("header"); ?>
             </div>
             <div id="content">
                 <?php echo $this->Session->flash(); ?>
                 <?php echo $content_for_layout; ?>
             </div>
-            <div id="footer" class="grid_12 top-border">
+            <div id="footer" class="span12 top-border">
                 <?php echo $this->element("footer"); ?>
             </div>
-            <div id="debug" class="grid_12" style="display: none">
+            <div id="debug" class="span12" style="display: none">
                 <?php echo $this->element('sql_dump'); ?>
                 <?php echo $this->Js->writeBuffer(); ?>
             </div>

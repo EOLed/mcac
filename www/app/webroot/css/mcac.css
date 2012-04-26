@@ -202,7 +202,7 @@ h1, h2 {
     margin: 0;
     height: auto;
 }
-
+/*
 .right-border {
     border-right-style: solid;
     border-right-width: 1px;
@@ -233,7 +233,7 @@ h1, h2 {
     padding-left: 9px;
     margin-left: 0px;
 }
-
+*/
 h3.sermon-details {
     font-size: 10px;
     padding-bottom: 10px;
@@ -465,11 +465,13 @@ p {
 ul {
     list-style-type: circle;
     padding-left: 14px;
+    margin: 0;
 }
 
 ol {
     list-style-type: decimal;
     padding-left: 20px;
+    margin: 0;
 }
 
 blockquote {

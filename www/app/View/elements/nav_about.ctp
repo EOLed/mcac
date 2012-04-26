@@ -1,10 +1,10 @@
-<div class="grid_4 nav-content-section">
+<div class="span4 nav-content-section">
     <?php 
     echo $this->Html->tag("h2", __("nav.about.title", true));
     echo __("nav.about.description", true); 
     ?>
 </div>
-<div class="prefix_4 grid_3 nav-content-section">
+<div class="offset4 span3 nav-content-section">
     <?php echo $this->Html->tag("h2", __("nav.about.learnmore", true)); ?>
     <ul>
         <?php

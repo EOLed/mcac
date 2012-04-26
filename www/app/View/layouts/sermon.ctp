@@ -21,14 +21,14 @@
     </head>
     <body>
         <div id="container" class="container_12">
-            <div id="header" class="grid_12">
+            <div id="header" class="span12">
                 <?php echo $this->element("header"); ?>
             </div>
             <div id="content">
                 <?php echo $this->Session->flash(); ?>
                 <?php echo $content_for_layout; ?>
             </div>
-            <div id="footer" class="grid_12 top-border">
+            <div id="footer" class="span12 top-border">
                 <?php echo $this->element("footer"); ?>
             </div>
             <div id="debug">

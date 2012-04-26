@@ -1,7 +1,7 @@
-<div id="logo" class="alpha grid_2">
+<div id="logo" class="alpha span2">
     <?php echo $this->Html->image("logo.png"); ?>
 </div>
-<div id="banner" class="omega grid_10">
+<div id="banner" class="omega span10">
     <ul id="banner-list">
         <?php
         if (isset($banners)) {

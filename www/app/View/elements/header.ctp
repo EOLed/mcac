@@ -1,7 +1,7 @@
-<div id="logo" class="alpha grid_3">
+<div id="logo" class="alpha span3">
     <?php echo $this->Html->link($this->Html->image("logo.png"), "/", array("alt"=>"Back to Home", "escape"=>false)); ?>
 </div>
-<div id="nav-pane" class="omega grid_6 suffix_3">
+<div id="nav-pane" class="omega span6 suffix_3">
     <ul id="nav">
         <li id="locale">
             <span>

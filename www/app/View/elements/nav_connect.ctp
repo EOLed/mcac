@@ -1,10 +1,10 @@
-<div class="grid_4 nav-content-section" style="z-index: 10">
+<div class="span4 nav-content-section" style="z-index: 10">
     <?php 
     echo $this->Html->tag("h2", __("nav.connect.title", true));
     echo __("nav.connect.description", true); 
     ?>
 </div>
-<div class="prefix_4 grid_3 nav-content-section" style="z-index: 5">
+<div class="offset4 span3 nav-content-section" style="z-index: 5">
     <?php echo $this->Html->tag("h2", __("Chinese Communities", true)); ?>
     <ul>
         <?php
@@ -51,7 +51,7 @@
         ?>
     </ul>
 </div>
-<div class="prefix_7 grid_3 suffix_2 nav-content-section" style="z-index: 3">
+<div class="offset7 span3 suffix_2 nav-content-section" style="z-index: 3">
     <?php echo $this->Html->tag("h2", __("English Communities", true)); ?>
     <ul>
         <?php
