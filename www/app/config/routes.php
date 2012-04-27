@@ -1,4 +1,5 @@
 <?php
+App::uses('GroupSlugRoute', 'Urg.Lib/Routes');
 /**
  * Routes configuration
  *
@@ -43,6 +44,10 @@
  * ...and connect the rest of 'Pages' controller's urls.
  */
 	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
+
+    Router::connect("/:group_slug", 
+                    array("plugin" => "urg", "controller" => "groups", "action" => "view"), 
+                    array("routeClass" => "GroupSlugRoute"));
 
     Router::connect("/groups/:action/*",
                     array("plugin" => "urg", "controller" => "groups", "action" =>"index"));
