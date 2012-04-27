@@ -1,42 +1,50 @@
-<div id="logo" class="alpha span3">
-    <?php echo $this->Html->link($this->Html->image("logo.png"), "/", array("alt"=>"Back to Home", "escape"=>false)); ?>
-</div>
-<div id="nav-pane" class="omega span6 suffix_3">
-    <ul id="nav">
-        <li id="locale">
-            <span>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <?php echo $this->Html->link(__("Montreal Chinese Alliance Church", true), "/", array("class" => "brand hidden-phone")) ?>
+          <?php echo $this->Html->link(__("MCAC", true), "/", array("class" => "brand visible-phone")) ?>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li>
+                <?php echo $this->Html->link($this->Html->image("logo-cma.png"),
+                                             "/",
+                                             array("escape" => false,
+                                                   "id" => "logo")); ?>
+              </li>
+              <li class="">
+                <?php echo $this->element("nav_connect"); ?>
+              </li>
+              <li class="">
+                <?php echo $this->element("nav_pastors"); ?>
+              </li>
+              <li class="">
+                <?php echo $this->element("nav_about"); ?>
+              </li>
+              <li class="divider-vertical"></li>
+              <li class="">
                 <?php if ($this->Session->read("Config.language") == "eng") {
                     echo $this->Html->link(__("Chinese", true), array("plugin" => "urg", "controller" => "users", "action" => "locale", "zh_CN"));
                 } else {
                     echo $this->Html->link(__("English", true), array("plugin" => "urg", "controller" => "users", "action" => "locale", "eng"));
                 } ?>
-            </span>
-        </li>
-        <li>
-            <span><?php echo __("About Us", true); ?></span>
-            <div id="nav-about" class="nav-content">
-                <?php echo $this->element("nav_about"); ?>
-            </div>
-        </li>
-        <li>
-            <span><?php echo __("Our Pastors", true); ?></span>
-            <div id="nav-pastors" class="nav-content">
-                <?php echo $this->element("nav_pastors"); ?>
-            </div>
-        </li>
-        <li>
-            <span><?php echo __("Connect", true); ?></span>
-            <div id="nav-connect" class="nav-content">
-                <?php echo $this->element("nav_connect"); ?>
-            </div>
-        </li>
-    </ul>
+              </li>
+              <li class="">
+                  <?php echo $this->Html->link(__("Login", true), array("plugin" => "urg", "controller"=>"users", "action"=>"login")) ?>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div id="header" class="visible-desktop">
 </div>
 
-
 <script type="text/javascript">
-    $("#nav li").hover(
-        function() { $(this).addClass("hover") }, 
-        function() { $(this).removeClass("hover") }
-    );
+    $('.dropdown-toggle').dropdown();
 </script>

@@ -1,6 +1,8 @@
-<div class="span12 nav-content-section">
-    <h2><?php echo __("Our Pastors", true) ?></h2>
-    <ul>
+<li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+        <?php echo __("Our Pastors", true) ?> <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
     <?php 
         echo $this->Html->tag("li", $this->Html->link(__("Rev. Jonathan Kaan", true), array("plugin" => "urg",
                                                                        "controller" => "groups",
@@ -24,4 +26,4 @@
                                                                        "mdavis")));
     ?>
     </ul>
-</div>
+</li>

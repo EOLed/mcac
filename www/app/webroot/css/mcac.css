@@ -13,13 +13,41 @@ body {
     color: #222222;
     line-height: 1.28;
 }
-#side-panel #post-content {
+
+.dropdown-label {
+    width: 250px;
+    padding: 10px;
+}
+#side-panel h3 {
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar-fixed-top .brand {
+    padding-right: 0;
+    padding-left: 0;
+    margin-left: 20px;
+    float: right;
+    font-weight: bold;
+    color: black;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .1), 0 0 30px rgba(255, 255, 255, .125);
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    transition: all .2s li
+}
+
+#side-panel p {
     font-size: 11px;
     line-height: 1.28;
 }
+
+#logo {
+    padding: 0;
+}
+
 #header {
     height: 60px;
-    padding: 15px 0;
 /*    -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.75);
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.75);
@@ -90,13 +118,6 @@ h1, h2 {
     border-radius: 7px;
 }
 */
-
-#activity-feed .post {
-    border-width: 1px;
-    padding-top: 10px;
-    border-color: #EAEAEA;
-    padding-bottom: 10px;
-}
 
 .activity-feed-thumbnail {
     padding-top: 11px;
@@ -514,11 +535,6 @@ code {
 .nav-pastor {
     width: 192px;
     float: left;
-}
-
-.activity-feed-post h3 {
-    font-size: 12px;
-    font-weight: bold;
 }
 
 ul.playlist li.sm2_paused {

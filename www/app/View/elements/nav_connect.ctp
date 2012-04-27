@@ -1,13 +1,12 @@
-<div class="span4 nav-content-section" style="z-index: 10">
-    <?php 
-    echo $this->Html->tag("h2", __("nav.connect.title", true));
-    echo __("nav.connect.description", true); 
-    ?>
-</div>
-<div class="offset4 span3 nav-content-section" style="z-index: 5">
-    <?php echo $this->Html->tag("h2", __("Chinese Communities", true)); ?>
-    <ul>
+<li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+        <?php echo __("Connect", true) ?> <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
         <?php
+        echo $this->Html->tag("li", __("nav.connect.title", true), array("class" => "dropdown-label"));
+        echo $this->Html->tag("li", __("nav.connect.description", true), array("class" => "dropdown-label"));
+        echo $this->Html->tag("li", __("Chinese Communities", true), array("class" => "dropdown-label"));
         echo $this->Html->tag("li",
                 $this->Html->link(__("Hang-Oi (Elderly)", true), array("plugin" => "urg",
                                                                        "controller" => "groups",
@@ -48,13 +47,8 @@
                                                                        "controller" => "groups",
                                                                        "action" => "view",
                                                                        "david")));
-        ?>
-    </ul>
-</div>
-<div class="offset7 span3 suffix_2 nav-content-section" style="z-index: 3">
-    <?php echo $this->Html->tag("h2", __("English Communities", true)); ?>
-    <ul>
-        <?php
+
+        echo $this->Html->tag("li", __("English Communities", true), array("class" => "dropdown-label")); 
         echo $this->Html->tag("li",
                 $this->Html->link(__("Jacob (Family)", true), array("plugin" => "urg",
                                                                        "controller" => "groups",
@@ -76,6 +70,5 @@
                                                                        "action" => "view",
                                                                        "timothies")));
         ?>
-    </ul>
-</div>
-
+    </ul> 
+</li>
