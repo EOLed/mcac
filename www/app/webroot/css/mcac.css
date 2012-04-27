@@ -23,6 +23,14 @@ body {
     font-weight: bold;
     text-transform: uppercase;
 }
+#login-menu {
+    width: 270px;
+    padding: 10px;
+}
+
+#login-menu form {
+    margin: 0;
+}
 
 .navbar-fixed-top .brand {
     padding-right: 0;

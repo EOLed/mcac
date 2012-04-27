@@ -38,15 +38,7 @@
                             echo $this->Html->link(__("English", true), array("plugin" => "urg", "controller" => "users", "action" => "locale", "eng"));
                         } ?>
                     </li>
-                    <li class="">
-                        <?php 
-                        if (CakeSession::read("User") == null) {
-                            echo $this->Html->link(__("Login", true), array("plugin" => "urg", "controller"=>"users", "action"=>"login"));
-                        } else {
-                            echo $this->Html->link(__("Logout", true), array("plugin" => "urg", "controller"=>"users", "action"=>"logout"));
-                        }
-                         ?> 
-                    </li>
+                    <li><?php echo $this->element("nav_login"); ?></li>
                 </ul>
             </div>
         </div>
