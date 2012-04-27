@@ -34,7 +34,13 @@
                 } ?>
               </li>
               <li class="">
-                  <?php echo $this->Html->link(__("Login", true), array("plugin" => "urg", "controller"=>"users", "action"=>"login")) ?>
+                  <?php 
+                        if (CakeSession::read("User") == null) {
+                            echo $this->Html->link(__("Login", true), array("plugin" => "urg", "controller"=>"users", "action"=>"login"));
+                        } else {
+                            echo $this->Html->link(__("Logout", true), array("plugin" => "urg", "controller"=>"users", "action"=>"logout"));
+                        }
+                   ?> 
               </li>
             </ul>
           </div>
