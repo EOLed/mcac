@@ -4,9 +4,9 @@
     </a>
     <ul class="dropdown-menu">
         <?php
-        echo $this->Html->tag("li", __("nav.connect.title", true), array("class" => "dropdown-label"));
+        echo $this->Html->tag("li", __("nav.connect.title", true), array("class" => "dropdown-label-header"));
         echo $this->Html->tag("li", __("nav.connect.description", true), array("class" => "dropdown-label"));
-        echo $this->Html->tag("li", __("Chinese Communities", true), array("class" => "dropdown-label"));
+        echo $this->Html->tag("li", __("Chinese Communities", true), array("class" => "dropdown-label-header"));
         echo $this->Html->tag("li",
                 $this->Html->link(__("Hang-Oi (Elderly)", true), array("plugin" => "urg",
                                                                        "controller" => "groups",
@@ -46,9 +46,9 @@
                 $this->Html->link(__("David (High School)", true), array("plugin" => "urg",
                                                                        "controller" => "groups",
                                                                        "action" => "view",
-                                                                       "david")));
+                                                                       "david"), array("class" => "dropdown-last")));
 
-        echo $this->Html->tag("li", __("English Communities", true), array("class" => "dropdown-label")); 
+        echo $this->Html->tag("li", __("English Communities", true), array("class" => "dropdown-label-header")); 
         echo $this->Html->tag("li",
                 $this->Html->link(__("Jacob (Family)", true), array("plugin" => "urg",
                                                                        "controller" => "groups",
