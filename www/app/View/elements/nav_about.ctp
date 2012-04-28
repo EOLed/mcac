@@ -4,9 +4,9 @@
     </a>
     <ul class="dropdown-menu">
     <?php
-        echo $this->Html->tag("li", __("nav.about.title", true), array("class" => "dropdown-label"));
+        echo $this->Html->tag("li", __("nav.about.title", true), array("class" => "dropdown-label-header"));
         echo $this->Html->tag("li", __("nav.about.description", true), array("class" => "dropdown-label"));
-        echo $this->Html->tag("li", __("nav.about.learnmore", true), array("class" => "dropdown-label"));
+        echo $this->Html->tag("li", __("nav.about.learnmore", true), array("class" => "dropdown-label-header"));
         echo $this->Html->tag("li",
                               $this->Html->link(__("Statement of Faith", true),
                               __("nav.about.link.statementoffaith", true)));

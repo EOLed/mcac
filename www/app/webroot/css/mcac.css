@@ -14,10 +14,25 @@ body {
     line-height: 1.28;
 }
 
-.dropdown-label {
+.dropdown-label, .dropdown-label-header {
     width: 250px;
-    padding: 10px;
+    padding: 5px 14px 10px 14px;
 }
+
+.dropdown-label {
+    font-style: italic;
+}
+
+.dropdown-label-header {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #444;
+}
+
+li .dropdown-last {
+    margin-bottom: 10px;
+}
+
 #side-panel h3 {
     font-size: 13px;
     font-weight: bold;
