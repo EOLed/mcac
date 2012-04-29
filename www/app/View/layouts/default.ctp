@@ -12,6 +12,7 @@
             echo $this->Html->meta('icon');
             echo $this->Html->meta(array("name"=>"viewport", "content"=>"width=device-width, initial-scale=1.0"));
 
+            Configure::load("config");
             if (Configure::read("General.cdn") === true) {
                 echo $this->Html->script("https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js");
                 echo $this->Html->script("https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js");
