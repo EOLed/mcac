@@ -29,6 +29,10 @@ body {
     color: #762;
 }
 
+#account-username {
+    color: #eee;
+}
+
 li .dropdown-last {
     margin-bottom: 10px;
 }
@@ -69,7 +73,7 @@ li .dropdown-last {
     padding: 0;
     padding-top: 3px;
     width: 34px;
-    hieght: 34px;
+    height: 34px;
 }
 
 #header {
