@@ -544,13 +544,12 @@ code {
     font-family: "Helvetica", "Arial", sans-serif;
 }
 
-.post-widget #post-content, #sermon-info {
-    font-family: "Georgia", serif;
+/*.post-widget #post-content, #sermon-info {
     font-size: 14px;
     letter-spacing: 0;
     line-height: 19px;
     color: #444;
-}
+}*/
 
 #sermon-info h3 {
     font-family: "Helvetia", "Arial", sans-serif;
