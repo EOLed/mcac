@@ -584,6 +584,10 @@ code {
     color: #776622;
 }
 
+#changelog h1 {
+    padding-bottom: 20px;
+}
+
 #changelog hr {
     padding: 20px 0;
     border-top-width: 0px;
