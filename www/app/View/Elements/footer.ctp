@@ -7,24 +7,26 @@ echo " | " . __("Email: ", true) . $this->Html->link("info@montreal-cac.org", "m
     </div>
 </div>
 <div class="row">
-<div class="span12">
-    &copy; Montreal Chinese Alliance Church |
-    Designed by <a href="http://am05.com">AM05.com</a> |
-    Part of the <a href="http://churchie.org">Churchie.org Network</a>
-</div>
-</div>
-<div class="row">
-<div class="span12">
-    <?php 
-        $f = fopen(Configure::read("General.changelog"), "r");
-        $current_version = fgets($f);
-        fclose($f);
-        echo $this->Html->link("Version " . substr($current_version, 1), array("plugin" => false, "controller" => "pages", "action" => "display", "changelog"));
-    ?>
-</div>
+    <div class="span12">
+        &copy; Montreal Chinese Alliance Church |
+        Designed by <a href="http://am05.com">AM05.com</a> |
+        Part of the <a href="http://churchie.org">Churchie.org Network</a>
+    </div>
 </div>
 <div class="row">
-<div class="span12">
-    <a href="#" onclick="$('#debug').toggle(); return false;">Show Debug Info</a>
+    <div class="span12">
+        <?php 
+            $f = fopen(Configure::read("General.changelog"), "r");
+            $current_version = fgets($f);
+            fclose($f);
+            echo $this->Html->link("Version " . substr($current_version, 1), array("plugin" => false, "controller" => "pages", "action" => "display", "changelog"));
+        ?>
+    </div>
 </div>
+<?php if (Configure::read("debug") > 0) { ?>
+<div class="row">
+    <div class="span12">
+        <a href="#" onclick="$('#debug').toggle(); return false;">Show Debug Info</a>
+    </div>
 </div>
+<?php } ?>
