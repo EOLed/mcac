@@ -20,6 +20,7 @@
  */
 
 App::uses('AppController', 'Controller');
+App::uses("MarkdownHelper", "Markdown.View/Helper");
 
 /**
  * Static content controller
@@ -43,7 +44,7 @@ class PagesController extends AppController {
  *
  * @var array
  */
-	public $helpers = array('Html', 'Session', "Form");
+	public $helpers = array('Html', 'Session', "Form", "Markdown.Markdown");
 
 /**
  * This controller does not use a model

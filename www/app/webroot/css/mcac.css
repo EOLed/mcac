@@ -566,6 +566,30 @@ code {
     float: left;
 }
 
+#changelog h2 {
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+
+#changelog li {
+    list-style-type: disc;
+}
+
+#changelog {
+    font-size: 12px;
+    color: #333;
+}
+
+#changelog h1 a {
+    color: #776622;
+}
+
+#changelog hr {
+    padding: 20px 0;
+    border-top-width: 0px;
+    border-color: #aaa;
+}
+
 ul.playlist li.sm2_paused {
     background-color: #bbaa55;
 }
