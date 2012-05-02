@@ -2,6 +2,7 @@ v 0.3.0 - May 2, 2012 (beta)
 --
  - **Addition:** Upgraded to CakePHP 2.1.2
  - **Addition:** Sticky posts
+ - **Bugfix:** Changelog formatting
 
 v 0.2.0 - May 2, 2012 (beta)
 --
