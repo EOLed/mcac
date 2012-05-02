@@ -1,10 +1,9 @@
-v 1.0.0 - xxx
+v 0.2.0 - May 2, 2012
 --
- - [Over a year later...](http://www.am05.com/2010/10/27/starting-a-church-site) We're finally live!
-
-----------
-Dev Builds
---
+ - First beta release!
+ - **bugfix:** support for default PHP mail sending
+ - **bugfix:** data sanitization for post content
+ - **bugfix:** max size for email banners
 
 v 0.1.0 - May 1, 2012
 --
