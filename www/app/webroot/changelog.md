@@ -1,3 +1,8 @@
+v 0.3.1 - May 3, 2012 (beta)
+--
+ - **Bugfix:** Social bookmarks not visible on phone (breaks layout)
+ - **Change:** Smarter post inserts
+
 v 0.3.0 - May 2, 2012 (beta)
 --
  - **Addition:** Upgraded to CakePHP 2.1.2
