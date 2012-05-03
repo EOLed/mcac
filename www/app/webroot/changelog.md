@@ -1,5 +1,6 @@
 v 0.3.1 - May 3, 2012 (beta)
 --
+ - **Addition:** Caching
  - **Bugfix:** Social bookmarks not visible on phone (breaks layout)
  - **Change:** Smarter post inserts
 

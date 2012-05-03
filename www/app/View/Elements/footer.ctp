@@ -16,10 +16,13 @@ echo " | " . __("Email: ", true) . $this->Html->link("info@montreal-cac.org", "m
 <div class="row">
     <div class="span12">
         <?php 
-            $f = fopen(Configure::read("General.changelog"), "r");
-            $current_version = fgets($f);
-            fclose($f);
-            echo $this->Html->link("Version " . substr($current_version, 1), array("plugin" => false, "controller" => "pages", "action" => "display", "changelog"));
+            if (Cache::read("app.version") === false) {
+                $f = fopen(Configure::read("General.changelog"), "r");
+                Cache::write("app.version", fgets($f));
+                fclose($f);
+            }
+
+            echo $this->Html->link("Version " . substr(Cache::read("app.version"), 1), array("plugin" => false, "controller" => "pages", "action" => "display", "changelog"));
         ?>
     </div>
 </div>
