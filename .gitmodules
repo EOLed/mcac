@@ -25,3 +25,6 @@
 [submodule "www/app/Plugin/Markdown"]
 	path = www/app/Plugin/Markdown
 	url = git@github.com:achan/markdown.git
+[submodule "www/app/Plugin/Socialize"]
+	path = www/app/Plugin/Socialize
+	url = git@github.com:achan/socialize.git
