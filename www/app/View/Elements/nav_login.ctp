@@ -9,21 +9,32 @@ if ($logged_user == null) {
                            array("class" => "dropdown-toggle", 
                                  "data-toggle" => "dropdown",
                                  "escape" => false));
-    $login_form = $this->Form->create("User", array("action"=>"login", "class"=>"form-inline"));
-    $login_form .= $this->Form->input("User.username", array("placeholder" => __("Username", true),
-                                                             "class" => "input-small",
-                                                             "div" => false,
-                                                             "label" => false)) . " ";
-    $login_form .= $this->Form->input("User.password", array("placeholder" => __("Password", true),
-                                                             "class" => "input-small",
+    $login_form = $this->Form->create("User", array("action"=>"login"));
+    $username = $this->Form->input("User.username", array("placeholder" => __("Username", true),
                                                              "div" => false,
                                                              "label" => false));
-    $login_form .=  $this->Form->end(array("label" => __("Login", true),
-                                           "class" => "btn btn-inverse",
-                                           "div" => false));
+    $password = $this->Form->input("User.password", array("placeholder" => __("Password", true),
+                                                             "div" => false,
+                                                             "label" => false));
+    $login_button =  $this->Form->submit(__("Login", true),
+                                         array("class" => "btn btn-inverse",
+                                               "div" => false));
+    $login_form .= $this->Html->div("control-group", $this->Html->div("controls", $username));
+    $login_form .= $this->Html->div("control-group", $this->Html->div("controls", $password . " " . $login_button));
+    $login_form .= $this->Form->end();
+
+    $register_form = $this->Form->create("User", array("action"=>"register"));
+
+    $register_button =  $this->Form->submit(__("Sign Up", true),
+                                         array("class" => "btn btn-inverse",
+                                               "div" => false));
+
+    $register_form .= $this->Html->div("control-group", $this->Html->div("controls", $username));
+    $register_form .= $this->Html->div("control-group", $this->Html->div("controls", $password . " " . $register_button));
+    $register_form .= $this->Form->end();
 
     $account_item .=  $this->Html->tag("ul", 
-                                       $this->Html->tag("li", $login_form, array("escape" => false)),
+                                       $this->Html->tag("li", $login_form, array("escape" => false)) . $this->Html->tag("li", __("Don't have an account?", true), array("class" => "dropdown-label-header")) . $this->Html->tag("li", $register_form, array("escape" => false)),
                                        array("escape" => false,
                                              "class" => "dropdown-menu",
                                              "id" => "login-menu"));
