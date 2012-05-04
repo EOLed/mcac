@@ -153,7 +153,7 @@
         <div class="span12">
             &copy; Montreal Chinese Alliance Church |
             Designed by <a href="http://am05.com">AM05.com</a> |
-            Part of the <a href="http://churchie.org">Churchie.org Network</a>
+            Powered by <a href="http://churchie.org">Churchie</a>
         </div>
     </div>
     <div class="row">
