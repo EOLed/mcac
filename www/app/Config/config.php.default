@@ -1,24 +1,108 @@
 <?php
+/**
+ * minimum number of characters for a password.
+ * type: int
+ * default: 6
+ */
 $config["User"]["passwordMinLength"] = 6;
+
+/**
+ * maximum length of characters for a password.
+ * type: int
+ * default: 30
+ */
 $config["User"]["passwordMaxLength"] = 30;
 
+/**
+ * array of role ids that normal users will be registered with.
+ * type: array(int...)
+ * default: array()
+ */
+$config["User"]["defaultRoles"] = array();
+
+/**
+ * specify whether user registration is enabled.
+ * type: boolean
+ * default: false
+ */
+$config["User"]["registrationEnabled"] = false;
+
+/**
+ * specify whether to use content delivery networks instead of local copies when possible.
+ * type: bool
+ * default: false
+ */
 $config["General"]["cdn"] = false;
 
+/**
+ * The location to the changelog markdown file.
+ * type: String
+ * default: null
+ */
+$config["General"]["changelog"] = null;
+
+/**
+ * The default width in pixels of the group/post banners.
+ * type: int
+ * default: 700;
+ */
 $config["Banner"]["defaultWidth"] = 700;
-$config["Banner"]["panelWidth"] = 460;
 
-$config["ActivityFeed"]["defaultWidth"] = 100;
-$config["ActivityFeed"]["defaultHeight"] = 100;
-// the number of days to populate feed from
+/**
+ * The number of days an event is considered relevant.
+ * Posts after this date will not be displayed in the Activity Feed.
+ * type: int
+ * default: 90
+ */
 $config["ActivityFeed"]["daysOfRelevance"] = 90;
-$config["ActivityFeed"]["limit"] = 10;
 
+/**
+ * The default amount of posts shown in the activity feed.
+ * type: int
+ * default: 15
+ */
+$config["ActivityFeed"]["limit"] = 15;
+
+/**
+ * The default width in pixels of the thumbnails generated for post galleries.
+ * type: int
+ * default: 140
+ */
 $config["PostContentImage"]["defaultThumbWidth"] = 140;
+
+/**
+ * The default height in pixels of the thumbnails generated for post galleries.
+ * type: int
+ * default: 140
+ */
 $config["PostContentImage"]["defaultThumbHeight"] = 140;
+
+/**
+ * The default width in pixels of full-sized images in post galleries.
+ * type: int
+ * default: 720
+ */
 $config["PostContentImage"]["defaultWidth"] = 720;
+
+/**
+ * The default height in pixels of the full-sized images in post galleries.
+ * type: int
+ * default: 500
+ */
 $config["PostContentImage"]["defaultHeight"] = 500;
 
+/**
+ * The email configuration for CakePHP to use.
+ * type: String
+ * default: "default"
+ * possible values: default, gmail
+ */
 $config["Email"]["config"] = "gmail";
 
+/**
+ * The default language for new visitors.
+ * type: String
+ * default: eng
+ * possible values: eng, fr
+ */
 $config["Language"]["default"] = "eng";
-
