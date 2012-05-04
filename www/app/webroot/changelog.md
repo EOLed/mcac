@@ -2,6 +2,7 @@ v 0.3.2 - May 3, 2012 (beta)
 --
  - **Addition:** Caching
  - **Addition:** Optional user registration module
+ - **Addition:** Attachment support for posts
 
 v 0.3.1 - May 3, 2012 (beta)
 --
