@@ -14,32 +14,6 @@ body {
     line-height: 1.28;
 }
 
-#site-map-footer {
-    background-color: #f8f8f8;
-    border-top: 1px solid #e0e0e0;
-    border-bottom: 1px solid #e0e0e0;
-    padding: 20px 0;
-    margin: 40px 0;
-    text-align: left;
-}
-
-#site-map-footer ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-#site-map-footer h4 {
-    font-size: 12px;
-    padding-bottom: 10px;
-}
-
-#site-map-footer h5 {
-    font-size: 11px;
-}
-
-#footer-location {
-    padding-bottom: 10px;
-}
 .dropdown-label, .dropdown-label-header {
     width: 250px;
     padding: 5px 14px 10px 14px;
@@ -651,4 +625,40 @@ ul.playlist li .timing {
 ul.playlist li .controls .statusbar .position {
     background-color: #776622;
     border-right-color: #776622;
+}
+
+#site-map-footer {
+    background-color: #f8f8f8;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 20px 0;
+    margin: 40px 0;
+    text-align: left;
+}
+
+#site-map-footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#site-map-footer h4 {
+    font-size: 12px;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 10px;
+}
+
+#site-map-footer h5 {
+    font-size: 11px;
+}
+
+#site-map-footer a {
+    color: #2c2c2c;
+}
+
+#site-map-footer a:hover, #site-map-footer a:visited {
+    color: #444;
+}
+
+#footer-location {
+    padding-bottom: 10px;
 }
