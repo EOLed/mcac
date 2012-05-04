@@ -1,3 +1,7 @@
+v 0.3.3 - May 4, 2012 (beta)
+--
+ - **Addition:** Sitemap added to footer
+
 v 0.3.2 - May 3, 2012 (beta)
 --
  - **Addition:** Caching

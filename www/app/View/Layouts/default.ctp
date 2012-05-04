@@ -46,13 +46,9 @@
                 <?php echo $this->Session->flash(); ?>
                 <?php echo $content_for_layout; ?>
             </div>
-            <div id="footer" class="top-border">
+        </div>
+        <div id="footer" class="top-border">
                 <?php echo $this->element("footer"); ?>
-            </div>
-            <div id="debug" class="span12" style="display: none">
-                <?php echo $this->element('sql_dump'); ?>
-                <?php echo $this->Js->writeBuffer(); ?>
-            </div>
         </div>
     </body>
 </html>
