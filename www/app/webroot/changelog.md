@@ -1,7 +1,10 @@
-v 0.3.1 - May 3, 2012 (beta)
+v 0.3.2 - May 3, 2012 (beta)
 --
  - **Addition:** Caching
- - **Addition:** User registration is open
+ - **Addition:** Optional user registration module
+
+v 0.3.1 - May 3, 2012 (beta)
+--
  - **Bugfix:** Social bookmarks not visible on phone (breaks layout)
  - **Change:** Smarter post inserts
 

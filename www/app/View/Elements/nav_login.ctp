@@ -23,18 +23,29 @@ if ($logged_user == null) {
     $login_form .= $this->Html->div("control-group", $this->Html->div("controls", $password . " " . $login_button));
     $login_form .= $this->Form->end();
 
-    $register_form = $this->Form->create("User", array("action"=>"register"));
+    $registration_enabled = Configure::read("User.registrationEnabled");
 
-    $register_button =  $this->Form->submit(__("Sign Up", true),
-                                         array("class" => "btn btn-inverse",
-                                               "div" => false));
+    $register_form_item = "";
+    if ($registration_enabled) {
+        $register_label = $this->Html->tag("li", 
+                                           __("Don't have an account?", true), 
+                                           array("class" => "dropdown-label-header"));
+        $register_form = $this->Form->create("User", array("action"=>"register"));
 
-    $register_form .= $this->Html->div("control-group", $this->Html->div("controls", $username));
-    $register_form .= $this->Html->div("control-group", $this->Html->div("controls", $password . " " . $register_button));
-    $register_form .= $this->Form->end();
+        $register_button =  $this->Form->submit(__("Sign Up", true),
+                                                array("class" => "btn btn-inverse", "div" => false));
 
-    $account_item .=  $this->Html->tag("ul", 
-                                       $this->Html->tag("li", $login_form, array("escape" => false)) . $this->Html->tag("li", __("Don't have an account?", true), array("class" => "dropdown-label-header")) . $this->Html->tag("li", $register_form, array("escape" => false)),
+        $register_form .= $this->Html->div("control-group", $this->Html->div("controls", $username));
+        $register_form .= $this->Html->div("control-group", 
+                                           $this->Html->div("controls", $password . " " . $register_button));
+        $register_form .= $this->Form->end();
+
+        $register_form_item = $register_label . $this->Html->tag("li", $register_form, array("escape" => false));
+    }
+
+    $login_form_item = $this->Html->tag("li", $login_form, array("escape" => false));
+
+    $account_item .=  $this->Html->tag("ul", $login_form_item . $register_form_item,
                                        array("escape" => false,
                                              "class" => "dropdown-menu",
                                              "id" => "login-menu"));
