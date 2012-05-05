@@ -1,4 +1,4 @@
-v 0.4.0
+v 0.4.0 - May 5, 2012 (beta)
 --
  - **Addition:** UI for widgets
  - **Change:** Smarter titles
