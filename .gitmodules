@@ -28,3 +28,6 @@
 [submodule "www/app/Plugin/Socialize"]
 	path = www/app/Plugin/Socialize
 	url = git@github.com:achan/socialize.git
+[submodule "www/app/Plugin/TwitterBootstrap"]
+	path = www/app/Plugin/TwitterBootstrap
+	url = git@github.com:achan/twitter-bootstrap-helper
