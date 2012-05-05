@@ -1,3 +1,8 @@
+v 0.4.0
+--
+ - **Addition:** UI for widgets
+ - **Change:** Smarter titles
+
 v 0.3.3 - May 4, 2012 (beta)
 --
  - **Addition:** Sitemap added to footer

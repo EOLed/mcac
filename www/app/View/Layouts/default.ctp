@@ -4,10 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <?php echo $this->Html->charset(); ?>
-        <title>
-            <?php __('Montreal Chinese Alliance Church &raquo;'); ?>
-            <?php echo $title_for_layout; ?>
-        </title>
+        <title><?php __('Montreal Chinese Alliance Church &raquo; ', true); ?><?php echo $title_for_layout; ?></title>
         <?php
             echo $this->Html->meta('icon');
             echo $this->Html->meta(array("name"=>"viewport", "content"=>"width=device-width, initial-scale=1.0"));
