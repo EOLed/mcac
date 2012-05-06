@@ -106,7 +106,17 @@
                 <ul>
                 <?php
                     echo $this->Html->tag("li",
-                            $this->Html->link(__("Jacob (Family)", true), array("plugin" => "urg",
+                            $this->Html->link(__("Isaac (Mature Adult)", true), array("plugin" => "urg",
+                                                                                      "controller" => "groups",
+                                                                                      "action" => "view",
+                                                                                      "isaac")));
+                    echo $this->Html->tag("li",
+                            $this->Html->link(__("Mothers Group", true), array("plugin" => "urg",
+                                                                               "controller" => "groups",
+                                                                               "action" => "view",
+                                                                               "mothersgroup")));
+                    echo $this->Html->tag("li",
+                            $this->Html->link(__("Jacob (Young Family)", true), array("plugin" => "urg",
                                                                                    "controller" => "groups",
                                                                                    "action" => "view",
                                                                                    "jacob")));
