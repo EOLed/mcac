@@ -15,7 +15,7 @@
                 echo $this->Html->script("https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js");
                 echo $this->Html->css("http://fonts.googleapis.com/css?family=Antic+Slab|Patua+One|Lato:100,100italic,light,lightitalic,regular,regularitalic,bold,bolditalic,900,900italic|Droid+Serif:regular,italic,bold,bolditalic|Arvo:regular,italic,bold,bolditalic");
             } else {
-                echo $this->Html->script('jquery/jquery');
+                echo $this->Html->script('jquery/jquery.min');
                 echo $this->Html->script("jquery/jquery-ui.custom.min");
             }
 
