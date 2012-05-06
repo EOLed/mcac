@@ -1,5 +1,6 @@
 v 0.4.1 - May 5, 2012 (beta)
 - **Bugfix:** Show the correct posts for upcoming events
+- **Change:** Posts form v2
 
 v 0.4.0 - May 5, 2012 (beta)
 --
