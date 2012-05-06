@@ -1,6 +1,7 @@
 v 0.4.2 - May 6, 2012 (beta)
 --
- - **Addition:** favicon added
+ - **Addition:** Favicon added
+ - **Bugfix:** Various bugs related to sermon uploads
 
 v 0.4.1 - May 5, 2012 (beta)
 --
