@@ -1,4 +1,9 @@
+v 0.4.2 - May 6, 2012 (beta)
+--
+ - **Addition:** favicon added
+
 v 0.4.1 - May 5, 2012 (beta)
+--
 - **Bugfix:** Show the correct posts for upcoming events
 - **Change:** Posts form v2
 
