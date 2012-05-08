@@ -337,6 +337,14 @@ h2, legend {
     margin-top: 5px;
 }
 
+.margin-top {
+    margin-top: 20px;
+}
+
+.margin-bottom {
+    margin-bottom: 20px;
+}
+
 #nav li:hover {
     color: #d1ccc0;
     background-image: url("../img/concrete_wall.png");

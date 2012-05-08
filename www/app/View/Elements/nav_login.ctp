@@ -58,11 +58,18 @@ if ($logged_user == null) {
                                             "escape" => false,
                                             "id" => "account-username"));
     
+    $profile_item = $this->Html->tag("li", $this->Html->link(__("My profile"),
+                                                             array("controller" => "profiles",
+                                                                   "action" => "update_profile",
+                                                                   "plugin" => false)));
     $logout_item = $this->Html->tag("li", $this->Html->link(__("Logout", true), 
                                                             array("plugin" => "urg",
                                                                   "controller" => "users",
                                                                   "action" => "logout")));
-    $account_item .= $this->Html->tag("ul", $logout_item, array("escape" => false, "class" => "dropdown-menu"));
+    $account_item .= $this->Html->tag("ul", 
+                                      $profile_item . $logout_item, 
+                                      array("escape" => false, 
+                                            "class" => "dropdown-menu"));
 }
 
 echo $this->Html->tag("li", $account_item, array("class" => "dropdown", "escape" => false));
