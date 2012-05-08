@@ -106,3 +106,10 @@ $config["Email"]["config"] = "gmail";
  * possible values: eng, fr
  */
 $config["Language"]["default"] = "eng";
+
+/**
+ * The languages supported by the application.
+ * type: array(String...)
+ * default: array("eng")
+ */
+$config["Language"]["default"] = array("eng");
