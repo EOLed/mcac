@@ -7,7 +7,7 @@
         <title><?php __('Montreal Chinese Alliance Church &raquo; ', true); ?><?php echo $title_for_layout; ?></title>
         <link rel="icon" type="image/png" href="<?php echo $this->Html->url("/favicon.png"); ?>" />
         <?php
-            echo $this->Html->meta(array("name"=>"viewport", "content"=>"width=device-width, initial-scale=1.0"));
+            echo $this->Html->meta(array("name"=>"viewport", "content"=>"width=device-width, initial-scale=1.0, user-scalable=no"));
 
             Configure::load("config");
             if (Configure::read("General.cdn") === true) {
