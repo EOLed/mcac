@@ -1,6 +1,7 @@
-v 0.4.2 - May 6, 2012 (beta)
+v 0.4.2 - May 7, 2012 (beta)
 --
  - **Addition:** Favicon added
+ - **Addition:** User profiles
  - **Bugfix:** Various bugs related to forms
 
 v 0.4.1 - May 5, 2012 (beta)
