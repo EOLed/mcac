@@ -58,10 +58,12 @@ class ProfilesController extends AppController {
         Configure::load("config");
         $default_locale = Configure::read("Language.default");
         foreach ($users as $user) {
-            $this->Profile->create();
-            $data["Profile"]["user_id"] = $user["User"]["id"];
-            $data["Profile"]["locale"] = $default_locale;
-            $this->Profile->save($data);
+            if ($this->Profile->findByUserId($user["User"]["id"]) !== false) {
+                $this->Profile->create();
+                $data["Profile"]["user_id"] = $user["User"]["id"];
+                $data["Profile"]["locale"] = $default_locale;
+                $this->Profile->save($data);
+            }
         }
 
         $this->redirect(array("action" => "index"));
