@@ -1,6 +1,7 @@
 v 0.4.3 - May 8, 2012 (beta)
 --
- - ui fixes for mobile devices
+ - **Bugfix:** UI fixes for mobile devices
+ - **Bugfix:** Optimized Facebook descriptions
 
 v 0.4.2 - May 7, 2012 (beta)
 --

@@ -8,7 +8,7 @@
         <link rel="icon" type="image/png" href="<?php echo $this->Html->url("/favicon.png"); ?>" />
         <?php
             echo $this->Html->meta(array("name"=>"viewport", "content"=>"width=device-width, initial-scale=1.0, user-scalable=no"));
-
+            echo $this->fetch("meta");
             Configure::load("config");
             if (Configure::read("General.cdn") === true) {
                 echo $this->Html->script("https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js");
@@ -31,9 +31,9 @@
             echo $this->Html->css("smoothness/jquery-ui-1.8.7.custom");
             echo $this->Html->css("bootstrap");
             echo $this->Html->css("bootstrap-responsive");
-            echo $scripts_for_layout;
+            echo $this->fetch("script");
+            echo $this->fetch("css");
             echo $this->Html->css("mcac");
-            echo $this->Html->css(__("mcac-styles", true));
         ?>
         <script type="text/javascript">
             var _gaq = _gaq || [];
@@ -53,7 +53,7 @@
         <div id="container" class="container">
             <div id="content">
                 <?php echo $this->Session->flash(); ?>
-                <?php echo $content_for_layout; ?>
+                <?php echo $this->fetch("content"); ?>
             </div>
         </div>
         <div id="footer" class="top-border">

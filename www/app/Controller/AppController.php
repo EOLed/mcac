@@ -32,7 +32,7 @@
  */
 class AppController extends Controller {
     var $components = array("Session");
-    var $helpers = array("Js" => array("Jquery"), "Session", "Html", "Form");
+    var $helpers = array("Js" => array("Jquery"), "Session", "Html", "Form", "Urg.SmartSnippet");
 	
     function log($msg, $type = LOG_ERROR) {
     	$trace = debug_backtrace();
