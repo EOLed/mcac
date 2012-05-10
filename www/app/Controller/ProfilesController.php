@@ -198,7 +198,7 @@ class ProfilesController extends UrgAppController {
                     CakeLog::write(LOG_DEBUG, "profile registered: " . Debugger::exportVar($this->request->data, 5));
                     $this->Session->write("User", $this->request->data);
                     $this->Auth->login($this->request->data);
-                    $this->redirect("/");
+                    $this->redirect($this->referer());
                 }
             }
 

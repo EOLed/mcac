@@ -9,7 +9,9 @@ if ($logged_user == null) {
                            array("class" => "dropdown-toggle", 
                                  "data-toggle" => "dropdown",
                                  "escape" => false));
-    $login_form = $this->Form->create("User", array("action"=>"login"));
+    $login_form = $this->Form->create("User", array("url" => array("plugin" => "urg",
+                                                                   "controller" => "users",
+                                                                   "action"=>"login")));
     $username = $this->Form->input("User.username", array("placeholder" => __("Username", true),
                                                              "div" => false,
                                                              "label" => false));

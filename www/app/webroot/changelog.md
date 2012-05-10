@@ -1,6 +1,6 @@
 v 0.4.4 - May 9, 2012 (beta)
 --
- - **Bugfix:** User registration bugs
+ - **Bugfix:** User registration/login bugs
 
 v 0.4.3 - May 8, 2012 (beta)
 --
