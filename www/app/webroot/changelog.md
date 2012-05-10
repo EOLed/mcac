@@ -1,3 +1,7 @@
+v 0.4.4 - May 9, 2012 (beta)
+--
+ - **Bugfix:** User registration bugs
+
 v 0.4.3 - May 8, 2012 (beta)
 --
  - **Bugfix:** UI fixes for mobile devices

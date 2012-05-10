@@ -40,6 +40,7 @@ class AppController extends Controller {
     }
 
     function beforeFilter() {
+        CakeLog::write(LOG_DEBUG, "app controller beforeFilter(): " . Debugger::exportVar($this->request, 5));
         if (isset($this->params["lang"])) {
             $this->Session->write("Config.language", $this->params["lang"]);
             Configure::write("Config.language", $this->params["language"]);

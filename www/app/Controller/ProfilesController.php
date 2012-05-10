@@ -1,14 +1,13 @@
 <?php
 App::uses('AuthComponent', 'Controller/Component');
-App::uses('AppController', 'Controller');
+App::uses('UrgAppController', 'Urg.Controller');
 /**
  * Profiles Controller
  *
  * @property Profile $Profile
  */
-class ProfilesController extends AppController {
+class ProfilesController extends UrgAppController {
     public $helpers = array("Form", "Html", "Session", "TwitterBootstrap.TwitterBootstrap");
-
 
 /**
  * index method
@@ -173,5 +172,38 @@ class ProfilesController extends AppController {
 		}
 		$this->Session->setFlash(__('Profile was not deleted'));
 		$this->redirect(array('action' => 'index'));
+	}
+
+	function register() {
+        CakeLog::write(LOG_DEBUG, "attempting to register profile...");
+        Configure::load("config");
+        if (Configure::read("User.registrationEnabled") === false) {
+            $this->Session->setFlash(__("User registration has been disabled."));
+            $this->redirect($this->referer());
+            return;
+        }
+
+        if (!empty($this->request->data)) {
+            $this->Profile->create();
+            $this->Profile->User->create();
+            $this->request->data["Role"]["Role"] = Configure::read("User.defaultRoles");
+            $profile_saved = false;
+            if ($this->Profile->User->save($this->request->data)) {
+                $this->Profile->id = $this->Profile->User->id;
+                $this->request->data["User"]["id"] = $this->Profile->User->id;
+                $this->request->data["Profile"]["id"] = $this->Profile->User->id;
+                $this->request->data["Profile"]["user_id"] = $this->Profile->User->id;
+                if ($this->Profile->save($this->request->data)) {
+                    $profile_saved = true;
+                    CakeLog::write(LOG_DEBUG, "profile registered: " . Debugger::exportVar($this->request->data, 5));
+                    $this->Session->write("User", $this->request->data);
+                    $this->Auth->login($this->request->data);
+                    $this->redirect("/");
+                }
+            }
+
+            if (!$profile_saved)
+                $this->Session->setFlash(__('The user could not be registered. Please, try again.'));
+        }
 	}
 }

@@ -30,7 +30,10 @@ if ($logged_user == null) {
         $register_label = $this->Html->tag("li", 
                                            __("Don't have an account?", true), 
                                            array("class" => "dropdown-label-header"));
-        $register_form = $this->Form->create("User", array("action"=>"register"));
+        $register_form = $this->Form->create("Profile", 
+                                             array("url" => array("controller" => "profiles",
+                                                                  "action" => "register",
+                                                                  "plugin" => false)));
 
         $register_button =  $this->Form->submit(__("Sign Up", true),
                                                 array("class" => "btn btn-inverse", "div" => false));
