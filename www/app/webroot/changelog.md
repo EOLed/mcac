@@ -1,3 +1,7 @@
+v 0.4.5 - May 12, 2012 (beta)
+--
+ - **Change:** Populate newsletter sender from user profile
+
 v 0.4.4 - May 9, 2012 (beta)
 --
  - **Bugfix:** User registration/login bugs
