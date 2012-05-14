@@ -19,32 +19,32 @@
                 <h4><?php echo __("Our Pastors"); ?></h4>
                 <ul>
                     <li>
-                        <?php echo $this->Html->link(__("Rev. Jonathan Kaan"), 
+                        <?php echo __("Rev. Jonathan Kaan"); /*$this->Html->link(__("Rev. Jonathan Kaan"), "#"); 
                                                      array("plugin" => "urg",
                                                            "controller" => "groups",
                                                            "action" => "view",
-                                                           "jkaan")); ?>
+                                                           "jkaan")); */ ?>
                     </li>
                     <li>
                         <?php echo $this->Html->link(__("Rev. Thomas Chan"), 
                                                      array("plugin" => "urg",
                                                            "controller" => "groups",
                                                            "action" => "view",
-                                                           "tchan")); ?>
+                                                           "tchan")); ?> 
                     </li>
                     <li>
-                        <?php echo $this->Html->link(__("Rev. Terry Yeung"), 
+                        <?php echo __("Rev. Terry Yeung"); /*$this->Html->link(__("Rev. Terry Yeung"), "#");   
                                                      array("plugin" => "urg",
                                                            "controller" => "groups",
                                                            "action" => "view",
-                                                           "tyeung")); ?>
+                                                           "tyeung")); */?>
                     </li>
                     <li>
-                        <?php echo $this->Html->link(__("Rev. Ian Ho"), 
+                        <?php echo __("Rev. Ian Ho"); /*$this->Html->link(__("Rev. Ian Ho"), "#");  
                                                      array("plugin" => "urg",
                                                            "controller" => "groups",
                                                            "action" => "view",
-                                                           "iho")); ?>
+                                                           "iho")); */?>
                     </li>
                     <li>
                         <?php echo $this->Html->link(__("Rev. Marshall Davis"), 
@@ -58,46 +58,46 @@
                 <h4><?php echo __("Chinese Ministries"); ?></h4>
                 <ul>
                     <?php
-        echo $this->Html->tag("li",
-                $this->Html->link(__("Hang-Oi (Elderly)", true), array("plugin" => "urg",
+        echo $this->Html->tag("li", __("Hang-Oi (Elderly)", true));
+                /*$this->Html->link(__("Hang-Oi (Elderly)", true), array("plugin" => "urg",
                                                                        "controller" => "groups",
                                                                        "action" => "view",
-                                                                       "hangoi")));
-        echo $this->Html->tag("li",
-                $this->Html->link(__("Jien Jin (Elderly)", true), array("plugin" => "urg",
+                                                                       "hangoi")));*/
+        echo $this->Html->tag("li",__("Jien Jin (Elderly)", true));
+                /*$this->Html->link(__("Jien Jin (Elderly)", true), array("plugin" => "urg",
                                                                        "controller" => "groups",
                                                                        "action" => "view",
-                                                                       "jienjin")));
-        echo $this->Html->tag("li",
+                                                                       "jienjin")));*/
+        echo $this->Html->tag("li",__("Canaan (Elderly)", true)); /*
                 $this->Html->link(__("Canaan (Elderly)", true), array("plugin" => "urg",
                                                                        "controller" => "groups",
                                                                        "action" => "view",
-                                                                       "canaan")));
-        echo $this->Html->tag("li",
+                                                                       "canaan")));*/
+        echo $this->Html->tag("li",__("Zion (Adults)", true)); /*
                 $this->Html->link(__("Zion (Adults)", true), array("plugin" => "urg",
                                                                        "controller" => "groups",
                                                                        "action" => "view",
-                                                                       "zion")));
-        echo $this->Html->tag("li",
+                                                                       "zion")));*/
+        echo $this->Html->tag("li",__("Mandarin (Adults)", true));/*
                 $this->Html->link(__("Mandarin (Adults)", true), array("plugin" => "urg",
                                                                        "controller" => "groups",
                                                                        "action" => "view",
-                                                                       "mandarin")));
-        echo $this->Html->tag("li",
+                                                                       "mandarin")));*/
+        echo $this->Html->tag("li",__("Betha (Married)", true)); /*
                 $this->Html->link(__("Betha (Married)", true), array("plugin" => "urg",
                                                                        "controller" => "groups",
                                                                        "action" => "view",
-                                                                       "betha")));
-        echo $this->Html->tag("li",
+                                                                       "betha"))); */
+        echo $this->Html->tag("li",__("Elisha (Career)", true)); /*
                 $this->Html->link(__("Elisha (Career)", true), array("plugin" => "urg",
                                                                        "controller" => "groups",
                                                                        "action" => "view",
-                                                                       "elisha")));
-        echo $this->Html->tag("li",
+                                                                       "elisha"))); */
+        echo $this->Html->tag("li",__("David (High School)", true)); /*
                 $this->Html->link(__("David (High School)", true), array("plugin" => "urg",
                                                                        "controller" => "groups",
                                                                        "action" => "view",
-                                                                       "david"), array("class" => "dropdown-last")));
+                                                                       "david"), array("class" => "dropdown-last"))); */
         ?>
         </ul>
             </div>
@@ -105,21 +105,21 @@
                 <h4><?php echo __("English Ministries"); ?></h4>
                 <ul>
                 <?php
-                    echo $this->Html->tag("li",
+                    echo $this->Html->tag("li",__("Isaac (Mature Adult)", true)); /*
                             $this->Html->link(__("Isaac (Mature Adult)", true), array("plugin" => "urg",
                                                                                       "controller" => "groups",
                                                                                       "action" => "view",
-                                                                                      "isaac")));
-                    echo $this->Html->tag("li",
+                                                                                      "isaac"))); */
+                    echo $this->Html->tag("li",__("Mothers Group", true)); /*
                             $this->Html->link(__("Mothers Group", true), array("plugin" => "urg",
                                                                                "controller" => "groups",
                                                                                "action" => "view",
-                                                                               "mothersgroup")));
-                    echo $this->Html->tag("li",
+                                                                               "mothersgroup")));*/
+                    echo $this->Html->tag("li",__("Jacob (Young Family)", true)); /*
                             $this->Html->link(__("Jacob (Young Family)", true), array("plugin" => "urg",
                                                                                    "controller" => "groups",
                                                                                    "action" => "view",
-                                                                                   "jacob")));
+                                                                                   "jacob"))); */
                     echo $this->Html->tag("li",
                             $this->Html->link(__("AE (Career)", true), array("plugin" => "urg",
                                                                                    "controller" => "groups",

@@ -8,52 +8,52 @@
         echo $this->Html->tag("li", __("nav.connect.description", true), array("class" => "dropdown-label"));
         echo $this->Html->tag("li", __("Chinese Communities", true), array("class" => "dropdown-label-header"));
         echo $this->Html->tag("li",
-                $this->Html->link(__("Hang-Oi (Elderly)", true), array("plugin" => "urg",
+                $this->Html->link(__("Hang-Oi (Elderly)", true), "#")); /*array("plugin" => "urg",
                                                                        "controller" => "groups",
                                                                        "action" => "view",
-                                                                       "hangoi")));
+                                                                       "hangoi")));*/
         echo $this->Html->tag("li",
-                $this->Html->link(__("Jien Jin (Elderly)", true), array("plugin" => "urg",
+                $this->Html->link(__("Jien Jin (Elderly)", true), "#")); /* array("plugin" => "urg",
                                                                        "controller" => "groups",
                                                                        "action" => "view",
-                                                                       "jienjin")));
+                                                                       "jienjin")));*/
         echo $this->Html->tag("li",
-                $this->Html->link(__("Canaan (Elderly)", true), array("plugin" => "urg",
+                $this->Html->link(__("Canaan (Elderly)", true),  "#")); /*array("plugin" => "urg",
                                                                        "controller" => "groups",
                                                                        "action" => "view",
-                                                                       "canaan")));
+                                                                       "canaan")));*/
         echo $this->Html->tag("li",
-                $this->Html->link(__("Zion (Adults)", true), array("plugin" => "urg",
+                $this->Html->link(__("Zion (Adults)", true), "#")); /* array("plugin" => "urg",
                                                                        "controller" => "groups",
                                                                        "action" => "view",
-                                                                       "zion")));
+                                                                       "zion")));*/
         echo $this->Html->tag("li",
-                $this->Html->link(__("Mandarin (Adults)", true), array("plugin" => "urg",
+                $this->Html->link(__("Mandarin (Adults)", true), "#")); /* array("plugin" => "urg",
                                                                        "controller" => "groups",
                                                                        "action" => "view",
-                                                                       "mandarin")));
+                                                                       "mandarin")));*/
         echo $this->Html->tag("li",
-                $this->Html->link(__("Betha (Married)", true), array("plugin" => "urg",
+                $this->Html->link(__("Betha (Married)", true), "#")); /* array("plugin" => "urg",
                                                                        "controller" => "groups",
                                                                        "action" => "view",
-                                                                       "betha")));
+                                                                       "betha")));*/
         echo $this->Html->tag("li",
-                $this->Html->link(__("Elisha (Career)", true), array("plugin" => "urg",
+                $this->Html->link(__("Elisha (Career)", true), "#")); /* array("plugin" => "urg",
                                                                        "controller" => "groups",
                                                                        "action" => "view",
-                                                                       "elisha")));
+                                                                       "elisha")));*/
         echo $this->Html->tag("li",
-                $this->Html->link(__("David (High School)", true), array("plugin" => "urg",
+                $this->Html->link(__("David (High School)", true), "#")); /* array("plugin" => "urg",
                                                                        "controller" => "groups",
                                                                        "action" => "view",
-                                                                       "david"), array("class" => "dropdown-last")));
+                                                                       "david"), array("class" => "dropdown-last")));*/
 
         echo $this->Html->tag("li", __("English Communities", true), array("class" => "dropdown-label-header")); 
         echo $this->Html->tag("li",
-                $this->Html->link(__("Jacob (Family)", true), array("plugin" => "urg",
+                $this->Html->link(__("Jacob (Family)", true), "#")); /* array("plugin" => "urg",
                                                                        "controller" => "groups",
                                                                        "action" => "view",
-                                                                       "jacob")));
+                                                                       "jacob")));*/
         echo $this->Html->tag("li",
                 $this->Html->link(__("AE (Career)", true), array("plugin" => "urg",
                                                                        "controller" => "groups",
@@ -69,6 +69,11 @@
                                                                        "controller" => "groups",
                                                                        "action" => "view",
                                                                        "timothies")));
+        echo $this->Html->tag("li",
+                $this->Html->link(__("Worship Team", true), array("plugin" => "urg",
+                                                                  "controller" => "groups",
+                                                                  "action" => "view",
+                                                                  "worship")));
         ?>
     </ul> 
 </li>
