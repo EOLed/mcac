@@ -1,3 +1,7 @@
+v 0.4.6 - May 14, 2012 (beta)
+--
+ - **Change:** Removed links to unimplemented sections
+
 v 0.4.5 - May 12, 2012 (beta)
 --
  - **Change:** Populate newsletter sender from user profile
