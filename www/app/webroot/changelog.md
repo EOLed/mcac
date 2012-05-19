@@ -1,3 +1,7 @@
+v 0.4.7 - May 18, 2012 (beta)
+--
+ - **Addition:** Edit/Delete upcoming events
+
 v 0.4.6 - May 14, 2012 (beta)
 --
  - **Change:** Removed links to unimplemented sections
