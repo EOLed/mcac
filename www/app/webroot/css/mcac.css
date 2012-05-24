@@ -670,3 +670,9 @@ ul.playlist li .controls .statusbar .position {
 #footer-location {
     padding-bottom: 10px;
 }
+
+#post-title-home-group, #post-title-home-group a {
+    font-size: 14px;
+    color: #777;
+}
+

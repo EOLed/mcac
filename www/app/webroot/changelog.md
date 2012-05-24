@@ -1,3 +1,7 @@
+v 0.4.8 - May 23, 2012 (beta)
+--
+ - **Change:** Post Titles have links back to home group
+
 v 0.4.7 - May 18, 2012 (beta)
 --
  - **Addition:** Edit/Delete upcoming events
