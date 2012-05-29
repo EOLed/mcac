@@ -541,7 +541,8 @@ ul {
 ol {
     list-style-type: decimal;
     padding-left: 20px;
-    margin: 0;
+    margin: 0 0 9px 0;
+    padding-bottom: 10px;
 }
 
 blockquote {
