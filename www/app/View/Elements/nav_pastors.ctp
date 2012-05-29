@@ -15,7 +15,7 @@
         echo $this->Html->tag("li", $this->Html->link(__("Rev. Terry Yeung", true), array("plugin" => "urg",
                                                                        "controller" => "groups",
                                                                        "action" => "view",
-                                                                       "tyueng")));
+                                                                       "tyeung")));
         echo $this->Html->tag("li", $this->Html->link(__("Rev. Ian Ho", true), array("plugin" => "urg",
                                                                        "controller" => "groups",
                                                                        "action" => "view",
