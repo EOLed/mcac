@@ -2,6 +2,7 @@ v 0.4.9 - May 28, 2012 (beta)
 --
  - **Bugfix:** RecentActivity widget takes a post_id to exclude.
  - **Bugfix:** UpcomingEvents widget shows events from closest home group.
+ - **Bugfix:** PastorFeed widget sorts by publish timestamp.
 
 v 0.4.8 - May 23, 2012 (beta)
 --

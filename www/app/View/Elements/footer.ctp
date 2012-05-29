@@ -19,11 +19,11 @@
                 <h4><?php echo __("Our Pastors"); ?></h4>
                 <ul>
                     <li>
-                        <?php echo __("Rev. Jonathan Kaan"); /*$this->Html->link(__("Rev. Jonathan Kaan"), "#"); 
+                        <?php echo $this->Html->link(__("Rev. Jonathan Kaan"), 
                                                      array("plugin" => "urg",
                                                            "controller" => "groups",
                                                            "action" => "view",
-                                                           "jkaan")); */ ?>
+                                                           "jkaan")); ?>
                     </li>
                     <li>
                         <?php echo $this->Html->link(__("Rev. Thomas Chan"), 
@@ -33,18 +33,18 @@
                                                            "tchan")); ?> 
                     </li>
                     <li>
-                        <?php echo __("Rev. Terry Yeung"); /*$this->Html->link(__("Rev. Terry Yeung"), "#");   
+                        <?php echo $this->Html->link(__("Rev. Terry Yeung"),   
                                                      array("plugin" => "urg",
                                                            "controller" => "groups",
                                                            "action" => "view",
-                                                           "tyeung")); */?>
+                                                           "tyeung")); ?>
                     </li>
                     <li>
-                        <?php echo __("Rev. Ian Ho"); /*$this->Html->link(__("Rev. Ian Ho"), "#");  
+                        <?php echo $this->Html->link(__("Rev. Ian Ho"),
                                                      array("plugin" => "urg",
                                                            "controller" => "groups",
                                                            "action" => "view",
-                                                           "iho")); */?>
+                                                           "iho")); ?>
                     </li>
                     <li>
                         <?php echo $this->Html->link(__("Rev. Marshall Davis"), 
