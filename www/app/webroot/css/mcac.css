@@ -677,3 +677,6 @@ ul.playlist li .controls .statusbar .position {
     color: #777;
 }
 
+.post-col .activity-feed-post h3 {
+    font-size: 18px;
+}
