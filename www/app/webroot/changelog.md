@@ -1,6 +1,7 @@
 v 0.5 - May 30, 2012 (beta)
 --
  - **Addition:** Sermons/Recent Activity caching
+ - **Addition:** Remember last chosen language
  - **Change:** Remove broken images on the fly
 
 v 0.4.10 - May 29, 2012 (beta)
