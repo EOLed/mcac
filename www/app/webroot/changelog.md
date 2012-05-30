@@ -1,3 +1,7 @@
+v 0.4.10 - May 29, 2012 (beta)
+--
+ - **Addition:** Markdown formatting guide.
+
 v 0.4.9 - May 28, 2012 (beta)
 --
  - **Bugfix:** RecentActivity widget takes a post_id to exclude.
