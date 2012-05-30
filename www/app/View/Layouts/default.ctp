@@ -62,9 +62,10 @@
         <script type="text/javascript">
             retries = 0;
             $("img").error(function() {
-                if (retries > 20) {
+                if (retries < 20) {
                     d = new Date();
-                    $(this).attr("src", $(this).attr("src") + "?"+ d.getTime());
+                    $(this).attr("src", $(this).attr("src") + "?"+ d.getTime()).delay(1000);
+                    console.log("reloading: " + $(this).attr("src"));
                     retries++;
                 } else {
                     $(this).remove();
