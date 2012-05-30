@@ -1,6 +1,12 @@
+v 0.4.11 - May 30, 2012 (beta)
+--
+ - **Addition:** Recent Activity caching
+ - **Change:** Remove broken images on the fly
+
 v 0.4.10 - May 29, 2012 (beta)
 --
  - **Addition:** Markdown formatting guide.
+ - **Addition:** Configurable amount of thumbnails to show in feed.
 
 v 0.4.9 - May 28, 2012 (beta)
 --

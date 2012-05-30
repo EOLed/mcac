@@ -59,6 +59,18 @@
         <div id="footer" class="top-border">
                 <?php echo $this->element("footer"); ?>
         </div>
+        <script type="text/javascript">
+            retries = 0;
+            $("img").error(function() {
+                if (retries > 20) {
+                    d = new Date();
+                    $(this).attr("src", $(this).attr("src") + "?"+ d.getTime());
+                    retries++;
+                } else {
+                    $(this).remove();
+                }
+            });
+        </script>
     </body>
 </html>
 <!-- end default.ctp -->
