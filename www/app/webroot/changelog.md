@@ -1,6 +1,6 @@
 v 0.4.11 - May 30, 2012 (beta)
 --
- - **Addition:** Recent Activity caching
+ - **Addition:** Sermons/Recent Activity caching
  - **Change:** Remove broken images on the fly
 
 v 0.4.10 - May 29, 2012 (beta)
