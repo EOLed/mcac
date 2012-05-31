@@ -1,4 +1,8 @@
-v 0.5 - May 30, 2012 (beta)
+v 0.5.1 - May 31, 2012 (beta)
+--
+ - **Bugfix:** Page title css fix
+
+v 0.5.0 - May 30, 2012 (beta)
 --
  - **Addition:** Sermons/Recent Activity caching
  - **Addition:** Remember last chosen language
