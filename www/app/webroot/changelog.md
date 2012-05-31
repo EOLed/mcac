@@ -1,6 +1,8 @@
 v 0.5.1 - May 31, 2012 (beta)
 --
  - **Bugfix:** Page title css fix
+ - **Bugfix:** ActivityFeed displays the latest PostBanner
+ - **Change:** Child groups get redirected to Home group
 
 v 0.5.0 - May 30, 2012 (beta)
 --
