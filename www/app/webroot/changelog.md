@@ -1,3 +1,7 @@
+v 0.6.0 - June 5, 2012 (beta)
+--
+ - **Addition:** Post commenting
+
 v 0.5.1 - May 31, 2012 (beta)
 --
  - **Bugfix:** Page title css fix
