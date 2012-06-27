@@ -1,4 +1,4 @@
-v 0.7.0 - Juen 26, 2012 (beta)
+v 0.7.0 - June 26, 2012 (beta)
 --
  - **Addition:** Post banner editing
  - **Bugfix:** Better post comment validation
