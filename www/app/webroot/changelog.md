@@ -1,3 +1,8 @@
+v 0.7.1 - Juen 26, 2012 (beta)
+--
+ - **Addition:** Sermon banner editing
+ - **Change:** Click on banner to edit
+
 v 0.7.0 - Juen 26, 2012 (beta)
 --
  - **Addition:** Post banner editing
