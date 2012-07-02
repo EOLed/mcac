@@ -1,4 +1,9 @@
-v 0.7.1 - Juen 26, 2012 (beta)
+v 0.7.2 - July 2, 2012 (beta)
+--
+ - **Addition:** Pretty url for latest sermon
+ - **Change:** Sermons page UI changes to ressemble bulletin
+
+v 0.7.1 - June 26, 2012 (beta)
 --
  - **Addition:** Sermon banner editing
  - **Addition:** Notify facebook groups of new posts
