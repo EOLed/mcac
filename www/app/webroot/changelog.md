@@ -1,4 +1,12 @@
+v 0.7.1 - Juen 26, 2012 (beta)
+--
+ - **Addition:** Sermon banner editing
+ - **Addition:** Notify facebook groups of new posts
+ - **Addition:** Live streaming sermons! 
+ - **Change:** Click on banner to edit
+
 v 0.7.0 - June 26, 2012 (beta)
+=======
 --
  - **Addition:** Post banner editing
  - **Bugfix:** Better post comment validation
