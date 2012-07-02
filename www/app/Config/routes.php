@@ -60,6 +60,7 @@ App::uses('GroupSlugRoute', 'Urg.Lib/Routes');
     Router::connect("/subscriptions/:action/*", 
                     array("controller" => "subscriptions", "plugin" => "urg_subscription"));
     Router::connect("/me", array("controller" => "profiles", "action" => "update_profile"));
+    Router::connect("/bulletin", array("plugin" => "urg_sermon", "controller" => "sermons", "action" => "latest"));
 /**
  * Load all plugin routes.  See the CakePlugin documentation on 
  * how to customize the loading of plugin routes.
