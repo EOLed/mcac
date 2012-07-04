@@ -1,3 +1,7 @@
+v 0.7.3 - July 3, 2012 (beta)
+--
+ - **Change:** Improved styling for live stream.
+
 v 0.7.2 - July 2, 2012 (beta)
 --
  - **Addition:** Pretty url for latest sermon

@@ -680,3 +680,11 @@ ul.playlist li .controls .statusbar .position {
 .post-col .activity-feed-post h3 {
     font-size: 18px;
 }
+
+.stream-caption {
+    padding-top: 5px;
+    font-style: italic;
+    color: #aaa;
+    font-size: 11px;
+    text-align: center;
+}
