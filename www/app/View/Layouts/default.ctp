@@ -38,7 +38,7 @@
         <script type="text/javascript">
             var _gaq = _gaq || [];
             _gaq.push(['_setAccount', 'UA-28737715-1']);
-            _gaq.push(['_setDomainName', 'montreal-cac.org']);
+            _gaq.push(['_setDomainName', 'mtlcac.org']);
             _gaq.push(['_trackPageview']);
 
             (function() {
