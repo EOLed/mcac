@@ -30,6 +30,11 @@
                     <li><?php echo $this->element("nav_connect"); ?></li>
                     <li><?php echo $this->element("nav_pastors"); ?></li>
                     <li><?php echo $this->element("nav_about"); ?></li>
+                    <?php if ($this->Session->read("Config.language") != "eng") { ?>
+                    <li><?php echo $this->element("nav_church_activities"); ?></li>
+                    <li><?php echo $this->element("nav_news"); ?></li>
+                    <?php } ?>
+                    
                     <li class="divider-vertical"></li>
                     <li>
                         <?php if ($this->Session->read("Config.language") == "eng") {
