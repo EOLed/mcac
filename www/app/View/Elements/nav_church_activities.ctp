@@ -7,11 +7,11 @@
         echo $this->Html->tag("li", $this->Html->link(__("Sunday School", true), array("plugin" => "urg",
                                                                        "controller" => "groups",
                                                                        "action" => "view",
-                                                                       "ss")));
+                                                                       "sundayschool")));
         echo $this->Html->tag("li", $this->Html->link(__("Prayer Meeting", true), array("plugin" => "urg",
                                                                        "controller" => "groups",
                                                                        "action" => "view",
-                                                                       "prayer-meeting")));
+                                                                       "prayermeeting")));
         echo $this->Html->tag("li", $this->Html->link(__("Fellowships", true), array("plugin" => "urg",
                                                                        "controller" => "groups",
                                                                        "action" => "view",

@@ -7,11 +7,11 @@
         echo $this->Html->tag("li", $this->Html->link(__("Duty Schedule", true), array("plugin" => "urg",
                                                                        "controller" => "groups",
                                                                        "action" => "view",
-                                                                       "duty-schedule")));
+                                                                       "duty")));
         echo $this->Html->tag("li", $this->Html->link(__("Forms", true), array("plugin" => "urg",
                                                                        "controller" => "groups",
                                                                        "action" => "view",
-                                                                       "mcac-forms")));
+                                                                       "forms")));
     ?>
     </ul>
 </li>
