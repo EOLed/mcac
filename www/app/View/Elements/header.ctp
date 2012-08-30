@@ -27,12 +27,32 @@
                                                            "id" => "logo",
                                                            "class" => "hidden-phone")); ?>
                     </li>
+                    <?php if ($this->Session->read("Config.language") == "eng") { ?>
                     <li><?php echo $this->element("nav_connect"); ?></li>
                     <li><?php echo $this->element("nav_pastors"); ?></li>
                     <li><?php echo $this->element("nav_about"); ?></li>
-                    <?php if ($this->Session->read("Config.language") != "eng") { ?>
-                    <li><?php echo $this->element("nav_church_activities"); ?></li>
-                    <li><?php echo $this->element("nav_news"); ?></li>
+                    <?php } else { ?>
+                    <li><?php echo $this->Html->link(__('Main'), "/") ?></li>
+                    <li><?php echo $this->Html->link(__('About Us'), array("plugin" => "urg_post",
+                                                                           "controller"=>"posts", 
+                                                                           "action"=>"view", 
+                                                                           813,
+                                                                           '關於我們')) ?></li>
+                    <li><?php echo $this->Html->link(__('Ministries'), array("plugin" => "urg_post",
+                                                                             "controller"=>"posts", 
+                                                                             "action"=>"view", 
+                                                                             814,
+                                                                             "教會事工")) ?></li>
+                    <li><?php echo $this->Html->link(__('News'), array("plugin" => "urg_post",
+                                                                       "controller"=>"posts", 
+                                                                       "action"=>"view", 
+                                                                       815,
+                                                                       "教會消息")) ?></li>
+                    <li><?php echo $this->Html->link(__('Contact Us'), array("plugin" => "urg_post",
+                                                                             "controller"=>"posts", 
+                                                                             "action"=>"view", 
+                                                                             816,
+                                                                             "聯絡我們")) ?></li>
                     <?php } ?>
                     
                     <li class="divider-vertical"></li>
