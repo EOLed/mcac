@@ -1,3 +1,8 @@
+v 0.8.0 - September 8, 2012 (beta)
+--
+ - **Addition:** Chinese congregation layout.
+ - **Bugfix:** Better form validation for Posts/Sermons.
+
 v 0.7.3 - July 3, 2012 (beta)
 --
  - **Change:** Improved styling for live stream.
