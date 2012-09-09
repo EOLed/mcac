@@ -1,3 +1,7 @@
+v 0.9.0 - September 9, 2012 (beta)
+--
+ - **Addition:** Migration tool
+
 v 0.8.0 - September 8, 2012 (beta)
 --
  - **Addition:** Chinese congregation layout.
@@ -20,7 +24,6 @@ v 0.7.1 - June 26, 2012 (beta)
  - **Change:** Click on banner to edit
 
 v 0.7.0 - June 26, 2012 (beta)
-=======
 --
  - **Addition:** Post banner editing
  - **Bugfix:** Better post comment validation

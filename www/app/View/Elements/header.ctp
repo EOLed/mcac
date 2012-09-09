@@ -36,22 +36,22 @@
                     <li><?php echo $this->Html->link(__('About Us'), array("plugin" => "urg_post",
                                                                            "controller"=>"posts", 
                                                                            "action"=>"view", 
-                                                                           813,
+                                                                           1047,
                                                                            '關於我們')) ?></li>
                     <li><?php echo $this->Html->link(__('Ministries'), array("plugin" => "urg_post",
                                                                              "controller"=>"posts", 
                                                                              "action"=>"view", 
-                                                                             814,
+                                                                             1048,
                                                                              "教會事工")) ?></li>
                     <li><?php echo $this->Html->link(__('News'), array("plugin" => "urg_post",
                                                                        "controller"=>"posts", 
                                                                        "action"=>"view", 
-                                                                       815,
+                                                                       1049,
                                                                        "教會消息")) ?></li>
                     <li><?php echo $this->Html->link(__('Contact Us'), array("plugin" => "urg_post",
                                                                              "controller"=>"posts", 
                                                                              "action"=>"view", 
-                                                                             816,
+                                                                             1050,
                                                                              "聯絡我們")) ?></li>
                     <?php } ?>
                     
