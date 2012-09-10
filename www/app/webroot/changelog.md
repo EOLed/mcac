@@ -1,6 +1,7 @@
 v 0.9.0 - September 9, 2012 (beta)
 --
  - **Addition:** Migration tool
+ - **Change:** PHP 5.4 compatible
 
 v 0.8.0 - September 8, 2012 (beta)
 --

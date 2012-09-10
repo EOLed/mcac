@@ -6,9 +6,9 @@ class FlyLoaderComponent extends Component {
     var $HELPER_TYPE = "Helper";
     var $BEHAVIOR_TYPE = "Behavior";
         
-    function initialize(&$controller) {
+    function initialize(Controller $controller) {
         // saving the controller reference for later use
-        $this->controller =& $controller;
+        $this->controller = $controller;
     }
                                 
     function load($type, $abs_name) {
