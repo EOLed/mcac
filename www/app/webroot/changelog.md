@@ -1,4 +1,7 @@
-v 0.9.0 - September 9, 2012 (beta)
+v 0.9.1 - September 11, 2012 (beta)
+--
+ - **Bugfix:** Improved form validation
+ 
 --
  - **Addition:** Migration tool
  - **Change:** PHP 5.4 compatible
