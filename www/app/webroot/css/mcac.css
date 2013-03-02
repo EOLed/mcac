@@ -4,7 +4,7 @@ body {
     background-repeat: no-repeat;
     background-position: top center;*/
     /*font-family: 'Lato', sans-serif;*/
-    background-image: url('/img/bg.png'); 
+    background-image: url('/img/bg.gif'); 
     background-repeat: repeat-x;
     background-position: top;
 
@@ -67,9 +67,9 @@ li .dropdown-last {
     padding-left: 0;
     margin-left: 20px;
     float: right;
-    font-weight: bold;
-    color: black;
-    text-shadow: 0 1px 0 rgba(255, 255, 255, .1), 0 0 30px rgba(255, 255, 255, .125);
+    /*font-weight: bold;*/
+    color: #999;
+    /*text-shadow: 0 1px 0 rgba(255, 255, 255, .1), 0 0 30px rgba(255, 255, 255, .125);*/
     -webkit-transition: all .2s linear;
     -moz-transition: all .2s linear;
     transition: all .2s li
@@ -688,3 +688,4 @@ ul.playlist li .controls .statusbar .position {
     font-size: 11px;
     text-align: center;
 }
+

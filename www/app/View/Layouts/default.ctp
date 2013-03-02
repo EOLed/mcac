@@ -34,6 +34,7 @@
             echo $this->fetch("script");
             echo $this->fetch("css");
             echo $this->Html->css("mcac");
+            echo $this->Html->css("mcac-" . $this->Session->read("Config.language"));
         ?>
         <script type="text/javascript">
             var _gaq = _gaq || [];

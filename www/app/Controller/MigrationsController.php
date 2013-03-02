@@ -15,23 +15,22 @@ class MigrationsController extends UrgAppController {
   public function migrate() {
     echo "\n\n\n\n\n";
     $this->cleanup();
-    $this->enhance_sermons();
 /*    $this->create_group("Sunday School", "sundayschool", "mcac-ministries", true);
-    $this->create_group("Chinese Sunday School", "chinesesundayschool", "sundayschool", true);
-    $this->create_group("English Sunday School", "englishsundayschool", "sundayschool", true);
     $this->create_home_group("Youth I", "youth1", "englishsundayschool");
-    $this->create_home_group("Youth II", "youth2", "englishsundayschool");
-    $this->create_home_group("Children's Sunday School", "childrensundayschool", "englishsundayschool");
-    $this->create_home_group("Adult", "adultsundayschool", "englishsundayschool");
-    $this->create_group("Prayer Meeting", "prayermeeting", "mcac-ministries", true);
-    $this->create_home_group("Prayer Meeting English", "prayermeeting-en", "prayermeeting");
-    $this->create_home_group("Prayer Meeting Chinese", "prayermeeting-ch", "prayermeeting");
-    $this->create_group("English Fellowships", "fellowships-en", "fellowships", true); 
-    $this->create_group("Chinese Fellowships", "fellowships-ch", "fellowships", true); 
-    $this->create_home_group("Caring", "caring", "mcac-ministries"); 
-    $this->create_home_group("Mission", "mission", "mcac-ministries"); 
-    $this->create_home_group("Duty", "duty", "mcac-ministries"); 
     $this->create_group("Menu", "mcac-menu", "mcac");*/
+
+    $this->Widget->create();
+    $side_panel = $this->Widget->findById(29);
+    $ministries_group = $this->Group->findById(65);
+    $side_panel["Widget"]["group_id"] = $ministries_group["Group"]["id"];
+    $this->Widget->save($side_panel);
+
+    $this->Widget->create();
+    $banner = $this->Widget->findById(7);
+    $options = array("post_id" => 1152);
+    $banner["Widget"]["options"] = json_encode($options);
+    $this->Widget->save($banner);
+
     Cache::clear(false);
   }
 
@@ -59,65 +58,9 @@ class MigrationsController extends UrgAppController {
     $this->loadModel("Urg.Post");
     $this->loadModel("Urg.Widget");
     
-    $this->Widget->deleteAll(array("Widget.group_id >=" => 455));
-    $this->Post->deleteAll(array("Post.group_id >=" => 455));
-    $this->Group->deleteAll(array("Group.id >=" => 455));
-  }
-
-  private function setupPrayerMeetingGroup() {
-    $slug = "prayermeeting";
-    // newsletter section
-    $options = array("eng" => array("group_slug" => "$slug-en-news",
-                                    "title" => "Interested?",
-                                    "message" => "Sign up below to receive period updates!"),
-                     "zh_CN" => array("group_slug" => "$slug-ch-news",
-                                    "title" => "Interested?",
-                                    "message" => "(Chinese) Sign up below to receive period updates!"));
-    $this->create_widget("UrgSubscription.I18nSubscribe", $slug, "/urg/groups/view", "col-0|0", $options);
-    $options = array("post_id" => "@post_id",
-                     "reply_to" => array("email" => array("model" => "Profile", "field" => "email"),
-                                         "name" => array("model" => "Profile", "field" => "name")));
-    $this->create_widget("UrgSubscription.NotifySubscribers", 
-                         "$slug-en-news", 
-                         "/urg_post/posts/add", 
-                         "backend", 
-                         $options);
-    $this->create_widget("UrgSubscription.NotifySubscribers", 
-                         "$slug-ch-news", 
-                         "/urg_post/posts/add", 
-                         "backend", 
-                         $options);
-
-    // about section
-    $english_about_id = $this->create_post("mcac-about", "Prayer Meeting (English)", "$slug-about-en");
-    $chinese_about_id = $this->create_post("mcac-about", "Prayer Meeting (Chinese)", "$slug-about-ch");
-    $options = array("eng" => array("post_id" => $english_about_id, "title" => false),
-                     "zh_CN" => array("post_id" => $chinese_about_id, "title" => false));
-    $this->create_widget("UrgPost.I18nPostContent", $slug, "/urg/groups/view", "col-0|1", $options);
-
-    // recent activity section
-    $options = array("eng" => array("group_slug" => "$slug-en", "show_thumbs" => true),
-                     "zh_CN" => array("group_slug" => "$slug-ch", "show_thumbs" => true));
-    $this->create_widget("UrgPost.I18nRecentActivity", $slug, "/urg/groups/view", "col-1|0", $options);
-
-    $options = array("eng" => array("group_slug" => "$slug-en"), "zh_CN" => array("group_slug" => "$slug-ch")); 
-    $this->create_widget("UrgPost.I18nUpcomingEvents", $slug, "/urg/groups/view", "col-2|0", $options);
-
-    $options = array("group_id" => "@group_id", 
-                     "columns" => array("col-0" => "span4", "col-1" => "span4", "col-2" => "span4"));
-    $this->create_widget("Urg.ColumnLayout", $slug, "/urg/groups/view", "layout", $options);
-  }
-
-  private function setupSundaySchoolGroup($parent_slug, $slug, $col) {
-    $sundayschool = $this->fetch_group_by_slug($parent_slug);
-    $ss_slug = $sundayschool["Group"]["slug"];
-    $group = $this->fetch_group_by_slug($slug);
-    $about_id = $this->create_post("mcac-about", $group["Group"]["name"], "$slug-about");
-    $options = array("post_id" => $about_id, "title" => false);
-    $this->create_widget("UrgPost.PostContent", $ss_slug, "/urg/groups/view", "col-$col|0", $options);
-
-    $options = array("group_slug" => $slug, "show_thumbs" => true);
-    $this->create_widget("UrgPost.RecentActivity", $ss_slug, "/urg/groups/view", "col-$col|1", $options);
+    $this->Widget->deleteAll(array("Widget.id >" => 710));
+    $this->Post->deleteAll(array("Post.id >" => 1152));
+    $this->Group->deleteAll(array("Group.id >" => 458));
   }
 
   private function create_home_group($name, $slug, $parent_slug) {
