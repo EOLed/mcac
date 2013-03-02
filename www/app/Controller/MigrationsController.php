@@ -15,7 +15,8 @@ class MigrationsController extends UrgAppController {
   public function migrate() {
     echo "\n\n\n\n\n";
     $this->cleanup();
-    $this->create_group("Sunday School", "sundayschool", "mcac-ministries", true);
+    $this->enhance_sermons();
+/*    $this->create_group("Sunday School", "sundayschool", "mcac-ministries", true);
     $this->create_group("Chinese Sunday School", "chinesesundayschool", "sundayschool", true);
     $this->create_group("English Sunday School", "englishsundayschool", "sundayschool", true);
     $this->create_home_group("Youth I", "youth1", "englishsundayschool");
@@ -30,57 +31,27 @@ class MigrationsController extends UrgAppController {
     $this->create_home_group("Caring", "caring", "mcac-ministries"); 
     $this->create_home_group("Mission", "mission", "mcac-ministries"); 
     $this->create_home_group("Duty", "duty", "mcac-ministries"); 
-    $this->create_group("Menu", "mcac-menu", "mcac");
-
-    $options = array("group_id" => "@group_id", 
-                     "columns" => array("col-0" => "span5", "col-1" => "span5 offset1"));
-    $this->create_widget("Urg.ColumnLayout", "sundayschool", "/urg/groups/view", "layout", $options);
-    $this->setupSundaySchoolGroup("sundayschool", "chinesesundayschool", 0);
-    $this->setupSundaySchoolGroup("sundayschool", "englishsundayschool", 1);
-
-    $this->setupPrayerMeetingGroup();
-
-    $options = array("group_id" => "@group_id", 
-                     "columns" => array("col-0" => "span5", "col-1" => "span5 offset1"));
-    $this->create_widget("Urg.ColumnLayout", "fellowships", "/urg/groups/view", "layout", $options);
-    $this->setupSundaySchoolGroup("fellowships", "fellowships-ch", 0);
-    $this->setupSundaySchoolGroup("fellowships", "fellowships-en", 1);
-
-    $this->setupMenu();
+    $this->create_group("Menu", "mcac-menu", "mcac");*/
+    Cache::clear(false);
   }
 
-  private function setupMenu() {
-    $options = array("post_id" => "@post_id");
-    $this->create_widget("UrgPost.PostTitle", "mcac-menu", "/urg_post/posts/view", "title", $options);
-    $options = array("group_id" => "@group_id", "columns" => array("col-0" => "span12"));
-    $this->create_widget("Urg.ColumnLayout", "mcac-menu", "/urg_post/posts/view", "layout", $options);
-
-    $content = "信仰
-簡介
-教牧同工
-牧者的話
-教會架構";
-    echo $this->create_post("mcac-menu", "關於我們", "關於我們", $content);
-    $content = "[主日學](/sundayschool)
-[祈禱會](/prayermeeting)
-[團契](/fellowships)
-[關懷事工](/caring)
-[外展宣教](/missions)";
-    echo $this->create_post("mcac-menu", "教會事工", "教會事工", $content);
-    echo $this->create_post("mcac-menu", "教會消息", "教會消息", "[特別聚會](/)
-[講道重溫](/sermons)
-[事工分配](/duty)
-行事曆
-[分類表格](/forms)"); 
-    echo $this->create_post("mcac-menu", "聯絡我們", "聯絡我們", "[地圖](http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Montreal+Chinese+Alliance+Church,+13,+Rue+Finchley,+Hampstead,+QC+H3X+2Z4,+Canada&aq=0&sll=37.0625,-95.677068&sspn=33.847644,79.013672&ie=UTF8&hq=Montreal+Chinese+Alliance+Church,&hnear=13+Rue+Finchley,+Hampstead,+Communaut%C3%A9-Urbaine-de-Montr%C3%A9al,+Qu%C3%A9bec+H3X+2Z6,+Canada&ll=45.480069,-73.633461&spn=0.006936,0.01929&z=16&iwloc=A)
-
-地址電話:
-13 Finchley
-Hampstead, Quebec
-H3X 2Z4
-514-482-2703
-
-電郵: [contact@mtlcac.org](mailto:contact@mtlcac.org)");
+  private function enhance_sermons() {
+    $this->loadModel("Urg.Group");
+    $this->Group->updateAll(array('Group.slug' => "'series'", 'Group.home' => 0), array('Group.id' => 80));
+    $this->create_group("Sermons", "sermons", "mcac", true);
+    $series_group = $this->Group->findById(80);
+    $series_group["Group"]["parent_id"] = $this->Group->findBySlug("sermons")["Group"]["id"];
+    $this->Group->save($series_group);
+    $this->create_widget("Urg.ColumnLayout", 
+                         "sermons", 
+                         "/urg/groups/view", 
+                         "layout", 
+                         array("group_id" => "@group_id", "columns" => array("col-0" => "span12")));
+    $this->create_widget("UrgSermon.SermonTiles", 
+                         "sermons", 
+                         "/urg/groups/view", 
+                         "col-0|0", 
+                         null);
   }
 
   private function cleanup() {
@@ -88,16 +59,9 @@ H3X 2Z4
     $this->loadModel("Urg.Post");
     $this->loadModel("Urg.Widget");
     
-    $this->Widget->deleteAll(array("Widget.group_id >=" => 144));
-    $this->Post->deleteAll(array("Post.group_id >=" => 144));
-    $this->Group->deleteAll(array("Group.id >=" => 144));
-
-    $fellowship_group = $this->fetch_group_by_slug("fellowships");
-    $layout_widget = $this->Widget->find("first", 
-                                         array("conditions" => array("group_id" => $fellowship_group["Group"]["id"], 
-                                                                     "placement" => "layout")));
-    $this->Widget->deleteAll(array("group_id" => $fellowship_group["Group"]["id"]));
-
+    $this->Widget->deleteAll(array("Widget.group_id >=" => 455));
+    $this->Post->deleteAll(array("Post.group_id >=" => 455));
+    $this->Group->deleteAll(array("Group.id >=" => 455));
   }
 
   private function setupPrayerMeetingGroup() {
@@ -203,9 +167,10 @@ H3X 2Z4
     $data["Widget"]["group_id"] = $group["Group"]["id"];
     $data["Widget"]["action"] = $action;
     $data["Widget"]["placement"] = $placement;
-    $data["Widget"]["options"] = str_replace("\"@group_id\"", 
-                                             "\${group_id}",
-                                             str_replace("\"@post_id\"", "\${post_id}", json_encode($options)));
+    if ($options != null)
+      $data["Widget"]["options"] = str_replace("\"@group_id\"", 
+                                               "\${group_id}",
+                                               str_replace("\"@post_id\"", "\${post_id}", json_encode($options)));
     $this->Widget->save($data);
   }
 
