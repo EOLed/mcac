@@ -21,8 +21,12 @@ class MigrationsController extends UrgAppController {
 
     $this->Widget->create();
     $side_panel = $this->Widget->findById(29);
-    $ministries_group = $this->Group->findById(65);
-    $side_panel["Widget"]["group_id"] = $ministries_group["Group"]["id"];
+    $mcac_group = $this->Group->findById(64);
+    $side_panel["Widget"]["group_id"] = $mcac_group["Group"]["id"];
+    $side_panel["Widget"]["placement"] = 'side';
+    $options = json_decode($side_panel["Widget"]["options"], true);
+    $options["zh_CN"]["post_id"] = 63;
+    $side_panel["Widget"]["options"] = json_encode($options);
     $this->Widget->save($side_panel);
 
     $this->Widget->create();
@@ -30,6 +34,67 @@ class MigrationsController extends UrgAppController {
     $options = array("post_id" => 1152);
     $banner["Widget"]["options"] = json_encode($options);
     $this->Widget->save($banner);
+
+    $this->Widget->create();
+    $announcements = $this->Widget->findById(35);
+    $announcements["Widget"]["placement"] = 'col-0|0';
+    $this->Widget->save($announcements);
+
+    $this->Widget->create();
+    $row2Options = json_decode('{"eng":{"group_id":${group_id},"columns":{"col-0":"span4","col-1":"span4", "col-2":"span4"}}, "zh_CN":{"group_id":${group_id},"columns":{"col-0":"span5","ch-col-1":"span5 offset2"}}}', true);
+    $options = array("eng" => array("group_id" => "@group_id",
+                                    "layout" => array("header" => array("banner" => "span9", "side" => "span3"), 
+                                                      "titleRow" => array("title" => "span12 page-title"),
+                                                      "content" => array("col0" => "span4", "col1" => "span4", "col2" => "span4"))),
+                     "zh_CN" => array("group_id" => "@group_id",
+                                      "layout" => array("header" => array("banner" => "span12"),
+                                                        "titleRow" => array("title" => "span12 page-title"),
+                                                        "content" => array("col0" => "span5", "chcol1" => "span5 offset2"))));
+    $this->create_widget("Urg.I18nPageLayout", 'mcac', "/urg/groups/view", "layout", $options);
+    $this->create_widget("Urg.GroupTitle", 'mcac', "/urg/groups/view", "title", array("group_id" => "@group_id"));
+    $this->Widget->delete(101);
+
+    $this->Widget->updateAll(array('Widget.placement' => "'col0|0'"), 
+                             array('Widget.placement' => 'col-0|0'));
+    $this->Widget->updateAll(array('Widget.placement' => "'col0|1'"), 
+                             array('Widget.placement' => 'col-0|1'));
+    $this->Widget->updateAll(array('Widget.placement' => "'col0|2'"), 
+                             array('Widget.placement' => 'col-0|2'));
+    $this->Widget->updateAll(array('Widget.placement' => "'col0|3'"), 
+                             array('Widget.placement' => 'col-0|3'));
+    $this->Widget->updateAll(array('Widget.placement' => "'col0|4'"), 
+                             array('Widget.placement' => 'col-0|4'));
+    $this->Widget->updateAll(array('Widget.placement' => "'col1|0'"), 
+                             array('Widget.placement' => 'col-1|0'));
+    $this->Widget->updateAll(array('Widget.placement' => "'col1|1'"), 
+                             array('Widget.placement' => 'col-1|1'));
+    $this->Widget->updateAll(array('Widget.placement' => "'col2|0'"), 
+                             array('Widget.placement' => 'col-2|0'));
+    $this->Widget->updateAll(array('Widget.placement' => "'col2|1'"), 
+                             array('Widget.placement' => 'col-2|1'));
+    $this->Widget->updateAll(array('Widget.placement' => "'chcol1|0'"), 
+                             array('Widget.placement' => 'ch-col-1|0'));
+
+    $oldWidgets = $this->Widget->find('all', array('conditions' => array('Widget.options LIKE' => "%col-%")));
+    
+    foreach ($oldWidgets as $widget) {
+      $widget["Widget"]["options"] = str_replace("col-", "col", $widget["Widget"]["options"]);
+      $this->Widget->create();
+      $this->Widget->save($widget);
+    }
+
+    $oldWidgets = $this->Widget->find('all', array('conditions' => array('Widget.name' => "Urg.ColumnLayout")));
+    foreach ($oldWidgets as $widget) {
+      $this->Widget->create();
+      $options = $widget["Widget"]["options"];
+      $new_options = array("header" => array("banner" => "span9", "side" => "span3"),
+                           "titleRow" => array("title" => "span12"),
+                           "content" => array("col0" => "span4", "col1" => "span4", "col2" => "span4"));
+      $widget["Widget"]["name"] = "Urg.PageLayout";
+      $widget["Widget"]["options"] = json_encode($new_options);
+      $this->Widget->save($widget);
+    }
+    
 
     Cache::clear(false);
   }
